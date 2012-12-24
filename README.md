@@ -1,4 +1,0 @@
-slt
-===
-
-Straight Line Theory
