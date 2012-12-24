@@ -1,0 +1,9 @@
+<?php
+    
+    // set php values needed for use within the site
+
+    // set site url for development
+    // make sure you end with a /
+    $site_url = "//localhost/straightlinetheory/";
+
+?>
