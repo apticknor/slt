@@ -9,7 +9,9 @@ Width: Extra Large Screen & Up
 
 /* ---------------------------------------------------------------------
  Section Mask - Fade the background image to white on large
-                screens where you can see it's hard edge
+                screens where you can see it's hard edge. In order
+                to avoid scrollbars, the media query must match the
+                size of the background image - 1360px
 ------------------------------------------------------------------------ */
 .section-bd_masthead:before {
     content: "";
