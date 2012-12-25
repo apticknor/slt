@@ -115,10 +115,27 @@ textarea {
 }
 
 /* ---------------------------------------------------------------------
+ Fonts
+------------------------------------------------------------------------ */
+@font-face {
+    font-family: "SeravekLight";
+    src: url("../fonts/seravek/seravek-300-light.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SeravekRegular";
+    src: url("../fonts/seravek/seravek-500-regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ---------------------------------------------------------------------
  Base Styles
 ------------------------------------------------------------------------ */
 body {
-    font: normal 12px/1.25 "Seravek", Helvetica, Arial, sans-serif;
+    font: normal 12px/1.25 "SeravekLight", Helvetica, Arial, sans-serif;
     color: #3a3a3a;
     background: #ffffff;
 }
@@ -231,7 +248,7 @@ a {
     line-height: 32px;
     background: #e9642a;
     color: #ffffff;
-    font-weight: bold;
+    font: normal 13px/32px "SeravekRegular", Helvetica, Arial, sans-serif;
     -webkit-transition: background-color .1s ease-in-out;
     -moz-transition:    background-color .1s ease-in-out;
     -ms-transition:     background-color .1s ease-in-out;
