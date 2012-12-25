@@ -10,9 +10,12 @@
 
         <!-- SEO -->
         <title>Straight Line Theory</title>
-        <meta name="description" content="" />
-        <meta name="author" content="" />
+        <meta name="description" content="Straight Line Theory helps companies make their websites and online applications easier to use. 
+We enable customers to evaluate and improve their sites by learning more about their users, resolving usability issues and creating intuitive experiences that deliver measurable results." />
+        <meta name="keywords" content="information architecture, IA, usability consulting, usability testing, usability expert, usability lab, web usability, user experience, user interface design, site architecture, wireframe, site map, scenarios, personas, Straight Line Theory, Straightline Theory, SLT, John Dusek, Andrew Benson, Jay Mathews, Roy Neal" />
+        <meta name="author" content="Straight Line Theory" />
         <meta name="robots" content="index,follow,archive" />
+        <link rel="canonical" href="http://straightlinetheory.com/" />
 
         <!-- ICONS -->
         <link rel="shortcut icon" type="image/ico" href="<?php echo $site_url; ?>favicon.ico" />
