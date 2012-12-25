@@ -142,14 +142,17 @@ a {
 .nav {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 10px;
 }
 
 /* ---------------------------------------------------------------------
  Sections
 ------------------------------------------------------------------------ */
+.section {
+    position: relative;
+}
+
 .section_masthead {
-    padding: 72px 0;
     background: #ffffff url('../images/design/bg-section-masthead.jpg') no-repeat center top;
 }
 
@@ -169,10 +172,14 @@ a {
     background: #ffffff;
 }
 
-.section-inner {
+.section-bd {
     margin: 0 auto;
     max-width: 940px;
     position: relative;
+}
+
+.section-bd_masthead {
+    padding: 72px 0;
 }
 
 /* ---------------------------------------------------------------------

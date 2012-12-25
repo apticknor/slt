@@ -4,7 +4,7 @@
 
         <!--- SECTION 1 -->
         <div class="section section_masthead" role="banner">
-            <div class="section-inner">
+            <div class="section-bd section-bd_masthead">
                 <h1>Straight Line Theory</h1>
                 <h2>Straight Line Theory is a team of information architects and usability experts based in Minneapolis.</h2>
                 <div class="nav" role="navigation">
@@ -16,7 +16,7 @@
 
         <!--- SECTION 2 -->
         <div class="section section_services">
-            <div class="section-inner">
+            <div class="section-bd">
                 <h2>We help companies simplify and improve their websites, applications and mobile experiences.</h2>
                 <ul>
                     <li>
@@ -38,7 +38,7 @@
 
         <!--- SECTION 3 -->
         <div class="section section_portfolio">
-            <div class="section-inner">
+            <div class="section-bd">
                 <h2>We're passionate about solving complex user experience challenges.</h2>
             </div>
         </div>
@@ -46,7 +46,7 @@
 
         <!--- SECTION 4 -->
         <div class="section section_about">
-            <div class="section-inner">
+            <div class="section-bd">
                 <h2>Meet Straight Line Theory</h2>
                 <p>We're a highly-skilled team of experienced UX professionals. We trill the challenge of turning complex business problems into simple, elegant solutions. We love to sketch, protoype, and explore what's possible. Whether your goal is to bvoost sales or improve customer satisfaction. We can help.</p>
                 <p>Interested in joining our Team? <a href="mailto:jobs@straightlinetheory.com">jobs@straightlinetheory.com</a></p>
@@ -95,7 +95,7 @@
 
         <!--- SECTION 5 -->
         <div class="section section_contact" role="contentinfo">
-            <div class="section-inner">
+            <div class="section-bd">
                 <h2>Want to know more? Contact Us.</h2>
                 <div class="vcard">
                     <h3 class="fn org">Straight Line Theory</h3>
