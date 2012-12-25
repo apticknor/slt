@@ -225,19 +225,18 @@ a {
 
 .preamble-bd {
     margin-bottom: 0;
-    font-size: 18px;
 }
 
 /* ---------------------------------------------------------------------
  Headings
+    - all headings change sizes / hierarchies as mediaqueries apply
 ------------------------------------------------------------------------ */
-.hdg {
-    
-}
+.hdg_section { font-size: 18px; }
 
-.hdg_mute {
-    color: #606158;
-}
+.hdg_gray { color: #606158; }
+.hdg_green { color: #315314; }
+.hdg_blue { color: #2b4242; }
+
 /* ---------------------------------------------------------------------
  Buttons
 ------------------------------------------------------------------------ */

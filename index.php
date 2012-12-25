@@ -10,7 +10,7 @@
                         <h1 class="logo">Straight Line Theory</h1>
                     </div>
                     <div class="preamble-bd">
-                        <h2 class="hdg hdg_mute">Straight Line Theory is a team of information architects and usability experts based in Minneapolis.</h2>
+                        <h2 class="hdg hdg_section hdg_gray">Straight Line Theory is a team of information architects and usability experts based in Minneapolis.</h2>
                     </div>
                 </div>
                 <div class="nav" role="navigation">
@@ -23,7 +23,7 @@
         <!--- SECTION 2 -->
         <div class="section section_services">
             <div class="section-bd">
-                <h2>We help companies simplify and improve their websites, applications and mobile experiences.</h2>
+                <h2 class="hdg hdg_section hdg_green">We help companies simplify and improve their websites, applications and mobile experiences.</h2>
                 <ul>
                     <li>
                         <h3>Understand Your Users.</h3>
@@ -45,7 +45,7 @@
         <!--- SECTION 3 -->
         <div class="section section_portfolio">
             <div class="section-bd">
-                <h2>We're passionate about solving complex user experience challenges.</h2>
+                <h2 class="hdg hdg_section hdg_gray">We're passionate about solving complex user experience challenges.</h2>
             </div>
         </div>
         <!-- // END SECTION 3 -->
@@ -53,7 +53,7 @@
         <!--- SECTION 4 -->
         <div class="section section_about">
             <div class="section-bd">
-                <h2>Meet Straight Line Theory</h2>
+                <h2 class="hdg hdg_section hdg_blue">Meet Straight Line Theory</h2>
                 <p>We're a highly-skilled team of experienced UX professionals. We trill the challenge of turning complex business problems into simple, elegant solutions. We love to sketch, protoype, and explore what's possible. Whether your goal is to bvoost sales or improve customer satisfaction. We can help.</p>
                 <p>Interested in joining our Team? <a href="mailto:jobs@straightlinetheory.com">jobs@straightlinetheory.com</a></p>
                 <ul>
@@ -76,7 +76,7 @@
                         <h3>John Dusek</h3>
                     </li>
                 </ul>
-                <h2>How We're Different</h2>
+                <h2 class="hdg hdg_section hdg_blue">How We're Different</h2>
                 <ul>
                     <li>
                         <h3>Understand Your Users</h3>
