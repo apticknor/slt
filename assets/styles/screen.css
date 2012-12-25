@@ -148,12 +148,26 @@ a {
 /* ---------------------------------------------------------------------
  Sections
 ------------------------------------------------------------------------ */
-.section {
+.section_masthead {
+    padding: 72px 0;
+    background: #ffffff url('../images/design/bg-section-masthead.jpg') no-repeat center top;
+}
+
+.section_services {
+    background: #9fc34d;
+}
+
+.section_portfolio {
     background: #ffffff;
 }
 
-.section_green { background: #9fc34d; }
-.section_blue { background: #80c5c7; }
+.section_about {
+    background: #80c5c7;
+}
+
+.section_contact {
+    background: #ffffff;
+}
 
 .section-inner {
     margin: 0 auto;

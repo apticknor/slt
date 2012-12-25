@@ -3,7 +3,7 @@
 <?php require_once('includes/head.php'); ?>
 
         <!--- SECTION 1 -->
-        <div class="section" role="banner">
+        <div class="section section_masthead" role="banner">
             <div class="section-inner">
                 <h1>Straight Line Theory</h1>
                 <h2>Straight Line Theory is a team of information architects and usability experts based in Minneapolis.</h2>
@@ -15,7 +15,7 @@
         <!-- // END SECTION 1 -->
 
         <!--- SECTION 2 -->
-        <div class="section section_green">
+        <div class="section section_services">
             <div class="section-inner">
                 <h2>We help companies simplify and improve their websites, applications and mobile experiences.</h2>
                 <ul>
@@ -37,7 +37,7 @@
         <!-- // END SECTION 2 -->
 
         <!--- SECTION 3 -->
-        <div class="section">
+        <div class="section section_portfolio">
             <div class="section-inner">
                 <h2>We're passionate about solving complex user experience challenges.</h2>
             </div>
@@ -45,7 +45,7 @@
         <!-- // END SECTION 3 -->
 
         <!--- SECTION 4 -->
-        <div class="section section_blue">
+        <div class="section section_about">
             <div class="section-inner">
                 <h2>Meet Straight Line Theory</h2>
                 <p>We're a highly-skilled team of experienced UX professionals. We trill the challenge of turning complex business problems into simple, elegant solutions. We love to sketch, protoype, and explore what's possible. Whether your goal is to bvoost sales or improve customer satisfaction. We can help.</p>
@@ -94,7 +94,7 @@
         <!-- // END SECTION 4 -->
 
         <!--- SECTION 5 -->
-        <div class="section" role="contentinfo">
+        <div class="section section_contact" role="contentinfo">
             <div class="section-inner">
                 <h2>Want to know more? Contact Us.</h2>
                 <div class="vcard">
