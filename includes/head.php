@@ -21,7 +21,11 @@
         <link rel="apple-touch-icon" href="<?php echo $site_url; ?>apple-touch-icon.png" />
 
         <!-- STYLESHEETS -->
-        <link rel="stylesheet" media="screen, projection" href="<?php echo $site_url; ?>assets/styles/screen.css" />
+        <link rel="stylesheet" media="screen" href="<?php echo $site_url; ?>assets/styles/screen.css" />
+        <link rel="stylesheet" media="screen and (min-width: 320px)" href="<?php echo $site_url; ?>assets/styles/screen-sm.css" />
+        <link rel="stylesheet" media="screen and (min-width: 768px)" href="<?php echo $site_url; ?>assets/styles/screen-md.css" />
+        <link rel="stylesheet" media="screen and (min-width: 1200px)" href="<?php echo $site_url; ?>assets/styles/screen-lg.css" />
+        <link rel="stylesheet" media="screen" href="<?php echo $site_url; ?>assets/styles/screen.css" />
         <link rel="stylesheet" media="print" href="<?php echo $site_url; ?>assets/styles/print.css" />
 
         <!-- JQUERY -->
