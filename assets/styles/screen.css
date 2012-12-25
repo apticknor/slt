@@ -120,6 +120,7 @@ textarea {
 body {
     font: normal 12px/1.25 'Seravek', Helvetica, Arial, sans-serif;
     color: #3a3a3a;
+    background: #ffffff;
 }
 
 a {
@@ -132,7 +133,11 @@ a {
 ------------------------------------------------------------------------ */
 .section {
     position: relative;
+    background: #ffffff;
 }
+
+.section_green { background: #9fc34d; }
+.section_blue { background: #80c5c7; }
 
 .section-inner {
     margin: 0 auto;

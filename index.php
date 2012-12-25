@@ -13,7 +13,7 @@
         <!-- // END SECTION 1 -->
 
         <!--- SECTION 2 -->
-        <div class="section">
+        <div class="section section_green">
             <div class="section-inner">
                 <h2>We help companies simplify and improve their websites, applications and mobile experiences.</h2>
                 <ul>
@@ -43,7 +43,7 @@
         <!-- // END SECTION 3 -->
 
         <!--- SECTION 4 -->
-        <div class="section">
+        <div class="section section_blue">
             <div class="section-inner">
                 <h2>Meet Straight Line Theory</h2>
                 <p>We're a highly-skilled team of experienced UX professionals. We trill the challenge of turning complex business problems into simple, elegant solutions. We love to sketch, protoype, and explore what's possible. Whether your goal is to bvoost sales or improve customer satisfaction. We can help.</p>
