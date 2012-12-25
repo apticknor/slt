@@ -14,7 +14,7 @@
                     </div>
                 </div>
                 <div class="nav" role="navigation">
-                    <a class="btn" href="#contact">Contact Us</a>
+                    <a class="btn" href="#page-contact">Contact Us</a>
                 </div>
             </div>
         </div>
@@ -100,7 +100,7 @@
         <!-- // END SECTION 4 -->
 
         <!--- SECTION 5 -->
-        <div class="section section_contact" role="contentinfo">
+        <div class="section section_contact" role="contentinfo" id="page-contact">
             <div class="section-bd">
                 <h2>Want to know more? Contact Us.</h2>
                 <div class="vcard">
