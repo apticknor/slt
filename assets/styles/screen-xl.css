@@ -20,11 +20,6 @@ Width: Extra Large Screen & Up
     left: -210px; /* (bg img width - section-bd width) / 2 == (1360 - 940) / 2 == -210px */
     width: 140px;
     height: 100%;
-    background: -moz-linear-gradient(
-                    left,
-                    rgba(255,255,255,1) 0%,
-                    rgba(255,255,255,0) 100%
-                );
     background: -webkit-gradient(
                     linear,
                     left top,
@@ -43,13 +38,18 @@ Width: Extra Large Screen & Up
                     rgba(255,255,255,1) 0%,
                     rgba(255,255,255,0) 100%
                 );
-    background: -o-linear-gradient(
-                    left, 
+    background: -moz-linear-gradient(
+                    left,
                     rgba(255,255,255,1) 0%,
                     rgba(255,255,255,0) 100%
                 );
     background: -ms-linear-gradient(
                     left,
+                    rgba(255,255,255,1) 0%,
+                    rgba(255,255,255,0) 100%
+                );
+    background: -o-linear-gradient(
+                    left, 
                     rgba(255,255,255,1) 0%,
                     rgba(255,255,255,0) 100%
                 );
@@ -67,11 +67,6 @@ Width: Extra Large Screen & Up
     right: -210px; /* (bg img width - section-bd width) / 2 == (1360 - 940) / 2 == -210px */
     width: 140px;
     height: 100%;
-    background: -moz-linear-gradient(
-                    left,
-                    rgba(255,255,255,0) 0%,
-                    rgba(255,255,255,1) 100%
-                );
     background: -webkit-gradient(
                     linear,
                     left top,
@@ -90,13 +85,18 @@ Width: Extra Large Screen & Up
                     rgba(255,255,255,0) 0%,
                     rgba(255,255,255,1) 100%
                 );
-    background: -o-linear-gradient(
-                    left, 
+    background: -moz-linear-gradient(
+                    left,
                     rgba(255,255,255,0) 0%,
                     rgba(255,255,255,1) 100%
                 );
     background: -ms-linear-gradient(
                     left,
+                    rgba(255,255,255,0) 0%,
+                    rgba(255,255,255,1) 100%
+                );
+    background: -o-linear-gradient(
+                    left, 
                     rgba(255,255,255,0) 0%,
                     rgba(255,255,255,1) 100%
                 );
