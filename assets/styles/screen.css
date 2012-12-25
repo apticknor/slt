@@ -180,34 +180,39 @@ a {
     position: relative;
 }
 
-.section_masthead {
-    background: #ffffff url("../images/design/bg-section-masthead.jpg") no-repeat center top;
-}
-
-.section_services {
-    background: #9fc34d;
-}
-
-.section_portfolio {
-    background: #ffffff;
-}
-
-.section_about {
-    background: #80c5c7;
-}
-
-.section_contact {
-    background: #ffffff;
-}
-
 .section-bd {
     margin: 0 auto;
     max-width: 940px;
     position: relative;
 }
 
+/* masthead section */
+.section_masthead {
+    background: #ffffff url("../images/design/bg-section-masthead.jpg") no-repeat center top;
+}
+
 .section-bd_masthead {
     padding: 72px 0;
+}
+
+/* services section */
+.section_services {
+    background: #9fc34d;
+}
+
+/* portfolio section */
+.section_portfolio {
+    background: #ffffff;
+}
+
+/* about section */
+.section_about {
+    background: #80c5c7;
+}
+
+/* contact section */
+.section_contact {
+    background: #ffffff;
 }
 
 /* ---------------------------------------------------------------------
