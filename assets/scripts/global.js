@@ -2,7 +2,7 @@
 Global JavaScript
 
 Target Browsers: All
-Authors: Anthony Ticknor
+Authors: Anthony Ticknor, Dan Piscitiello
 ------------------------------------------------------------------------ */
 
 // Namespace Object

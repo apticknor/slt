@@ -1,6 +1,8 @@
 # Mon, 24 Dec 2012 22:59:09 -0600
 # Author: Anthony Ticknor <tony.ticknor@gmail.com>
+# Author: Dan Piscitiello <dpisciti@gmail.com>
 
+# Start Rewrites
 RewriteEngine on
 RewriteBase /
 
