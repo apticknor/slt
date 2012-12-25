@@ -1,0 +1,60 @@
+# Mon, 24 Dec 2012 22:59:09 -0600
+# Author: Anthony Ticknor <tony.ticknor@gmail.com>
+
+RewriteEngine on
+RewriteBase /
+
+# Prevent access to .htaccess and other system / config files
+RedirectMatch 404 /(|dist)\.htaccess$
+RedirectMatch 404 /config.php(|\.dist)$
+RedirectMatch 404 /functions.php$
+RedirectMatch 404 /.*\.(sql|log|dist|bak)$
+
+# Remove the www
+RewriteCond %{HTTP_HOST} ^www.straightlinetheory.com$ [NC]
+RewriteRule ^(.*)$ http://straightlinetheory.com/$1 [R=301,L]
+
+# Turn off all directory indexes
+Options All -indexes
+
+# use utf-8 encoding for anything served text/plain or text/html
+AddDefaultCharset utf-8
+
+# force utf-8 for a number of file formats
+AddCharset utf-8 .html .css .js .xml .json .rss
+
+# HTC Files (for IE hacks)
+AddType text/x-component .htc
+
+# video
+AddType video/ogg  ogg ogv
+AddType video/mp4  mp4
+AddType video/webm webm
+
+# Proper svg serving. Required for svg webfonts on iPad
+#   twitter.com/FontSquirrel/status/14855840545
+AddType image/svg+xml                 svg svgz
+
+# Webfonts
+AddType application/vnd.ms-fontobject eot
+AddType font/ttf                      ttf
+AddType font/otf                      otf
+AddType font/x-woff                   woff
+
+AddType text/cache-manifest           manifest
+
+# gzip compression.
+<IfModule mod_deflate.c>
+     # html, xml, css, and js:
+     AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/x-javascript text/javascript application/javascript application/json text/js
+
+     # webfonts and svg:
+     <FilesMatch "\.(ttf|otf|eot|svg)$" >
+          SetOutputFilter DEFLATE
+     </FilesMatch>
+</IfModule>
+
+# Slip PHP some crack...
+php_value upload_max_filesize 100M
+php_value post_max_size 100M
+php_value memory_limit 256M
