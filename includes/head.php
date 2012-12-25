@@ -25,6 +25,7 @@
         <link rel="stylesheet" media="screen and (min-width: 320px)" href="<?php echo $site_url; ?>assets/styles/screen-sm.css" />
         <link rel="stylesheet" media="screen and (min-width: 768px)" href="<?php echo $site_url; ?>assets/styles/screen-md.css" />
         <link rel="stylesheet" media="screen and (min-width: 960px)" href="<?php echo $site_url; ?>assets/styles/screen-lg.css" />
+        <link rel="stylesheet" media="screen and (min-width: 1360px)" href="<?php echo $site_url; ?>assets/styles/screen-xl.css" />
         <link rel="stylesheet" media="print" href="<?php echo $site_url; ?>assets/styles/print.css" />
 
         <!-- IE STYLESHEETS SANS MEDIAQUERIES -->
@@ -32,6 +33,7 @@
         <link rel="stylesheet" media="screen" href="<?php echo $site_url; ?>assets/styles/screen-sm.css" />
         <link rel="stylesheet" media="screen" href="<?php echo $site_url; ?>assets/styles/screen-md.css" />
         <link rel="stylesheet" media="screen" href="<?php echo $site_url; ?>assets/styles/screen-lg.css" />
+        <link rel="stylesheet" media="screen" href="<?php echo $site_url; ?>assets/styles/screen-xl.css" />
         <![endif]-->
 
         <!-- JQUERY -->
