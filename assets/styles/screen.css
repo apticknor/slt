@@ -232,5 +232,13 @@ a {
     background: #e9642a;
     color: #ffffff;
     font-weight: bold;
+    -webkit-transition: background-color .1s ease-in-out;
+    -moz-transition:    background-color .1s ease-in-out;
+    -ms-transition:     background-color .1s ease-in-out;
+    -o-transition:      background-color .1s ease-in-out;
+    transition:         background-color .1s ease-in-out;
 }
 
+.btn:hover {
+    background: #dc5a22;
+}
