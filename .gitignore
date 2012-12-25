@@ -18,6 +18,8 @@ Thumbs.db
 .htaccess
 config.php
 
-# Design Files #
+# Dev Files #
 #########################
 _psd
+*.psd
+_todo.txt
