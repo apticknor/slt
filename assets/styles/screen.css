@@ -117,3 +117,27 @@ textarea {
 /* ---------------------------------------------------------------------
  Base Styles
 ------------------------------------------------------------------------ */
+body {
+    font: normal 12px/1.25 'Seravek', Helvetica, Arial, sans-serif;
+    color: #3a3a3a;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ---------------------------------------------------------------------
+ Section
+------------------------------------------------------------------------ */
+.section {
+    position: relative;
+}
+
+.section-inner {
+    margin: 0 auto;
+    max-width: 940px;
+}
+
+
+
