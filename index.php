@@ -5,8 +5,14 @@
         <!--- SECTION 1 -->
         <div class="section section_masthead" role="banner">
             <div class="section-bd section-bd_masthead">
-                <h1>Straight Line Theory</h1>
-                <h2>Straight Line Theory is a team of information architects and usability experts based in Minneapolis.</h2>
+                <div class="preamble">
+                    <div class="preamble-hd">
+                        <h1 class="logo">Straight Line Theory</h1>
+                    </div>
+                    <div class="preamble-bd">
+                        <h2 class="hdg hdg_mute">Straight Line Theory is a team of information architects and usability experts based in Minneapolis.</h2>
+                    </div>
+                </div>
                 <div class="nav" role="navigation">
                     <a class="btn" href="#contact">Contact Us</a>
                 </div>

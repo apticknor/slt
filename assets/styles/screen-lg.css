@@ -18,5 +18,21 @@ Width: Large Screen & Up
  Sections
 ------------------------------------------------------------------------ */
 .section-bd_masthead {
-    padding: 190px 0 212px;
+    padding: 183px 0;
+}
+
+/* ---------------------------------------------------------------------
+ Preamble
+------------------------------------------------------------------------ */
+.preamble {
+    width: 864px;
+}
+
+.preamble-hd {
+    margin-bottom: 38px;
+}
+
+.preamble-bd {
+    margin-bottom: 22px;
+    font-size: 34px;
 }

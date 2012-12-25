@@ -11,5 +11,21 @@ Width: Medium Screen & Up
  Sections
 ------------------------------------------------------------------------ */
 .section-bd_masthead {
-    padding: 114px 0 128px 0;
+    padding: 114px 0;
+}
+
+/* ---------------------------------------------------------------------
+ Preamble
+------------------------------------------------------------------------ */
+.preamble {
+    width: 500px;
+}
+
+.preamble-hd {
+    margin-bottom: 20px;
+}
+
+.preamble-bd {
+    margin-bottom: 14px;
+    font-size: 20px;
 }

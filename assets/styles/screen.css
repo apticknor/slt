@@ -118,7 +118,7 @@ textarea {
  Base Styles
 ------------------------------------------------------------------------ */
 body {
-    font: normal 12px/1.25 'Seravek', Helvetica, Arial, sans-serif;
+    font: normal 12px/1.25 "Seravek", Helvetica, Arial, sans-serif;
     color: #3a3a3a;
     background: #ffffff;
 }
@@ -134,6 +134,17 @@ a {
 .isHidden {
     position: absolute;
     left: -9999px;
+}
+
+/* ---------------------------------------------------------------------
+ Logo
+------------------------------------------------------------------------ */
+.logo {
+    display: inline-block;
+    width: 235px;
+    height: 128px;
+    background: transparent url("../images/design/logo.png") no-repeat 0 0;
+    text-indent: -9999px;
 }
 
 /* ---------------------------------------------------------------------
@@ -153,7 +164,7 @@ a {
 }
 
 .section_masthead {
-    background: #ffffff url('../images/design/bg-section-masthead.jpg') no-repeat center top;
+    background: #ffffff url("../images/design/bg-section-masthead.jpg") no-repeat center top;
 }
 
 .section_services {
@@ -182,6 +193,34 @@ a {
     padding: 72px 0;
 }
 
+/* ---------------------------------------------------------------------
+ Preamble
+------------------------------------------------------------------------ */
+.preamble {
+    width: 310px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.preamble-hd {
+    margin-bottom: 18px;
+}
+
+.preamble-bd {
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+/* ---------------------------------------------------------------------
+ Headings
+------------------------------------------------------------------------ */
+.hdg {
+    
+}
+
+.hdg_mute {
+    color: #606158;
+}
 /* ---------------------------------------------------------------------
  Buttons
 ------------------------------------------------------------------------ */
