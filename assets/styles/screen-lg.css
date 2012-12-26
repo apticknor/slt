@@ -24,6 +24,10 @@ body {
 /* ---------------------------------------------------------------------
  Sections
 ------------------------------------------------------------------------ */
+.section-bd {
+    padding: 100px;
+}
+
 /* masthead section */
 .section-bd_masthead {
     padding: 183px 0;
@@ -37,11 +41,11 @@ body {
 }
 
 .preamble-hd {
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 
 .preamble-bd {
-    margin-bottom: 22px;
+    margin-bottom: 18px;
 }
 
 /* ---------------------------------------------------------------------
