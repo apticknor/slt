@@ -29,11 +29,16 @@
         <link rel="stylesheet" media="print" href="<?php echo $site_url; ?>assets/styles/print.css" />
 
         <!-- IE STYLESHEETS SANS MEDIAQUERIES -->
-        <!--[if lte IE 8]>
+        <!--[if IE 8]>
         <link rel="stylesheet" media="screen" href="<?php echo $site_url; ?>assets/styles/screen-sm.css" />
         <link rel="stylesheet" media="screen" href="<?php echo $site_url; ?>assets/styles/screen-md.css" />
         <link rel="stylesheet" media="screen" href="<?php echo $site_url; ?>assets/styles/screen-lg.css" />
         <link rel="stylesheet" media="screen" href="<?php echo $site_url; ?>assets/styles/screen-xl.css" />
+        <![endif]-->
+        
+        <!-- LEGACY IE SUPPORT -->
+        <!--[if lte IE 8]>
+        <link rel="stylesheet" media="screen" href="<?php echo $site_url; ?>assets/styles/ie-legacy.css" />
         <![endif]-->
 
         <!-- JQUERY -->
