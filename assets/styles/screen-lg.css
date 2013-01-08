@@ -12,6 +12,11 @@ Width: Large Screen & Up
 ------------------------------------------------------------------------ */
 body {
     font: normal 17px/1.41 "SeravekLight", Helvetica, Arial, sans-serif;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 /* ---------------------------------------------------------------------

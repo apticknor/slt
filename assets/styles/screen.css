@@ -137,7 +137,7 @@ textarea {
 body {
     font: normal 12px/1.25 "SeravekLight", Helvetica, Arial, sans-serif;
     color: #3a3a3a;
-    background: #ffffff;
+    background: #ffffff url("../images/design/bg-section-masthead.jpg") no-repeat fixed center top; /* creates "rollover" effect over the top of the first section */
 }
 
 a {
@@ -185,11 +185,6 @@ a {
     max-width: 940px;
     position: relative;
     padding: 50px 0;
-}
-
-/* masthead section */
-.section_masthead {
-    background: #ffffff url("../images/design/bg-section-masthead.jpg") no-repeat center top;
 }
 
 .section-bd_masthead {
