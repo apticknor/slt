@@ -43,5 +43,26 @@ body {
 ------------------------------------------------------------------------ */
 .hdg_section { font-size: 20px; }
 
+/* ---------------------------------------------------------------------
+ Blocks
+------------------------------------------------------------------------ */
+.blocks > * {
+    display: inline-block;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative; /* fix the inline-block spacing gap */
+    margin-left: -4px; /* fix the inline-block spacing gap */
+}
 
+.blocks > * + * {
+    padding-left: 20px;
+}
 
+.blocks_2up > * { width: 50.0%; }
+.blocks_3up > * { width: 33.3% }
+.blocks_4up > * { width: 25.0%; }
+.blocks_5up > * { width: 20.0%; }

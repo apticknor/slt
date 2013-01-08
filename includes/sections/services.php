@@ -2,7 +2,7 @@
         <div class="section section_services">
             <div class="section-bd">
                 <h2 class="hdg hdg_section hdg_green">We help companies simplify and improve their websites, applications and mobile experiences.</h2>
-                <ul>
+                <ul class="blocks blocks_3up">
                     <li>
                         <h3>Understand Your Users.</h3>
                         <p>Do you have a complete picture of the people you want to reach? Through user research and ethnographic studies, we'll help you gain a deeper understanding of your users' behaviors, motivations and goals.</p>
