@@ -29,11 +29,19 @@ body {
 /* ---------------------------------------------------------------------
  Sections
 ------------------------------------------------------------------------ */
-.section-bd {
-    padding: 100px;
+.section {
+    padding: 100px 0;
+}
+
+.section-hd {
+    max-width: none; /* reset med view max-width */
 }
 
 /* masthead section */
+.section_masthead {
+    padding: 0;
+}
+
 .section-bd_masthead {
     padding: 183px 0;
 }
@@ -60,4 +68,10 @@ body {
 .hdg_section { font-size: 34px; }
 .hdg_subSection { font-size: 22px; }
 
+/* ---------------------------------------------------------------------
+ Blocks
+------------------------------------------------------------------------ */
+.blocks > * {
+    font-size: 17px; /* reset font-size after inline block spacing fix*/
+}
 

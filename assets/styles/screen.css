@@ -145,6 +145,12 @@ a {
     text-decoration: none;
 }
 
+/* make sure media never breaks the bounds of it's own container */
+img,
+video,
+audio {
+    max-width: 100%;
+}
 /* ---------------------------------------------------------------------
  Utility Classes
 ------------------------------------------------------------------------ */
@@ -177,23 +183,39 @@ a {
  Sections
 ------------------------------------------------------------------------ */
 .section {
+    padding: 50px 0;
     position: relative;
+}
+
+.section-hd {
+    margin: 0 auto 30px auto;
+    max-width: 940px;
+    text-align: center;
+    max-width: 420px;
 }
 
 .section-bd {
     margin: 0 auto;
     max-width: 940px;
-    position: relative;
-    padding: 50px 0;
+}
+
+/* masted section */
+.section_masthead {
+    padding: 0;
 }
 
 .section-bd_masthead {
-    padding: 72px 0;
+    padding: 72px 0 50px 0;
+    position: relative;
 }
 
 /* services section */
 .section_services {
     background: #9fc34d;
+}
+
+.section-hd_services {
+    padding: 0 14px;
 }
 
 /* portfolio section */
@@ -265,7 +287,37 @@ a {
  Box
 ------------------------------------------------------------------------ */
 .box {
-    padding: 30px 14px;
+    padding: 20px 14px;
+    margin-bottom: 20px;
     background-color: #b0ce6d; /* fallback for non rgba */
     background-color: rgba(255,255,255,.18);
+}
+
+/* ---------------------------------------------------------------------
+ Blocks
+------------------------------------------------------------------------ */
+.blocks {
+    margin: 0 auto;
+    max-width: 480px;
+}
+
+.blocks > * {
+    margin: 0 6%;
+}
+
+/* ---------------------------------------------------------------------
+ Feature
+------------------------------------------------------------------------ */
+.feature-img {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.feature-hd {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.feature-bd {
+    
 }

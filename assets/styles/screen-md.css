@@ -17,9 +17,26 @@ body {
 /* ---------------------------------------------------------------------
  Sections
 ------------------------------------------------------------------------ */
+.section {
+    padding: 80px 0;
+}
+
+.section-hd {
+    max-width: 540px; /* reset small view max-width */
+}
+
 /* masthead section */
+.section_masthead {
+    padding: 0;
+}
+
 .section-bd_masthead {
     padding: 114px 0;
+}
+
+/* services section */
+.section-hd_services {
+    padding: 0 140px;
 }
 
 /* ---------------------------------------------------------------------
@@ -45,8 +62,23 @@ body {
 .hdg_subSection { font-size: 15px; }
 
 /* ---------------------------------------------------------------------
+ Box
+------------------------------------------------------------------------ */
+.box {
+    margin-bottom: 0;
+}
+
+/* ---------------------------------------------------------------------
  Blocks
 ------------------------------------------------------------------------ */
+.blocks {
+    margin: 0; /* reset small view margin */
+    max-width: none; /* reset small view max-width */
+    font-size: 0; /* fix inline block spacing */
+    position: relative;
+    left: -10px;
+}
+
 .blocks > * {
     display: inline-block;
     vertical-align: top;
@@ -55,12 +87,9 @@ body {
     -ms-box-sizing: border-box;
     -o-box-sizing: border-box;
     box-sizing: border-box;
-    position: relative; /* fix the inline-block spacing gap */
-    margin-left: -4px; /* fix the inline-block spacing gap */
-}
-
-.blocks > * + * {
+    margin: 0; /* reset small view margin */
     padding-left: 20px;
+    font-size: 10px; /* reset font-size after inline block spacing fix*/
 }
 
 .blocks_2up > * { width: 50.0%; }
