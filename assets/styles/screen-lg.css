@@ -33,6 +33,14 @@ body {
     padding: 100px 0;
 }
 
+.section:before {
+    height: 60px;
+}
+
+.section:after {
+    height: 60px;
+}
+
 .section-hd {
     max-width: 768px; /* reset med view max-width */
 }
@@ -40,6 +48,10 @@ body {
 /* masthead section */
 .section_masthead {
     padding: 0;
+}
+
+.section_masthead:after {
+    height: 170px;
 }
 
 .section-bd_masthead {
