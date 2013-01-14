@@ -233,6 +233,7 @@ a {
     - all headings change sizes / hierarchies as mediaqueries apply
 ------------------------------------------------------------------------ */
 .hdg_section { font-size: 18px; }
+.hdg_subSection { font-size: 18px; }
 
 .hdg_gray { color: #606158; }
 .hdg_green { color: #315314; }
