@@ -9,7 +9,7 @@
                         <div class="box">
                             <div class="feature">
                                 <div class="feature-img">
-                                    <img src="//placehold.it/224x148" alt="" />
+                                    <img src="<?php echo $site_url; ?>assets/images/content/services-users.png" alt="" />
                                 </div>
                                 <div class="feature-hd">
                                     <h3 class="hdg_subSection hdg_green">Understand Your Users.</h3>
@@ -24,7 +24,7 @@
                         <div class="box">
                             <div class="feature">
                                 <div class="feature-img">
-                                    <img src="//placehold.it/224x148" alt="" />
+                                    <img src="<?php echo $site_url; ?>assets/images/content/services-experience.png" alt="" />
                                 </div>
                                 <div class="feature-hd">
                                     <h3 class="hdg_subSection hdg_green">Define the Experience.</h3>
@@ -39,7 +39,7 @@
                         <div class="box">
                             <div class="feature">
                                 <div class="feature-img">
-                                    <img src="//placehold.it/224x148" alt="" />
+                                    <img src="<?php echo $site_url; ?>assets/images/content/services-testing.png" alt="" />
                                 </div>
                                 <div class="feature-hd">
                                     <h3 class="hdg_subSection hdg_green">Test, Evaluate &amp; Improve.</h3>
