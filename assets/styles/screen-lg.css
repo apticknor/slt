@@ -34,7 +34,7 @@ body {
 }
 
 .section-hd {
-    max-width: none; /* reset med view max-width */
+    max-width: 768px; /* reset med view max-width */
 }
 
 /* masthead section */
