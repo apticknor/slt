@@ -11,7 +11,7 @@ Width: Medium Screen & Up
  Base Styles
 ------------------------------------------------------------------------ */
 body {
-    font: normal 10px/1.26 "SeravekLight", Helvetica, Arial, sans-serif;
+    font: normal 16px/1.25 "SeravekLight", Helvetica, Arial, sans-serif;
 }
 
 /* ---------------------------------------------------------------------
@@ -50,7 +50,7 @@ body {
  Preamble
 ------------------------------------------------------------------------ */
 .preamble {
-    width: 500px;
+    width: 560px;
 }
 
 .preamble-hd {
@@ -65,8 +65,12 @@ body {
  Headings
     - all headings change sizes / hierarchies as mediaqueries apply
 ------------------------------------------------------------------------ */
-.hdg_section { font-size: 20px; }
-.hdg_subSection { font-size: 15px; }
+.hdg_section {
+    font-size: 24px;
+}
+.hdg_subSection {
+    font-size: 20px;
+}
 
 /* ---------------------------------------------------------------------
  Box
@@ -96,7 +100,7 @@ body {
     box-sizing: border-box;
     margin: 0; /* reset small view margin */
     padding-left: 20px;
-    font-size: 10px; /* reset font-size after inline block spacing fix*/
+    font-size: 16px; /* reset font-size after inline block spacing fix*/
 }
 
 .blocks_2up > * { width: 50.0%; }

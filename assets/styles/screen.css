@@ -135,7 +135,7 @@ textarea {
  Base Styles
 ------------------------------------------------------------------------ */
 body {
-    font: normal 12px/1.25 "SeravekLight", Helvetica, Arial, sans-serif;
+    font: normal 16px/1.25 "SeravekLight", Helvetica, Arial, sans-serif;
     color: #3a3a3a;
     background: #ffffff url("../images/design/bg-section-masthead.jpg") no-repeat fixed center top; /* creates "rollover" effect over the top of the first section */
 }
@@ -307,8 +307,14 @@ audio {
  Headings
     - all headings change sizes / hierarchies as mediaqueries apply
 ------------------------------------------------------------------------ */
-.hdg_section { font-size: 18px; }
-.hdg_subSection { font-size: 18px; }
+.hdg_section {
+    font-size: 20px;
+    line-height: 1.2;
+}
+.hdg_subSection {
+    font-size: 20px;
+    line-height: 1.2;
+ }
 
 .hdg_gray { color: #606158; }
 .hdg_green { color: #315314; }

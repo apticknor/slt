@@ -11,7 +11,7 @@ Width: Large Screen & Up
  Base Styles
 ------------------------------------------------------------------------ */
 body {
-    font: normal 17px/1.41 "SeravekLight", Helvetica, Arial, sans-serif;
+    font: normal 18px/1.26 "SeravekLight", Helvetica, Arial, sans-serif;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
@@ -62,7 +62,7 @@ body {
  Preamble
 ------------------------------------------------------------------------ */
 .preamble {
-    width: 864px;
+    width: 800px;
 }
 
 .preamble-hd {
