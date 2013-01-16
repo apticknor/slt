@@ -380,3 +380,13 @@ audio {
 .feature-bd {
     
 }
+
+/* ---------------------------------------------------------------------
+ High Pixel Density Display Support
+------------------------------------------------------------------------ */
+@media only screen and (-webkit-min-device-pixel-ratio:1.5) {
+    .logo {
+        background: transparent url("../images/design/logo@2x.png") no-repeat 0 0;
+        background-size: 100%;
+    }
+}
