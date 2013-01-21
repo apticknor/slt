@@ -21,7 +21,7 @@
         <link rel="apple-touch-icon" href="<?php echo $site_url; ?>apple-touch-icon.png" />
 
         <!-- STYLESHEETS -->
-        <link rel="stylesheet" media="screen" href="<?php echo $site_url; ?>assets/styles/screen.css" />
+        <link rel="stylesheet" media="screen and (min-width: 1em)" href="<?php echo $site_url; ?>assets/styles/screen.css" />
         <link rel="stylesheet" media="screen and (min-width: 20em)" href="<?php echo $site_url; ?>assets/styles/screen-sm.css" />
         <link rel="stylesheet" media="screen and (min-width: 42em)" href="<?php echo $site_url; ?>assets/styles/screen-md.css" />
         <link rel="stylesheet" media="screen and (min-width: 60em)" href="<?php echo $site_url; ?>assets/styles/screen-lg.css" />
@@ -30,6 +30,7 @@
 
         <!-- IE STYLESHEETS SANS MEDIAQUERIES -->
         <!--[if IE 8]>
+        <link rel="stylesheet" media="screen" href="<?php echo $site_url; ?>assets/styles/screen.css" />
         <link rel="stylesheet" media="screen" href="<?php echo $site_url; ?>assets/styles/screen-sm.css" />
         <link rel="stylesheet" media="screen" href="<?php echo $site_url; ?>assets/styles/screen-md.css" />
         <link rel="stylesheet" media="screen" href="<?php echo $site_url; ?>assets/styles/screen-lg.css" />
