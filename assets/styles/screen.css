@@ -281,7 +281,8 @@ audio {
 
 /* contact section */
 .section_contact {
-    background: #ffffff;
+    padding: 20px 0;
+    background: #eeeae2;
 }
 
 /* ---------------------------------------------------------------------
@@ -310,13 +311,23 @@ audio {
     line-height: 1.2;
 }
 .hdg_subSection {
-    font-size: 20px;
+    font-size: 19px;
     line-height: 1.2;
  }
 
+.hdg_minorSection {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+/* hdg mixins */
 .hdg_gray { color: #606158; }
 .hdg_green { color: #315314; }
 .hdg_blue { color: #2b4242; }
+.hdg_lightGreen { color: #9fc34d; }
+.hdg_lightBlue { color: #80c5c7; }
+.hdg_bold { font-weight: bold; }
+.hdg_cap { text-transform: uppercase; }
 
 /* ---------------------------------------------------------------------
  Buttons
@@ -350,6 +361,11 @@ audio {
     background-color: rgba(255,255,255,.18);
 }
 
+.box_basic {
+    margin: 0;
+    background-color: transparent;
+}
+
 /* ---------------------------------------------------------------------
  Blocks
 ------------------------------------------------------------------------ */
@@ -374,6 +390,28 @@ audio {
 .feature-hd {
     text-align: center;
     margin-bottom: 12px;
+}
+
+/* ---------------------------------------------------------------------
+ Teaser
+------------------------------------------------------------------------ */
+.teaser {
+    overflow: hidden;
+    text-align: center;
+    font-size: 14px;
+}
+
+.teaser-hd {
+    margin-bottom: 20px;
+}
+
+.teaser-subHd {
+    margin-bottom: 6px;
+}
+
+.teaser-bd {
+    margin-bottom: 20px;
+    line-height: 1.4;
 }
 
 /* ---------------------------------------------------------------------
