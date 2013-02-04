@@ -6,3 +6,81 @@ Target Browsers: All
 Media Type: Screen, Projection
 Width: Extra Large Screen & Up
 ------------------------------------------------------------------------ */
+
+/* ---------------------------------------------------------------------
+ Sections
+------------------------------------------------------------------------ */
+
+/* fade the edges of the map when it gets gigantic */
+.section-bd_contact:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: 634px; /* must match height of element */
+    background: -webkit-linear-gradient(
+                    left,
+                    rgba(238,234,226,0) 0%,
+                    rgba(238,234,226,1) 100%
+                );
+    background: -moz-linear-gradient(
+                    left,
+                    rgba(238,234,226,0) 0%,
+                    rgba(238,234,226,1) 100%
+                );
+    background: -ms-linear-gradient(
+                    left,
+                    rgba(238,234,226,0) 0%,
+                    rgba(238,234,226,1) 100%
+                );
+    background: -o-linear-gradient(
+                    left,
+                    rgba(238,234,226,0) 0%,
+                    rgba(238,234,226,1) 100%)
+                ;
+    background: linear-gradient(
+                    to right,
+                    rgba(238,234,226,0) 0%,
+                    rgba(238,234,226,1) 100%
+                );
+}
+
+.section-bd_contact:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 634px; /* must match height of element */
+    background: -webkit-linear-gradient(
+                    left,
+                    rgba(238,234,226,1) 0%,
+                    rgba(238,234,226,0) 100%
+                );
+    background: -moz-linear-gradient(
+                    left,
+                    rgba(238,234,226,1) 0%,
+                    rgba(238,234,226,0) 100%
+                );
+    background: -ms-linear-gradient(
+                    left,
+                    rgba(238,234,226,1) 0%,
+                    rgba(238,234,226,0) 100%
+                );
+    background: -o-linear-gradient(
+                    left,
+                    rgba(238,234,226,1) 0%,
+                    rgba(238,234,226,0) 100%)
+                ;
+    background: linear-gradient(
+                    to right,
+                    rgba(238,234,226,1) 0%,
+                    rgba(238,234,226,0) 100%
+                );
+}
+
+/* adjust map overlay position when fade is in place */
+.mapOverlay {
+    right: 40px;
+}

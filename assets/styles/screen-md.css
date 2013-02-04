@@ -46,6 +46,18 @@ body {
     padding: 114px 0;
 }
 
+/* contact section */
+.section_contact {
+    background: #eeeae2 url("../images/design/bg-map.jpg") no-repeat center top;
+    height: 634px;
+    padding: 0;
+}
+
+.section-bd_contact {
+    position: relative;
+    max-width: 1364px;
+}
+
 /* ---------------------------------------------------------------------
  Preamble
 ------------------------------------------------------------------------ */
@@ -79,6 +91,13 @@ body {
     margin-bottom: 0;
 }
 
+.box_mute {
+    padding: 20px;
+    background-color: #b0ce6d; /* fallback for non rgba */
+    background-color: rgba(254,250,242,.9);
+    border: 1px solid rgba(100,100,100,.1);
+}
+
 /* ---------------------------------------------------------------------
  Blocks
 ------------------------------------------------------------------------ */
@@ -107,3 +126,103 @@ body {
 .blocks_3up > * { width: 33.3% }
 .blocks_4up > * { width: 25.0%; }
 .blocks_5up > * { width: 20.0%; }
+
+/* ---------------------------------------------------------------------
+ Map Overlay & Pin
+------------------------------------------------------------------------ */
+.mapOverlay {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+/* enclose base to quarantine to mediaquery capabale browser */
+@media only screen and (min-width: 1em) {
+    .mapPin {
+        display: block;
+        position: absolute;
+        left: 37%;
+        top: 126px; 
+        width: 61px;
+        height: 88px;
+        background: transparent url("../images/design/map-pin.png") no-repeat 0 0;
+    }
+    
+    .mapPin:hover {
+        -webkit-animation: wobble .7s linear 0s infinite normal;
+        -moz-animation:    wobble .7s linear 0s infinite normal;
+        -ms-animation:     wobble .7s linear 0s infinite normal;
+        -o-animation:      wobble .7s linear 0s infinite normal;
+        animation:         wobble .7s linear 0s infinite normal;
+    }
+
+    @-webkit-keyframes wobble {
+        0%  { -webkit-transform: translateY(0%); }
+        25% { -webkit-transform: translateY(-6%); }
+        50% { -webkit-transform: translateY(0%); }
+    }
+    @-moz-keyframes wobble {
+        0%  { -moz-transform: translateY(0%); }
+        25% { -moz-transform: translateY(-6%); }
+        50% { -moz-transform: translateY(0%); }
+    }
+    @-ms-keyframes wobble {
+        0%  { -ms-transform: translateY(0%); }
+        25% { -ms-transform: translateY(-6%); }
+        50% { -ms-transform: translateY(0%); }
+    }
+    @-o-keyframes wobble {
+        0%  { -o-transform: translateY(0%); }
+        25% { -o-transform: translateY(-6%); }
+        50% { -o-transform: translateY(0%); }
+    }
+    @keyframes wobble {
+        0%  { transform: translateY(0%); }
+        25% { transform: translateY(-6%); }
+        50% { transform: translateY(0%); }
+    }
+}
+
+/* fine control of mapPin for accuracy in it's placement on the map */
+@media only screen and (min-width: 40em) {
+    .mapPin {
+        left: 36%;
+    }
+}
+
+@media only screen and (min-width: 44em) {
+    .mapPin {
+        left: 37.6%;
+    }
+}
+
+@media only screen and (min-width: 48em) {
+    .mapPin {
+        left: 38.8%;
+    }
+}
+
+@media only screen and (min-width: 53em) {
+    .mapPin {
+        left: 40%;
+    }
+}
+
+@media only screen and (min-width: 59em) {
+    .mapPin {
+        left: 41.3%;
+    }
+}
+
+@media only screen and (min-width: 70em) {
+    .mapPin {
+        left: 42.3%;
+    }
+}
+
+@media only screen and (min-width: 80em) {
+    .mapPin {
+        left: 43.3%;
+    }
+}
