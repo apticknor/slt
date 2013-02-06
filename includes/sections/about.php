@@ -4,23 +4,29 @@
                 <h2 class="hdg hdg_section hdg_blue">Meet Straight Line Theory</h2>
                 <p>We're a highly-skilled team of experienced UX professionals. We trill the challenge of turning complex business problems into simple, elegant solutions. We love to sketch, protoype, and explore what's possible. Whether your goal is to bvoost sales or improve customer satisfaction. We can help.</p>
                 <p>Interested in joining our Team? <a href="mailto:jobs@straightlinetheory.com">jobs@straightlinetheory.com</a></p>
-                <ul>
+                <ul class="blocks blocks_3up">
                     <li>
+                        <img src="<?php echo $site_url; ?>assets/images/content/andrew-benson.jpg" alt="Andrew Benson" />
                         <h3>Andrew Benson</h3>
                     </li>
                     <li>
+                        <img src="<?php echo $site_url; ?>assets/images/content/kristen-skifstad.jpg" alt="Kristen Skifstad" />
                         <h3>Kristen Skifstad</h3>
                     </li>
                     <li>
+                        <img src="<?php echo $site_url; ?>assets/images/content/jay-mathews.jpg" alt="Jay Mathews" />
                         <h3>Jay Mathews</h3>
                     </li>
                     <li>
+                        <img src="<?php echo $site_url; ?>assets/images/content/laura-horan.jpg" alt="Laura Horan" />
                         <h3>Laura Horan</h3>
                     </li>
                     <li>
+                        <img src="<?php echo $site_url; ?>assets/images/content/roy-neal.jpg" alt="Roy Neal" />
                         <h3>Roy Neal</h3>
                     </li>
                     <li>
+                        <img src="<?php echo $site_url; ?>assets/images/content/john-dusek.jpg" alt="John Dusek" />
                         <h3>John Dusek</h3>
                     </li>
                 </ul>
