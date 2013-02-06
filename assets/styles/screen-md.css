@@ -101,26 +101,14 @@ body {
 ------------------------------------------------------------------------ */
 .blocks {
     margin: 0; /* reset small view margin */
-    max-width: none; /* reset small view max-width */
-    font-size: 0; /* fix inline block spacing */
-    position: relative;
-    left: -10px;
 }
 
 .blocks > * {
-    display: inline-block;
-    vertical-align: top;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
     margin: 0; /* reset small view margin */
-    padding-left: 20px;
-    font-size: 16px; /* reset font-size after inline block spacing fix*/
 }
 
 .blocks_2up > * { width: 50.0%; }
+.blocks_2upThen3up > * { width: 33.3%; }
 .blocks_3up > * { width: 33.3% }
 .blocks_4up > * { width: 25.0%; }
 .blocks_5up > * { width: 20.0%; }

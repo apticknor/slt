@@ -4,30 +4,66 @@
                 <h2 class="hdg hdg_section hdg_blue">Meet Straight Line Theory</h2>
                 <p>We're a highly-skilled team of experienced UX professionals. We trill the challenge of turning complex business problems into simple, elegant solutions. We love to sketch, protoype, and explore what's possible. Whether your goal is to bvoost sales or improve customer satisfaction. We can help.</p>
                 <p>Interested in joining our Team? <a href="mailto:jobs@straightlinetheory.com">jobs@straightlinetheory.com</a></p>
-                <ul class="blocks blocks_3up">
+                <ul class="blocks blocks_2upThen3up">
                     <li>
-                        <img src="<?php echo $site_url; ?>assets/images/content/andrew-benson.jpg" alt="Andrew Benson" />
-                        <h3>Andrew Benson</h3>
+                        <div class="feature">
+                            <div class="feature-img">
+                                <img src="<?php echo $site_url; ?>assets/images/content/andrew-benson.jpg" alt="Andrew Benson" />
+                            </div>
+                            <div class="feature-hd">
+                                <h3 class="hdg hdg_bold">Andrew Benson</h3>
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        <img src="<?php echo $site_url; ?>assets/images/content/kristen-skifstad.jpg" alt="Kristen Skifstad" />
-                        <h3>Kristen Skifstad</h3>
+                        <div class="feature">
+                            <div class="feature-img">
+                                <img src="<?php echo $site_url; ?>assets/images/content/kristen-skifstad.jpg" alt="Kristen Skifstad" />
+                            </div>
+                            <div class="feature-hd">
+                                <h3 class="hdg hdg_bold">Kristen Skifstad</h3>
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        <img src="<?php echo $site_url; ?>assets/images/content/jay-mathews.jpg" alt="Jay Mathews" />
-                        <h3>Jay Mathews</h3>
+                        <div class="feature">
+                            <div class="feature-img">
+                                <img src="<?php echo $site_url; ?>assets/images/content/jay-mathews.jpg" alt="Jay Mathews" />
+                            </div>
+                            <div class="feature-hd">
+                                <h3 class="hdg hdg_bold">Jay Mathews</h3>
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        <img src="<?php echo $site_url; ?>assets/images/content/laura-horan.jpg" alt="Laura Horan" />
-                        <h3>Laura Horan</h3>
+                        <div class="feature">
+                            <div class="feature-img">
+                                <img src="<?php echo $site_url; ?>assets/images/content/laura-horan.jpg" alt="Laura Horan" />
+                            </div>
+                            <div class="feature-hd">
+                                <h3 class="hdg hdg_bold">Laura Horan</h3>
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        <img src="<?php echo $site_url; ?>assets/images/content/roy-neal.jpg" alt="Roy Neal" />
-                        <h3>Roy Neal</h3>
+                        <div class="feature">
+                            <div class="feature-img">
+                                <img src="<?php echo $site_url; ?>assets/images/content/roy-neal.jpg" alt="Roy Neal" />
+                            </div>
+                            <div class="feature-hd">
+                                <h3 class="hdg hdg_bold">Roy Neal</h3>
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        <img src="<?php echo $site_url; ?>assets/images/content/john-dusek.jpg" alt="John Dusek" />
-                        <h3>John Dusek</h3>
+                        <div class="feature">
+                            <div class="feature-img">
+                                <img src="<?php echo $site_url; ?>assets/images/content/john-dusek.jpg" alt="John Dusek" />
+                            </div>
+                            <div class="feature-hd">
+                                <h3 class="hdg hdg_bold">John Dusek</h3>
+                            </div>
+                        </div>
                     </li>
                 </ul>
                 <h2 class="hdg hdg_section hdg_blue">How We're Different</h2>
