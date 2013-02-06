@@ -18,7 +18,7 @@
 
         <!-- ICONS -->
         <link rel="shortcut icon" type="image/ico" href="<?php echo $site_url; ?>favicon.ico" />
-        <link rel="apple-touch-icon" href="<?php echo $site_url; ?>apple-touch-icon.png" />
+        <link rel="apple-touch-icon-precomposed" href="<?php echo $site_url; ?>apple-touch-icon.png" />
 
         <!-- STYLESHEETS -->
         <link rel="stylesheet" media="screen and (min-width: 1em)" href="<?php echo $site_url; ?>assets/styles/screen.css" />
