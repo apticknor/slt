@@ -1,7 +1,9 @@
         <!--- SECTION ABOUT -->
         <div class="section section_about">
-            <div class="section-bd">
+            <div class="section-hd section-hd_services">
                 <h2 class="hdg hdg_section hdg_blue">Meet Straight Line Theory</h2>
+            </div>
+            <div class="section-bd">
                 <p>We're a highly-skilled team of experienced UX professionals. We trill the challenge of turning complex business problems into simple, elegant solutions. We love to sketch, protoype, and explore what's possible. Whether your goal is to bvoost sales or improve customer satisfaction. We can help.</p>
                 <p>Interested in joining our Team? <a href="mailto:jobs@straightlinetheory.com">jobs@straightlinetheory.com</a></p>
                 <ul class="blocks blocks_2upThen3up">
