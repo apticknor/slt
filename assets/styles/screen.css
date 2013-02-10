@@ -143,6 +143,10 @@ a {
     text-decoration: none;
 }
 
+p + p {
+    margin-top: 16px;
+}
+
 /* make sure media never breaks the bounds of it's own container */
 img,
 video,
@@ -324,6 +328,7 @@ audio {
 .hdg_gray { color: #606158; }
 .hdg_green { color: #315314; }
 .hdg_blue { color: #2b4242; }
+.hdg_white { color: #ffffff; }
 .hdg_lightGreen { color: #9fc34d; }
 .hdg_lightBlue { color: #80c5c7; }
 .hdg_bold { font-weight: bold; }
