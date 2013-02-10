@@ -143,10 +143,6 @@ a {
     text-decoration: none;
 }
 
-p + p {
-    margin-top: 16px;
-}
-
 /* make sure media never breaks the bounds of it's own container */
 img,
 video,
