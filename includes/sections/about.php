@@ -5,8 +5,10 @@
             </div>
             <div class="section-bd">
                 <h3 class="isHidden">Our Team</h3>
-                <p>We're a highly-skilled team of experienced UX professionals. We trill the challenge of turning complex business problems into simple, elegant solutions. We love to sketch, protoype, and explore what's possible. Whether your goal is to bvoost sales or improve customer satisfaction. We can help.</p>
-                <p>Interested in joining our Team? <a href="mailto:jobs@straightlinetheory.com">jobs@straightlinetheory.com</a></p>
+                <div class="intro">
+                    <p>We're a highly-skilled team of experienced UX professionals. We trill the challenge of turning complex business problems into simple, elegant solutions. We love to sketch, protoype, and explore what's possible. Whether your goal is to bvoost sales or improve customer satisfaction. We can help.</p>
+                    <p><strong class="isBold">Interested in joining our Team?</strong> <a href="mailto:jobs@straightlinetheory.com" class="link-callout">jobs@straightlinetheory.com</a></p>
+                </div>
                 <ul class="blocks blocks_2upThen3up">
                     <li>
                         <div class="feature">
@@ -75,22 +77,63 @@
             </div>
             <div class="section-bd">
                 <h3 class="isHidden">Our Difference</h3>
+                <div class="hub">
+                    <div class="hub-panel hub-panel_1of5">
+                        <img src="//placehold.it/219x415" />
+                    </div>
+                    <div class="hub-panel hub-panel_2of5">
+                        <img src="//placehold.it/253x206" />
+                    </div>
+                    <div class="hub-panel hub-panel_3of5">
+                        <img src="//placehold.it/462x206" />
+                    </div>
+                    <div class="hub-panel hub-panel_4of5">
+                        <img src="//placehold.it/462x206" />
+                    </div>
+                    <div class="hub-panel hub-panel_5of5">
+                        <img src="//placehold.it/253x206" />
+                    </div>
+                </div>
                 <ul class="blocks blocks_4up">
                     <li>
-                        <h4 class="hdg hdg_white">Understand Your Users</h4>
-                        <p>We started Straight Line Theory in 2002 to focus exclusively on creating great digital experiences that are easy to use. Doing one thing keeps us lean and sharp.</p>
+                        <div class="feature">
+                            <div class="feature-subhd">
+                                <h4 class="hdg hdg_white hdg_bold">Understand Your Users</h4>
+                            </div>
+                            <div class="feature-bd">
+                                <p>We started Straight Line Theory in 2002 to focus exclusively on creating great digital experiences that are easy to use. Doing one thing keeps us lean and sharp.</p>
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        <h4 class="hdg hdg_white">We Understand Business</h4>
-                        <p>We've learned a lot from working with Fortune 500 leaders, established brands, and start-ups in retail, consumer goods, financial services, hospitality, healthcare and technology.</p>
+                        <div class="feature">
+                            <div class="feature-subhd">
+                                <h4 class="hdg hdg_white hdg_bold">We Understand Business</h4>
+                            </div>
+                            <div class="feature-bd">
+                                <p>We've learned a lot from working with Fortune 500 leaders, established brands, and start-ups in retail, consumer goods, financial services, hospitality, healthcare and technology.</p>
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        <h4 class="hdg hdg_white">We're small but get big results</h4>
-                        <p>Being small means you'll work directly with talented information architects and usability experts who are passionate about what we do and invested in your success.</p>
+                        <div class="feature">
+                            <div class="feature-subhd">
+                                <h4 class="hdg hdg_white hdg_bold">We're small but get big results</h4>
+                            </div>
+                            <div class="feature-bd">
+                                <p>Being small means you'll work directly with talented information architects and usability experts who are passionate about what we do and invested in your success.</p>
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        <h4 class="hdg hdg_white">We cut out the unimportant stuff</h4>
-                        <p>We've learned a lot from working with Fortune 500 leaders, established brands, and start-ups in retail, consumer goods, financial services, hospitality, healthcare and technology.</p>
+                        <div class="feature">
+                            <div class="feature-subhd">
+                                <h4 class="hdg hdg_white hdg_bold">We cut out the unimportant stuff</h4>
+                            </div>
+                            <div class="feature-bd">
+                                <p>We've learned a lot from working with Fortune 500 leaders, established brands, and start-ups in retail, consumer goods, financial services, hospitality, healthcare and technology.</p>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
