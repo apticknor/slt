@@ -10,11 +10,14 @@ var SLT = SLT || {};
 
 // Pass reference to jQuery and Namespace
 (function($, APP) {
-
+    
+    'use strict';
+    
     // DOM Ready Function
     $(function() {
         APP.ExternalLinks.init();
         APP.AutoReplace.init();
+        APP.Tabs.init();
     });
 
 /* ---------------------------------------------------------------------
@@ -34,7 +37,7 @@ APP.ExternalLinks = {
 
 /* ---------------------------------------------------------------------
 AutoReplace
-Author: Anthony Ticknor
+Author: Dan Piscitiello
 
 Mimics HTML5 placeholder behavior in browsers that do not support it.
 
@@ -90,13 +93,94 @@ APP.AutoReplace = {
                 $this.parents('form').off('submit.autoreplace').on(
                     'submit.autoreplace',
                     function() {
-                        if ($this.val() == defaultText) {
+                        if ($this.val() === defaultText) {
                             $this.val('');
                         }
                     }
                 );
             }
         );
+    }
+};
+
+/* ---------------------------------------------------------------------
+Tabs
+Author: Anthony Ticknor
+
+Tab switching.
+------------------------------------------------------------------------ */
+APP.Tabs = {
+    $tabs: undefined,
+    $tabContent: undefined,
+    $tabControls: undefined,
+    
+    init: function() {
+        var $tabs = $('#jsTabs');
+        var $tabContent;
+        var $tabControls;
+        
+        if (!$tabs.length) {
+            return;
+        }
+        
+        $tabContent = $tabs.find('.jsTab-content');
+        
+        if (!$tabContent.length) {
+            return;
+        }
+        
+        $tabControls = $tabs.find('.jsTab-controls');
+        
+        if (!$tabControls.length) {
+            return;
+        }
+        
+        this.$tabs = $tabs;
+        this.$tabContent = $tabContent;
+        this.$tabControls = $tabControls;
+        
+        this.createNavigation();
+        this.showTab();
+        this.bind();
+        
+    },
+    
+    createNavigation: function() {
+        var nav = '<ol>';
+        
+        this.$tabContent.each(function(index) {
+            var $this = $(this);
+            var label = $this.attr('data-jstab-label');
+            nav += '<li><a href="#" data-jstab-index="'+index+'">'+label+'</a></li>';
+        });
+        
+        nav += '</ol>';
+
+        this.$tabControls.prepend(nav);
+    },
+    
+    bind: function() {
+        var self = this;
+        
+        this.$tabControls.on('click', 'a', function(e) {
+            e.preventDefault();
+            var $this = $(this);
+            var newSlideIndex = $this.attr('data-jstab-index');
+            self.showTab(newSlideIndex);
+        });
+    },
+    
+    showTab: function(slideIndex) {
+       
+        this.$tabControls.find('li').removeClass('isActive');
+        this.$tabContent.addClass('isHidden');
+
+        if (slideIndex === undefined) {
+            slideIndex = 0;
+        }
+
+        this.$tabControls.find('li').eq(slideIndex).addClass('isActive');
+        this.$tabContent.eq(slideIndex).removeClass('isHidden');
     }
 };
 
