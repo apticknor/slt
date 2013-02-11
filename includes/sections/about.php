@@ -96,7 +96,7 @@
                 </div>
                 <ul class="blocks blocks_4up">
                     <li>
-                        <div class="feature">
+                        <div class="feature feature_spacedWhenSmall">
                             <div class="feature-subhd">
                                 <h4 class="hdg hdg_white hdg_bold">Understand Your Users</h4>
                             </div>
@@ -106,7 +106,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="feature">
+                        <div class="feature feature_spacedWhenSmall">
                             <div class="feature-subhd">
                                 <h4 class="hdg hdg_white hdg_bold">We Understand Business</h4>
                             </div>
@@ -116,7 +116,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="feature">
+                        <div class="feature feature_spacedWhenSmall">
                             <div class="feature-subhd">
                                 <h4 class="hdg hdg_white hdg_bold">We're small but get big results</h4>
                             </div>
@@ -126,7 +126,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="feature">
+                        <div class="feature feature_spacedWhenSmall">
                             <div class="feature-subhd">
                                 <h4 class="hdg hdg_white hdg_bold">We cut out the unimportant stuff</h4>
                             </div>
