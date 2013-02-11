@@ -504,6 +504,35 @@ audio {
 }
 
 /* ---------------------------------------------------------------------
+ Nav List
+------------------------------------------------------------------------ */
+.navList {
+    display: block;
+    padding: 0 10px;
+    margin: 0 auto 30px auto;
+}
+
+.navList > li {
+    display: inline-block;
+    width: 50%;
+}
+
+.navList > li > a {
+    display: block;
+    padding: 10px 0;
+    background: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    color: #2b4242;
+}
+
+.navList > li.isActive > a {
+    background-color: #40989b;
+}
+
+/* ---------------------------------------------------------------------
  Links
 ------------------------------------------------------------------------ */
 .link-callout {

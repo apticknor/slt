@@ -146,7 +146,7 @@ APP.Tabs = {
     },
     
     createNavigation: function() {
-        var nav = '<ol>';
+        var nav = '<ol class="navList">';
         
         this.$tabContent.each(function(index) {
             var $this = $(this);
