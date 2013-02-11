@@ -119,6 +119,11 @@ APP.Tabs = {
         var $tabContent;
         var $tabControls;
         
+        // stop script for legacy IE
+        if (legacyIE === true) {
+            return;
+        }
+        
         if (!$tabs.length) {
             return;
         }

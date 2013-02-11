@@ -2,7 +2,7 @@
         <div class="section section_about" id="jsTabs">
             <div class="jsTab-controls"></div>
             <div class="jsTab-content" data-jstab-label="Our Team">
-                <div class="section-hd section-hd_services">
+                <div class="section-hd section-hd_about">
                     <h2 class="hdg hdg_section hdg_blue">Meet Straight Line Theory</h2>
                 </div>
                 <div class="section-bd">
@@ -76,7 +76,7 @@
                 </div>
             </div>
             <div class="jsTab-content" data-jstab-label="Our Difference">
-                <div class="section-hd section-hd_services">
+                <div class="section-hd section-hd_about">
                     <h2 class="hdg hdg_section hdg_blue">How We're Different</h2>
                 </div>
                 <div class="section-bd">

@@ -6,3 +6,232 @@ Target Browsers: IE7 & Down
 Media Type: Screen, Projection
 Width: Desktop Sites
 ------------------------------------------------------------------------ */
+
+/* ---------------------------------------------------------------------
+ Base
+------------------------------------------------------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font: normal 16px/1.25 Helvetica, Arial, sans-serif;
+    color: #444444;
+    background-color: #ffffff;
+}
+
+a {
+    color: #444444;
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, ol, ul {
+    margin-bottom: 1em;
+}
+
+/* ---------------------------------------------------------------------
+ Utility Classes
+------------------------------------------------------------------------ */
+.isHidden {
+    position: absolute;
+    left: -9999px;
+}
+
+.isBold {
+    font-weight: bold;
+}
+
+/* ---------------------------------------------------------------------
+ Logo
+------------------------------------------------------------------------ */
+.logo {
+    display: block;
+    width: 235px;
+    height: 128px;
+    margin-bottom: 40px;
+    background: transparent url("../images/design/logo.png") no-repeat 0 0;
+    text-indent: -9999px;
+}
+
+/* ---------------------------------------------------------------------
+ Section
+------------------------------------------------------------------------ */
+.section {
+    padding: 40px;
+}
+
+.section-hd,
+.section-bd {
+    margin: 0 auto;
+    width: 900px;
+}
+
+/* ---------------------------------------------------------------------
+ Section Services
+------------------------------------------------------------------------ */
+.section_services {
+    background: #9fc34d;
+}
+
+.section-hd_services {
+    border-bottom: 1px solid;
+    margin-bottom: 2em;
+}
+
+.section_services .feature {
+    overflow: hidden;
+    zoom: 1;
+    margin-bottom: 30px;
+}
+
+.section_services .feature-img {
+    width: 200px;
+    float: left;
+}
+
+.section_services .feature-hd {
+    width: 600px;
+    float: left;
+}
+
+.section_services .feature-bd {
+    width: 600px;
+    float: left;
+}
+
+.section_services .feature-img img {
+    width: 200px;
+}
+
+/* ---------------------------------------------------------------------
+ Section Portfolio
+------------------------------------------------------------------------ */
+.section_portfolio {
+    
+}
+
+/* ---------------------------------------------------------------------
+ Section About
+------------------------------------------------------------------------ */
+.section_about {
+    background: #80c5c7;
+}
+
+.section-hd_about {
+    border-bottom: 1px solid;
+    margin-bottom: 2em;
+}
+
+
+.section_about .blocks_2upThen3up {
+    overflow: hidden;
+    zoom: 1;
+    margin-bottom: 50px;
+}
+
+.section_about .blocks_2upThen3up > li {
+    float: left;
+    width: 300px;
+}
+
+.section_about .blocks_2upThen3up > li img {
+    width: 298px;
+}
+
+.section_about .blocks_2upThen3up > li .feature {
+    text-align: center;
+}
+
+/* ---------------------------------------------------------------------
+ Section
+------------------------------------------------------------------------ */
+.section_contact .teaser-hd {
+    border-bottom: 1px solid;
+    margin-bottom: 2em;
+}
+
+.section_contact .teaser-ft .hdg {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+/* ---------------------------------------------------------------------
+ Hub
+------------------------------------------------------------------------ */
+.hub {
+    position: relative;
+    margin-bottom: 30px
+}
+
+.hub img {
+    display: block;
+}
+
+.hub-panel {
+    position: absolute;
+}
+
+.hub-panel_1of5 {
+    position: relative; /* remove positioning and let this tall image hold the dynamic height */
+    width: 210px;
+}
+
+.hub-panel_1of5 img {
+    width: 210px;
+}
+
+.hub-panel_2of5 {
+    top: 0;
+    left: 213px;
+    width: 240px;
+}
+
+.hub-panel_2of5 img {
+    width: 242px;
+}
+
+.hub-panel_3of5 {
+    top: 0;
+    right: 0;
+    width: 442px;
+}
+
+.hub-panel_3of5 img {
+    width: 442px;
+}
+
+.hub-panel_4of5 {
+    top: 201px;
+    left: 213px;
+    width: 442px;
+}
+
+.hub-panel_4of5 img {
+    width: 442px;
+}
+
+.hub-panel_5of5 {
+    top: 201px;
+    right: 0;
+    width: 242px
+}
+
+.hub-panel_5of5 img {
+    width: 242px;
+}
+
+/* ---------------------------------------------------------------------
+ Global Footers
+------------------------------------------------------------------------ */
+.globalFooter {
+    display: none;
+}
