@@ -168,6 +168,24 @@ body {
 }
 
 /* ---------------------------------------------------------------------
+ Global Footer
+------------------------------------------------------------------------ */
+.globalFooter {
+    background: #ffffff;
+    display: block;
+}
+
+.globalFooter-bd {
+    max-width: 900px;
+    padding: 0 20px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 72px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* ---------------------------------------------------------------------
  Map - Overlay & Pin
 ------------------------------------------------------------------------ */
 .map {
