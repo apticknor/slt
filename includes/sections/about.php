@@ -79,19 +79,19 @@
                 <h3 class="isHidden">Our Difference</h3>
                 <div class="hub">
                     <div class="hub-panel hub-panel_1of5">
-                        <img src="//placehold.it/219x415" />
+                        <img src="<?php echo $site_url; ?>assets/images/content/hub1.jpg" alt="" />
                     </div>
                     <div class="hub-panel hub-panel_2of5">
-                        <img src="//placehold.it/253x206" />
+                        <img src="<?php echo $site_url; ?>assets/images/content/hub2.jpg" alt="" />
                     </div>
                     <div class="hub-panel hub-panel_3of5">
-                        <img src="//placehold.it/462x206" />
+                        <img src="<?php echo $site_url; ?>assets/images/content/hub3.jpg" alt="" />
                     </div>
                     <div class="hub-panel hub-panel_4of5">
-                        <img src="//placehold.it/462x206" />
+                        <img src="<?php echo $site_url; ?>assets/images/content/hub4.jpg" alt="" />
                     </div>
                     <div class="hub-panel hub-panel_5of5">
-                        <img src="//placehold.it/253x206" />
+                        <img src="<?php echo $site_url; ?>assets/images/content/hub5.jpg" alt="" />
                     </div>
                 </div>
                 <ul class="blocks blocks_4up">
