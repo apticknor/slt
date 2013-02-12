@@ -340,3 +340,18 @@ body {
         top: 126px; 
     }
 }
+
+/* ---------------------------------------------------------------------
+ Diagonal Stripes
+------------------------------------------------------------------------ */
+.stripes {
+    content: '';
+    width: 120%;
+    height: 140%;
+    position: absolute;
+    top: -60%;
+    left: -60%;
+    background: rgba(7,152,152,.32);
+    -webkit-transform: rotate(-44deg);
+    z-index: 26;
+}
