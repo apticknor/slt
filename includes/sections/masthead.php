@@ -10,7 +10,7 @@
                         <h2 class="hdg hdg_section hdg_gray">Straight Line Theory is a team of information architects and usability experts based in Minneapolis.</h2>
                     </div>
                 </div>
-                <div class="nav" role="navigation">
+                <div id="js-fixedNav" class="nav" role="navigation">
                     <a class="btn" href="#page-contact">Contact Us</a>
                 </div>
             </div>
