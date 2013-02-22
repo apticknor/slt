@@ -98,7 +98,7 @@
                             <img src="<?php echo $site_url; ?>assets/images/content/hub5.jpg" alt="" />
                         </div>
                     </div>
-                    <ul class="blocks blocks_4up">
+                    <ul class="blocks blocks_2upThen4up">
                         <li>
                             <div class="feature feature_spacedWhenSmall">
                                 <div class="feature-subhd">

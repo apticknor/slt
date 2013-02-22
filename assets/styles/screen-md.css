@@ -109,6 +109,7 @@ body {
 
 .blocks_2up > * { width: 50.0%; }
 .blocks_2upThen3up > * { width: 33.3%; }
+.blocks_2upThen4up > * { width: 50%; }
 .blocks_3up > * { width: 33.3% }
 .blocks_4up > * { width: 25.0%; }
 .blocks_5up > * { width: 20.0%; }

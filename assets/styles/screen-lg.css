@@ -99,3 +99,5 @@ body {
     font-size: 17px; /* reset font-size after inline block spacing fix*/
 }
 
+.blocks_2upThen4up > * { width: 25%; }
+
