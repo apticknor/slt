@@ -91,9 +91,12 @@ body {
 
 .box_mute {
     padding: 20px;
-    background-color: #b0ce6d; /* fallback for non rgba */
-    background-color: rgba(254,250,242,.9);
-    border: 1px solid rgba(100,100,100,.1);
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 4px 10px #a7a49d;
+    -moz-box-shadow:    0 4px 10px #a7a49d;
+    -ms-box-shadow:     0 4px 10px #a7a49d;
+    -o-box-shadow:      0 4px 10px #a7a49d;
+    box-shadow:         0 4px 10px #a7a49d;
 }
 
 /* ---------------------------------------------------------------------
@@ -196,8 +199,9 @@ body {
 
 .map-overlay {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 50%;
+    right: 60px;
+    margin-top: -114px; /* vertically center on the map */
     z-index: 999;
 }
 
@@ -249,48 +253,55 @@ body {
 /* fine control of map */
 @media only screen and (min-width: 40em) {
     .map {
-        background-position: -460px -60px;
+        background-position: -384px -60px;
     }
     
     .map-pin {
-        left: 128px;
-        top: 66px; 
+        left: 96px;
+        top: 172px; 
+    }
+}
+
+@media only screen and (min-width: 48em) {
+    .map {
+        background-position: -340px -60px;
+    }
+    
+    .map-pin {
+        left: 140px;
+        top: 172px; 
     }
 }
 
 @media only screen and (min-width: 52em) {
     .map {
         height: 534px;
-        background-position: -340px 0;
+        background-position: -300px -20px;
     }
     
     .map-pin {
-        left: 248px;
-        top: 126px; 
+        left: 180px;
+        top: 212px; 
+    }
+    
+    .map-overlay {
+        right: 100px;
     }
 }
 
 @media only screen and (min-width: 60em) {
     .map {
         height: 634px;
-        background-position: -340px 0;
+        background-position: -280px 0;
     }
     
     .map-pin {
-        left: 248px;
-        top: 126px; 
-    }
-}
-
-@media only screen and (min-width: 64em) {
-    .map {
-        height: 634px;
-        background-position: -240px 0;
+        left: 200px;
+        top: 234px; 
     }
     
-    .map-pin {
-        left: 348px;
-        top: 126px; 
+    .map-overlay {
+        margin-top: -124px; /* vertically center on the map */
     }
 }
 
@@ -301,8 +312,12 @@ body {
     }
     
     .map-pin {
-        left: 428px;
-        top: 126px; 
+        left: 320px;
+        top: 234px; 
+    }
+    
+    .map-overlay {
+        right: 200px;
     }
 }
 
@@ -313,20 +328,8 @@ body {
     }
     
     .map-pin {
-        left: 508px;
-        top: 126px; 
-    }
-}
-
-@media only screen and (min-width: 78em) {
-    .map {
-        height: 634px;
-        background-position: -20px 0;
-    }
-    
-    .map-pin {
-        left: 568px;
-        top: 126px; 
+        left: 400px;
+        top: 234px; 
     }
 }
 
@@ -337,8 +340,8 @@ body {
     }
     
     .map-pin {
-        left: 588px;
-        top: 126px; 
+        left: 480px;
+        top: 234px; 
     }
 }
 
