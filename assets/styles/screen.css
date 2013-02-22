@@ -349,11 +349,10 @@ audio {
 .btn {
     display: inline-block;
     padding: 0 44px;
-    height: 32px;
-    line-height: 32px;
+    height: 38px;
     background: #e9642a;
     color: #ffffff;
-    font: normal 13px/32px "SeravekRegular", Helvetica, Arial, sans-serif;
+    font: normal 13px/38px "SeravekRegular", Helvetica, Arial, sans-serif;
     -webkit-transition: background-color .1s ease-in-out;
     -moz-transition:    background-color .1s ease-in-out;
     -ms-transition:     background-color .1s ease-in-out;
