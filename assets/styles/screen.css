@@ -149,12 +149,23 @@ video,
 audio {
     max-width: 100%;
 }
+
 /* ---------------------------------------------------------------------
  Utility Classes
 ------------------------------------------------------------------------ */
 .isHidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
     position: absolute;
-    left: -9999px;
+    width: 1px;
+}
+
+.isBold {
+    font-weight: bold;
 }
 
 /* ---------------------------------------------------------------------
@@ -208,11 +219,13 @@ audio {
     max-width: 940px;
     text-align: center;
     max-width: 420px;
+    z-index: 999; /* stack sections over stripes */
 }
 
 .section-bd {
     margin: 0 auto;
     max-width: 940px;
+    z-index: 999; /* stack sections over stripes */
 }
 
 /* masthead section */
@@ -324,6 +337,7 @@ audio {
 .hdg_gray { color: #606158; }
 .hdg_green { color: #315314; }
 .hdg_blue { color: #2b4242; }
+.hdg_white { color: #ffffff; }
 .hdg_lightGreen { color: #9fc34d; }
 .hdg_lightBlue { color: #80c5c7; }
 .hdg_bold { font-weight: bold; }
@@ -335,11 +349,10 @@ audio {
 .btn {
     display: inline-block;
     padding: 0 44px;
-    height: 32px;
-    line-height: 32px;
+    height: 38px;
     background: #e9642a;
     color: #ffffff;
-    font: normal 13px/32px "SeravekRegular", Helvetica, Arial, sans-serif;
+    font: normal 13px/38px "SeravekRegular", Helvetica, Arial, sans-serif;
     -webkit-transition: background-color .1s ease-in-out;
     -moz-transition:    background-color .1s ease-in-out;
     -ms-transition:     background-color .1s ease-in-out;
@@ -371,19 +384,45 @@ audio {
 ------------------------------------------------------------------------ */
 .blocks {
     margin: 0 auto;
+    font-size: 0; /* fix inline block spacing */
+    position: relative;
+    left: -10px;
 }
 
 .blocks > * {
-    margin: 0 6%;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding-left: 20px;
+    font-size: 16px; /* reset font-size after inline block spacing fix*/
 }
+
+.blocks_tight {
+    padding: 0 10px;
+    left: -3px;
+}
+
+.blocks_tight > * {
+    padding-left: 3px;
+}
+
+.blocks_2upThen3up > * { width: 50%; }
 
 /* ---------------------------------------------------------------------
  Feature
 ------------------------------------------------------------------------ */
+.feature_spacedWhenSmall {
+    margin-bottom: 16px;
+}
+
 .feature-img {
     text-align: center;
     margin-bottom: 12px;
-    max-width: 260px;
     margin: 0 auto;
 }
 
@@ -466,8 +505,118 @@ audio {
 .partners-usbank    { width: 53px; }
 
 /* ---------------------------------------------------------------------
+ Intro
+------------------------------------------------------------------------ */
+.intro {
+    padding: 0 30px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.intro p {
+    margin-bottom: 22px;
+}
+
+.intro p:last-child {
+    margin-bottom: 36px;
+}
+
+/* ---------------------------------------------------------------------
+ Hub
+------------------------------------------------------------------------ */
+.hub {
+    position: relative;
+    margin: 0 10px 30px 10px;
+}
+
+.hub img {
+    display: block;
+}
+
+.hub-panel {
+    position: absolute;
+}
+
+.hub-panel_1of5 {
+    position: relative; /* remove positioning and let this tall image hold the dynamic height */
+    width: 32.017543859649%; /* 219 / 684 */
+}
+
+.hub-panel_2of5 {
+    display: none; /* hide on small screen */
+}
+
+.hub-panel_3of5 {
+    top: 0;
+    left: 32.456140350877%; /* 222 / 684  */
+    width: 67.543859649123%; /* 462 / 684 */
+}
+
+.hub-panel_4of5 {
+    top: 50.361445783133%; /* 209 / 415 */
+    left: 32.456140350877%; /* 222 / 684  */
+    width: 67.543859649123%; /* 462 / 684 */
+}
+
+.hub-panel_5of5 {
+    display: none; /* hide on small screen */
+}
+
+/* ---------------------------------------------------------------------
+ Nav List
+------------------------------------------------------------------------ */
+.navList {
+    display: block;
+    padding: 0 10px;
+    margin: 0 auto 30px auto;
+}
+
+.navList > li {
+    display: inline-block;
+    width: 50%;
+}
+
+.navList > li > a {
+    display: block;
+    padding: 14px 0;
+    background: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    color: #2b4242;
+}
+
+.navList > li.isActive > a {
+    background-color: #40989b;
+}
+
+/* ---------------------------------------------------------------------
+ Links
+------------------------------------------------------------------------ */
+.link-callout {
+    color: #ffffff;
+}
+
+.link-highlight {
+    color: #e9642a;
+}
+
+/* ---------------------------------------------------------------------
+ Global Footer
+------------------------------------------------------------------------ */
+.globalFooter {
+    display: none;
+}
+
+/* ---------------------------------------------------------------------
  High Pixel Density Display Support
 ------------------------------------------------------------------------ */
+.imgConstraint {
+    max-width: 260px;
+    margin: 0 auto;
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio:1.5) {
     .logo {
         background: transparent url("../images/design/logo@2x.png") no-repeat 0 0;

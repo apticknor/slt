@@ -91,9 +91,12 @@ body {
 
 .box_mute {
     padding: 20px;
-    background-color: #b0ce6d; /* fallback for non rgba */
-    background-color: rgba(254,250,242,.9);
-    border: 1px solid rgba(100,100,100,.1);
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 4px 10px #a7a49d;
+    -moz-box-shadow:    0 4px 10px #a7a49d;
+    -ms-box-shadow:     0 4px 10px #a7a49d;
+    -o-box-shadow:      0 4px 10px #a7a49d;
+    box-shadow:         0 4px 10px #a7a49d;
 }
 
 /* ---------------------------------------------------------------------
@@ -101,26 +104,15 @@ body {
 ------------------------------------------------------------------------ */
 .blocks {
     margin: 0; /* reset small view margin */
-    max-width: none; /* reset small view max-width */
-    font-size: 0; /* fix inline block spacing */
-    position: relative;
-    left: -10px;
 }
 
 .blocks > * {
-    display: inline-block;
-    vertical-align: top;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
     margin: 0; /* reset small view margin */
-    padding-left: 20px;
-    font-size: 16px; /* reset font-size after inline block spacing fix*/
 }
 
 .blocks_2up > * { width: 50.0%; }
+.blocks_2upThen3up > * { width: 33.3%; }
+.blocks_2upThen4up > * { width: 50%; }
 .blocks_3up > * { width: 33.3% }
 .blocks_4up > * { width: 25.0%; }
 .blocks_5up > * { width: 20.0%; }
@@ -139,6 +131,78 @@ body {
 }
 
 /* ---------------------------------------------------------------------
+ Feature
+------------------------------------------------------------------------ */
+.feature_spacedWhenSmall {
+    margin-bottom: 16px;
+}
+
+.feature-subhd {
+    margin-bottom: 12px;
+}
+
+/* ---------------------------------------------------------------------
+ Nav List
+------------------------------------------------------------------------ */
+.navList {
+    width: 540px;
+    padding: 0;
+}
+
+/* ---------------------------------------------------------------------
+ Hub
+------------------------------------------------------------------------ */
+.hub-panel_1of5 {
+    position: relative; /* remove positioning and let this tall image hold the dynamic height */
+    width: 23.297872340426%; /* 219 / 940 */
+}
+
+.hub-panel_2of5 {
+    display: block;
+    top: 0;
+    left: 23.617021276596%; /* 222 / 940  */
+    width: 26.914893617021%; /* 253 / 940 */
+}
+
+.hub-panel_3of5 {
+    top: 0;
+    right: 0;
+    left: auto;
+    width: 49.148936170213%; /* 462 / 940 */
+}
+
+.hub-panel_4of5 {
+    top: 50.361445783133%; /* 209 / 415 */
+    left: 23.617021276596%; /* 222 / 940  */
+    width: 49.148936170213%; /* 462 / 940 */
+}
+
+.hub-panel_5of5 {
+    display: block;
+    top: 50.361445783133%; /* 209 / 415 */
+    right: 0;
+    width: 26.914893617021%; /* 253 / 940 */
+}
+
+/* ---------------------------------------------------------------------
+ Global Footer
+------------------------------------------------------------------------ */
+.globalFooter {
+    background: #ffffff;
+    display: block;
+}
+
+.globalFooter-bd {
+    max-width: 900px;
+    padding: 0 20px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 72px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* ---------------------------------------------------------------------
  Map - Overlay & Pin
 ------------------------------------------------------------------------ */
 .map {
@@ -148,8 +212,9 @@ body {
 
 .map-overlay {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 50%;
+    right: 60px;
+    margin-top: -114px; /* vertically center on the map */
     z-index: 999;
 }
 
@@ -201,48 +266,55 @@ body {
 /* fine control of map */
 @media only screen and (min-width: 40em) {
     .map {
-        background-position: -460px -60px;
+        background-position: -384px -60px;
     }
 
     .map-pin {
-        left: 128px;
-        top: 66px;
+        left: 96px;
+        top: 172px;
+    }
+}
+
+@media only screen and (min-width: 48em) {
+    .map {
+        background-position: -340px -60px;
+    }
+
+    .map-pin {
+        left: 140px;
+        top: 172px;
     }
 }
 
 @media only screen and (min-width: 52em) {
     .map {
         height: 534px;
-        background-position: -340px 0;
+        background-position: -300px -20px;
     }
 
     .map-pin {
-        left: 248px;
-        top: 126px;
+        left: 180px;
+        top: 212px;
+    }
+
+    .map-overlay {
+        right: 100px;
     }
 }
 
 @media only screen and (min-width: 60em) {
     .map {
         height: 634px;
-        background-position: -340px 0;
+        background-position: -280px 0;
     }
 
     .map-pin {
-        left: 248px;
-        top: 126px;
-    }
-}
-
-@media only screen and (min-width: 64em) {
-    .map {
-        height: 634px;
-        background-position: -240px 0;
+        left: 200px;
+        top: 234px;
     }
 
-    .map-pin {
-        left: 348px;
-        top: 126px;
+    .map-overlay {
+        margin-top: -124px; /* vertically center on the map */
     }
 }
 
@@ -253,8 +325,12 @@ body {
     }
 
     .map-pin {
-        left: 428px;
-        top: 126px;
+        left: 320px;
+        top: 234px;
+    }
+
+    .map-overlay {
+        right: 200px;
     }
 }
 
@@ -265,20 +341,8 @@ body {
     }
 
     .map-pin {
-        left: 508px;
-        top: 126px;
-    }
-}
-
-@media only screen and (min-width: 78em) {
-    .map {
-        height: 634px;
-        background-position: -20px 0;
-    }
-
-    .map-pin {
-        left: 568px;
-        top: 126px;
+        left: 400px;
+        top: 234px;
     }
 }
 
@@ -289,7 +353,26 @@ body {
     }
 
     .map-pin {
-        left: 588px;
-        top: 126px;
+        left: 480px;
+        top: 234px;
     }
+}
+
+/* ---------------------------------------------------------------------
+ Diagonal Stripes
+------------------------------------------------------------------------ */
+.stripes {
+    content: '';
+    width: 120%;
+    height: 140%;
+    position: absolute;
+    top: -60%;
+    left: -60%;
+    background: rgba(7,152,152,.32);
+    -webkit-transform: rotate(-44deg);
+    -moz-transform: rotate(-44deg);
+    -ms-transform: rotate(-44deg);
+    -o-transform: rotate(-44deg);
+    transform: rotate(-44deg);
+    z-index: 26;
 }

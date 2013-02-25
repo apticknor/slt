@@ -47,6 +47,14 @@
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 
         <!-- JAVASCRIPT -->
+        <script type="text/javascript">
+            var legacyIE;
+        </script>
+        <!--[if lt IE 8]>
+        <script type="text/javascript">
+            var legacyIE = true;
+        </script>
+        <![endif]-->
         <script type="text/javascript" src="<?php echo $site_url; ?>assets/scripts/global.js"></script>
     </head>
     <body>

@@ -26,6 +26,13 @@ body {
     right: 0;
 }
 
+.nav_isFixed {
+    position: fixed;
+    width: 940px;
+    right: auto;
+    text-align: right;
+}
+
 /* ---------------------------------------------------------------------
  Sections
 ------------------------------------------------------------------------ */
@@ -92,6 +99,8 @@ body {
     font-size: 17px; /* reset font-size after inline block spacing fix*/
 }
 
+.blocks_2upThen4up > * { width: 25%; }
+
 /* ---------------------------------------------------------------------
  Pagination Dots
 ------------------------------------------------------------------------ */
@@ -104,3 +113,4 @@ body {
 .paginationDot.isActive {
     background-position: -70px 0;
 }
+
