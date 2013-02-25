@@ -136,6 +136,7 @@ body {
     font: normal 16px/1.25 "SeravekLight", Helvetica, Arial, sans-serif;
     color: #3a3a3a;
     background: #ffffff url("../images/design/bg-section-masthead.jpg") no-repeat fixed center top; /* creates "rollover" effect over the top of the first section */
+    min-width: 320px;
 }
 
 a {
@@ -265,6 +266,7 @@ audio {
 /* portfolio section */
 .section_portfolio {
     background: #ffffff;
+    padding: 50px 45px; /* lateral padding should match carousel btn width */
 }
 
 .section_portfolio:before {
@@ -276,6 +278,8 @@ audio {
     border-left: 2px solid #e9642a;
     border-right: 2px solid #e9642a;
 }
+
+.section_portfolio > .section-hd { margin-bottom: 16px; }
 
 /* about section */
 .section_about {
@@ -454,6 +458,47 @@ audio {
 }
 
 /* ---------------------------------------------------------------------
+ Promo
+------------------------------------------------------------------------ */
+.promo-ft {
+    padding-top: 18px;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* ---------------------------------------------------------------------
+ Carousel
+------------------------------------------------------------------------ */
+.carousel {
+    width: 225px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.carousel-controls {
+    padding-bottom: 27px;
+}
+
+.carousel-controls-btn {
+    display: block;
+    width: 45px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    text-indent: -9999px;
+}
+
+.carousel-controls-btn_prev {
+    left: 0;
+    background: transparent url(../images/design/arrow-prev-mobile.png) no-repeat center center;
+}
+
+.carousel-controls-btn_next {
+    right: 0;
+    background: transparent url(../images/design/arrow-next-mobile.png) no-repeat center center;
+}
+
+/* ---------------------------------------------------------------------
  Pagination List
 ------------------------------------------------------------------------ */
 .pagination {
@@ -463,7 +508,7 @@ audio {
 
 .pagination > * {
     display: inline-block;
-    margin: 0 5px;
+    margin: 0 2px;
 }
 
 /* ---------------------------------------------------------------------
@@ -484,6 +529,7 @@ audio {
  Partners Logos
 ------------------------------------------------------------------------ */
 .partners {
+    padding-top: 20px;
     font-size: 0;
     text-align: center;
 }
@@ -622,6 +668,12 @@ audio {
         background: transparent url("../images/design/logo@2x.png") no-repeat 0 0;
         background-size: 100%;
     }
+
+    .carousel-controls-btn { background-size: 13px; }
+
+    .carousel-controls-btn_prev { background-image: url(../images/design/arrow-prev-mobile@2x.png); }
+
+    .carousel-controls-btn_next { background-image: url(../images/design/arrow-next-mobile@2x.png); }
 
     .paginationDot {
         background-image: url(../images/design/pagination-dots@2x.png);

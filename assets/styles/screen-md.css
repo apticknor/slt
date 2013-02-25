@@ -46,6 +46,10 @@ body {
     padding: 114px 0;
 }
 
+.section_portfolio {
+    padding: 80px 56px; /* lateral padding should match carousel btn width */
+}
+
 /* contact section */
 .section_contact {
     padding: 0;
@@ -118,6 +122,41 @@ body {
 .blocks_5up > * { width: 20.0%; }
 
 /* ---------------------------------------------------------------------
+ Promo
+------------------------------------------------------------------------ */
+.promo-ft {
+    padding-top: 33px;
+    font-size: 13px;
+}
+
+/* ---------------------------------------------------------------------
+ Carousel
+------------------------------------------------------------------------ */
+.carousel {
+    width: 508px;
+}
+
+.carousel-controls {
+    padding-bottom: 20px;
+}
+
+.carousel-controls-btn {
+    width: 56px;
+}
+
+.carousel-controls-btn:hover {
+    background-color: #f1f1f1;
+    background-color: rgba(234, 234, 234, 0.68);
+}
+
+/* ---------------------------------------------------------------------
+ Pagination
+------------------------------------------------------------------------ */
+.pagination > * {
+    margin: 0 3px;
+}
+
+/* ---------------------------------------------------------------------
  Pagination Dots
 ------------------------------------------------------------------------ */
 .paginationDot {
@@ -129,6 +168,15 @@ body {
 .paginationDot.isActive {
     background-position: -38px 0;
 }
+
+/* ---------------------------------------------------------------------
+ Partners Logos :: increased by 1.2x for tablet
+------------------------------------------------------------------------ */
+.partners-3m        { width: 47px; }
+.partners-bestbuy   { width: 53px; }
+.partners-apple     { width: 41px; }
+.partners-target    { width: 44px; }
+.partners-usbank    { width: 64px; }
 
 /* ---------------------------------------------------------------------
  Feature

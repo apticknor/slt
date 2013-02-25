@@ -14,17 +14,18 @@
                                     <li><span class="paginationDot"></span></li>
                                     <li><span class="paginationDot"></span></li>
                                 </ol>
-                                <a href="#" class="carousel-controls-prev">Previous Slide</a>
-                                <a href="#" class="carousel-controls-next">Next Slide</a>
+                                <a href="#" class="carousel-controls-btn carousel-controls-btn_prev">Previous Slide</a>
+                                <a href="#" class="carousel-controls-btn carousel-controls-btn_next">Next Slide</a>
                             </div>
                             <ul class="carousel-slides">
                                 <li>
-                                    <img src="assets/images/content/fpo-slide-mobile.jpg" alt="" />
+                                    <img src="assets/images/content/fpo-slide-desktop.png" alt="" />
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="promo-ft">
+                        <p>We've helped some of the top brands in the world.</p>
                         <ul class="partners">
                             <li class="partners-3m"><img src="assets/images/design/logo-3m.jpg" /></li>
                             <li class="partners-bestbuy"><img src="assets/images/design/logo-bestbuy.jpg" /></li>
