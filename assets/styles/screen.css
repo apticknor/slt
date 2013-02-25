@@ -415,11 +415,67 @@ audio {
 }
 
 /* ---------------------------------------------------------------------
+ Pagination List
+------------------------------------------------------------------------ */
+.pagination {
+    font-size: 0;
+    text-align: center;
+}
+
+.pagination > * {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+/* ---------------------------------------------------------------------
+ Pagination Dots
+------------------------------------------------------------------------ */
+.paginationDot {
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: transparent url(../images/design/pagination-dots.png) no-repeat 0 0;
+}
+
+.paginationDot.isActive {
+    background-position: -14px 0;
+}
+
+/* ---------------------------------------------------------------------
+ Partners Logos
+------------------------------------------------------------------------ */
+.partners {
+    font-size: 0;
+    text-align: center;
+}
+
+.partners  > * {
+    display: inline-block;
+}
+/*
+.partners-3m        { width: 80px; }
+.partners-bestbuy   { width: 90px; }
+.partners-apple     { width: 73px; }
+.partners-target    { width: 75px; }
+.partners-usbank    { width: 109px; }*/
+
+.partners-3m        { width: 39px; }
+.partners-bestbuy   { width: 44px; }
+.partners-apple     { width: 34px; }
+.partners-target    { width: 37px; }
+.partners-usbank    { width: 53px; }
+
+/* ---------------------------------------------------------------------
  High Pixel Density Display Support
 ------------------------------------------------------------------------ */
 @media only screen and (-webkit-min-device-pixel-ratio:1.5) {
     .logo {
         background: transparent url("../images/design/logo@2x.png") no-repeat 0 0;
         background-size: 100%;
+    }
+
+    .paginationDot {
+        background-image: url(../images/design/pagination-dots@2x.png);
+        background-size: 86px;
     }
 }

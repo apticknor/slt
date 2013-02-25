@@ -126,6 +126,19 @@ body {
 .blocks_5up > * { width: 20.0%; }
 
 /* ---------------------------------------------------------------------
+ Pagination Dots
+------------------------------------------------------------------------ */
+.paginationDot {
+    width: 9px;
+    height: 10px;
+    background-position: -26px 0;
+}
+
+.paginationDot.isActive {
+    background-position: -38px 0;
+}
+
+/* ---------------------------------------------------------------------
  Map - Overlay & Pin
 ------------------------------------------------------------------------ */
 .map {
@@ -149,7 +162,7 @@ body {
         height: 88px;
         background: transparent url("../images/design/map-pin.png") no-repeat 0 0;
     }
-    
+
     .map-pin:hover {
         -webkit-animation: wobble .7s linear 0s infinite normal;
         -moz-animation:    wobble .7s linear 0s infinite normal;
@@ -190,10 +203,10 @@ body {
     .map {
         background-position: -460px -60px;
     }
-    
+
     .map-pin {
         left: 128px;
-        top: 66px; 
+        top: 66px;
     }
 }
 
@@ -202,10 +215,10 @@ body {
         height: 534px;
         background-position: -340px 0;
     }
-    
+
     .map-pin {
         left: 248px;
-        top: 126px; 
+        top: 126px;
     }
 }
 
@@ -214,10 +227,10 @@ body {
         height: 634px;
         background-position: -340px 0;
     }
-    
+
     .map-pin {
         left: 248px;
-        top: 126px; 
+        top: 126px;
     }
 }
 
@@ -226,10 +239,10 @@ body {
         height: 634px;
         background-position: -240px 0;
     }
-    
+
     .map-pin {
         left: 348px;
-        top: 126px; 
+        top: 126px;
     }
 }
 
@@ -238,10 +251,10 @@ body {
         height: 634px;
         background-position: -160px 0;
     }
-    
+
     .map-pin {
         left: 428px;
-        top: 126px; 
+        top: 126px;
     }
 }
 
@@ -250,10 +263,10 @@ body {
         height: 634px;
         background-position: -80px 0;
     }
-    
+
     .map-pin {
         left: 508px;
-        top: 126px; 
+        top: 126px;
     }
 }
 
@@ -262,10 +275,10 @@ body {
         height: 634px;
         background-position: -20px 0;
     }
-    
+
     .map-pin {
         left: 568px;
-        top: 126px; 
+        top: 126px;
     }
 }
 
@@ -274,9 +287,9 @@ body {
         height: 634px;
         background-position: 0 0;
     }
-    
+
     .map-pin {
         left: 588px;
-        top: 126px; 
+        top: 126px;
     }
 }

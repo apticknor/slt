@@ -92,3 +92,15 @@ body {
     font-size: 17px; /* reset font-size after inline block spacing fix*/
 }
 
+/* ---------------------------------------------------------------------
+ Pagination Dots
+------------------------------------------------------------------------ */
+.paginationDot {
+    width: 15px;
+    height: 16px;
+    background-position: -52px 0;
+}
+
+.paginationDot.isActive {
+    background-position: -70px 0;
+}

@@ -22,10 +22,10 @@
 
         <!-- STYLESHEETS -->
         <link rel="stylesheet" media="screen and (min-width: 1em)" href="<?php echo $site_url; ?>assets/styles/screen.css" />
-        <link rel="stylesheet" media="screen and (min-width: 20em)" href="<?php echo $site_url; ?>assets/styles/screen-sm.css" />
-        <link rel="stylesheet" media="screen and (min-width: 42em)" href="<?php echo $site_url; ?>assets/styles/screen-md.css" />
-        <link rel="stylesheet" media="screen and (min-width: 60em)" href="<?php echo $site_url; ?>assets/styles/screen-lg.css" />
-        <link rel="stylesheet" media="screen and (min-width: 84em)" href="<?php echo $site_url; ?>assets/styles/screen-xl.css" />
+        <link rel="stylesheet" media="screen and (min-width: 20em)" href="<?php echo $site_url; ?>assets/styles/screen-sm.css" /> <!-- 320px -->
+        <link rel="stylesheet" media="screen and (min-width: 42em)" href="<?php echo $site_url; ?>assets/styles/screen-md.css" /> <!-- 672px -->
+        <link rel="stylesheet" media="screen and (min-width: 60em)" href="<?php echo $site_url; ?>assets/styles/screen-lg.css" /> <!-- 960px -->
+        <link rel="stylesheet" media="screen and (min-width: 84em)" href="<?php echo $site_url; ?>assets/styles/screen-xl.css" /> <!-- 1344px -->
         <link rel="stylesheet" media="print" href="<?php echo $site_url; ?>assets/styles/print.css" />
 
         <!-- IE STYLESHEETS SANS MEDIAQUERIES -->
@@ -37,7 +37,7 @@
         <link rel="stylesheet" media="screen" href="<?php echo $site_url; ?>assets/styles/screen-xl.css" />
         <link rel="stylesheet" media="screen" href="<?php echo $site_url; ?>assets/styles/ie8.css" />
         <![endif]-->
-        
+
         <!-- LEGACY IE SUPPORT -->
         <!--[if lt IE 8]>
         <link rel="stylesheet" media="screen" href="<?php echo $site_url; ?>assets/styles/ie-legacy.css" />
