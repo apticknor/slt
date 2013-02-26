@@ -66,7 +66,7 @@ body {
 }
 
 .section_portfolio {
-    padding: 100px 112px; /* lateral padding should match carousel btn width */
+    padding: 100px 132px; /* lateral padding should match carousel btn width, plus a bit */
 }
 
 .section_portfolio > .section-hd { margin-bottom: 29px; }
@@ -137,11 +137,11 @@ body {
 .paginationDot {
     width: 15px;
     height: 16px;
-    background-position: -52px 0;
+    background-position: -71px 0;
 }
 
 .paginationDot.isActive {
-    background-position: -70px 0;
+    background-position: -52px 0;
 }
 
 /* ---------------------------------------------------------------------

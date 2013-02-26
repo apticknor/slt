@@ -7,20 +7,9 @@
                 <div class="promo">
                     <div class="promo-bd">
                         <div class="carousel" id="portfolioCarousel">
-                            <div class="carousel-controls">
-                                <ol class="pagination">
-                                    <li><span class="paginationDot"></span></li>
-                                    <li><span class="paginationDot isActive"></span></li>
-                                    <li><span class="paginationDot"></span></li>
-                                    <li><span class="paginationDot"></span></li>
-                                </ol>
-                                <a href="#" class="carousel-controls-btn carousel-controls-btn_prev">Previous Slide</a>
-                                <a href="#" class="carousel-controls-btn carousel-controls-btn_next">Next Slide</a>
-                            </div>
                             <ul class="carousel-slides">
-                                <li>
-                                    <img src="assets/images/content/fpo-slide-desktop.png" alt="" />
-                                </li>
+                                <li><img src="assets/images/content/fpo-slide-desktop.png" alt="" /></li>
+                                <li><img src="assets/images/content/fpo-slide-desktop.png" alt="" /></li>
                             </ul>
                         </div>
                     </div>
@@ -38,25 +27,3 @@
             </div>
         </div>
         <!-- // END SECTION PORTFOLIO -->
-
-<!--         <div class="section section_portfolio">
-            <div class="section-hd">
-                <h2 class="hdg hdg_section hdg_gray">We're passionate about solving complex user experience challenges.</h2>
-            </div>
-            <div class="section-bd">
-                <span class="paginationDot"></span>
-                <span class="paginationDot"></span>
-                <span class="paginationDot"></span>
-                <span class="paginationDot"></span>
-                <div class="carousel js-carousel">
-                    <ul class="carousel-slides">
-                        <li>
-                            <img src="" alt="" />
-                        </li>
-                    </ul>
-                    <div class="carousel-controls">
-                    </div>
-                </div>
-            </div>
-        </div>
- -->

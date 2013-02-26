@@ -266,7 +266,7 @@ audio {
 /* portfolio section */
 .section_portfolio {
     background: #ffffff;
-    padding: 50px 45px; /* lateral padding should match carousel btn width */
+    padding: 50px 45px;
 }
 
 .section_portfolio:before {
@@ -470,7 +470,8 @@ audio {
  Carousel
 ------------------------------------------------------------------------ */
 .carousel {
-    width: 225px;
+    min-width: 225px;
+    max-width: 100%;
     margin: 0 auto;
     text-align: center;
 }
@@ -486,6 +487,13 @@ audio {
     top: 0;
     bottom: 0;
     text-indent: -9999px;
+    cursor: pointer;
+    background-color: rgba(234, 234, 234, 0);
+    -webkit-transition: background-color .2s ease-in-out;
+    -moz-transition:    background-color .2s ease-in-out;
+    -ms-transition:     background-color .2s ease-in-out;
+    -o-transition:      background-color .2s ease-in-out;
+    transition:         background-color .2s ease-in-out;
 }
 
 .carousel-controls-btn_prev {
@@ -496,6 +504,17 @@ audio {
 .carousel-controls-btn_next {
     right: 0;
     background: transparent url(../images/design/arrow-next-mobile.png) no-repeat center center;
+}
+
+.carousel-slides {
+    overflow: hidden;
+    font-size: 0;
+    white-space: nowrap;
+}
+
+.carousel-slides > * {
+    display: inline-block;
+    width: 100%;
 }
 
 /* ---------------------------------------------------------------------
@@ -518,11 +537,11 @@ audio {
     display: block;
     width: 8px;
     height: 8px;
-    background: transparent url(../images/design/pagination-dots.png) no-repeat 0 0;
+    background: transparent url(../images/design/pagination-dots.png) no-repeat -12px 0;
 }
 
 .paginationDot.isActive {
-    background-position: -14px 0;
+    background-position: 0 0;
 }
 
 /* ---------------------------------------------------------------------
@@ -537,12 +556,6 @@ audio {
 .partners  > * {
     display: inline-block;
 }
-/*
-.partners-3m        { width: 80px; }
-.partners-bestbuy   { width: 90px; }
-.partners-apple     { width: 73px; }
-.partners-target    { width: 75px; }
-.partners-usbank    { width: 109px; }*/
 
 .partners-3m        { width: 39px; }
 .partners-bestbuy   { width: 44px; }

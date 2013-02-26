@@ -47,7 +47,7 @@ body {
 }
 
 .section_portfolio {
-    padding: 80px 56px; /* lateral padding should match carousel btn width */
+    padding: 80px 66px; /* lateral padding should match carousel btn width, plus a bit */
 }
 
 /* contact section */
@@ -133,7 +133,7 @@ body {
  Carousel
 ------------------------------------------------------------------------ */
 .carousel {
-    width: 508px;
+    min-width: 508px;
 }
 
 .carousel-controls {
@@ -160,13 +160,13 @@ body {
  Pagination Dots
 ------------------------------------------------------------------------ */
 .paginationDot {
-    width: 9px;
+    width: 10px;
     height: 10px;
-    background-position: -26px 0;
+    background-position: -38px 0;
 }
 
 .paginationDot.isActive {
-    background-position: -38px 0;
+    background-position: -24px 0;
 }
 
 /* ---------------------------------------------------------------------
