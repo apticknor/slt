@@ -11,7 +11,9 @@
                     </div>
                 </div>
                 <div id="js-fixedNav" class="nav" role="navigation">
-                    <a class="btn" href="#page-contact">Contact Us</a>
+                    <div class="nav-inner">
+                        <a class="btn" href="#page-contact">Contact Us</a>
+                    </div>
                 </div>
             </div>
         </div>

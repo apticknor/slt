@@ -26,6 +26,10 @@ body {
     right: 0;
 }
 
+.nav-inner {
+    margin-right: 11px;
+}
+
 .nav_isFixed {
     position: fixed;
     width: 940px;
