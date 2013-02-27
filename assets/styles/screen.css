@@ -357,11 +357,11 @@ audio {
     background: #e9642a;
     color: #ffffff;
     font: normal 13px/38px "SeravekRegular", Helvetica, Arial, sans-serif;
-    -webkit-transition: background-color .1s ease-in-out;
-    -moz-transition:    background-color .1s ease-in-out;
-    -ms-transition:     background-color .1s ease-in-out;
-    -o-transition:      background-color .1s ease-in-out;
-    transition:         background-color .1s ease-in-out;
+    -webkit-transition: background-color .2s ease-in-out;
+    -moz-transition:    background-color .2s ease-in-out;
+    -ms-transition:     background-color .2s ease-in-out;
+    -o-transition:      background-color .2s ease-in-out;
+    transition:         background-color .2s ease-in-out;
 }
 
 .btn:hover {
@@ -644,10 +644,20 @@ audio {
     font-weight: bold;
     font-size: 14px;
     color: #2b4242;
+    -webkit-transition: background-color .2s ease-in-out;
+    -moz-transition:    background-color .2s ease-in-out;
+    -ms-transition:     background-color .2s ease-in-out;
+    -o-transition:      background-color .2s ease-in-out;
+    transition:         background-color .2s ease-in-out;
+}
+
+.navList > li > a:hover {
+    background-color: #f2f2f2;
 }
 
 .navList > li.isActive > a {
     background-color: #40989b;
+    cursor: default;
 }
 
 /* ---------------------------------------------------------------------
