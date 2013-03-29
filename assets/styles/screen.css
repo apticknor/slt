@@ -270,13 +270,13 @@ audio {
 }
 
 .section_portfolio:before {
-    border-left: 2px solid #e9642a;
-    border-right: 2px solid #e9642a;
+    border-left: 2px solid #7abdbe;
+    border-right: 2px solid #7abdbe;
 }
 
 .section_portfolio:after {
-    border-left: 2px solid #e9642a;
-    border-right: 2px solid #e9642a;
+    border-left: 2px solid #7abdbe;
+    border-right: 2px solid #7abdbe;
 }
 
 .section_portfolio > .section-hd { margin-bottom: 16px; }
@@ -643,7 +643,7 @@ audio {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 14px;
-    color: #2b4242;
+    color: #e9642a;
     -webkit-transition: background-color .2s ease-in-out;
     -moz-transition:    background-color .2s ease-in-out;
     -ms-transition:     background-color .2s ease-in-out;
@@ -657,6 +657,7 @@ audio {
 
 .navList > li.isActive > a {
     background-color: #40989b;
+    color: #2b4242;
     cursor: default;
 }
 
