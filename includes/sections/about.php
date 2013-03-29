@@ -1,6 +1,73 @@
         <!--- SECTION ABOUT -->
         <div class="section section_about" id="jsTabs">
             <div class="jsTab-controls"></div>
+            <div class="jsTab-content" data-jstab-label="Our Difference">
+                <div class="section-hd section-hd_about">
+                    <h2 class="hdg hdg_section hdg_blue">How We're Different</h2>
+                </div>
+                <div class="section-bd">
+                    <h3 class="isHidden">Our Difference</h3>
+                    <div class="hub">
+                        <div class="hub-panel hub-panel_1of5">
+                            <img src="<?php echo $site_url; ?>assets/images/content/hub1.jpg" alt="" />
+                        </div>
+                        <div class="hub-panel hub-panel_2of5">
+                            <img src="<?php echo $site_url; ?>assets/images/content/hub2.jpg" alt="" />
+                        </div>
+                        <div class="hub-panel hub-panel_3of5">
+                            <img src="<?php echo $site_url; ?>assets/images/content/hub3.jpg" alt="" />
+                        </div>
+                        <div class="hub-panel hub-panel_4of5">
+                            <img src="<?php echo $site_url; ?>assets/images/content/hub4.jpg" alt="" />
+                        </div>
+                        <div class="hub-panel hub-panel_5of5">
+                            <img src="<?php echo $site_url; ?>assets/images/content/hub5.jpg" alt="" />
+                        </div>
+                    </div>
+                    <ul class="blocks blocks_2upThen4up">
+                        <li>
+                            <div class="feature feature_spacedWhenSmall">
+                                <div class="feature-subhd">
+                                    <h4 class="hdg hdg_white hdg_bold">Understand Your Users</h4>
+                                </div>
+                                <div class="feature-bd">
+                                    <p>We started Straight Line Theory in 2002 to focus exclusively on creating great digital experiences that are easy to use. Doing one thing keeps us lean and sharp.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="feature feature_spacedWhenSmall">
+                                <div class="feature-subhd">
+                                    <h4 class="hdg hdg_white hdg_bold">We Understand Business</h4>
+                                </div>
+                                <div class="feature-bd">
+                                    <p>We've learned a lot from working with Fortune 500 leaders, established brands, and start-ups in retail, consumer goods, financial services, hospitality, healthcare and technology.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="feature feature_spacedWhenSmall">
+                                <div class="feature-subhd">
+                                    <h4 class="hdg hdg_white hdg_bold">We're small but get big results</h4>
+                                </div>
+                                <div class="feature-bd">
+                                    <p>Being small means you'll work directly with talented information architects and usability experts who are passionate about what we do and invested in your success.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="feature feature_spacedWhenSmall">
+                                <div class="feature-subhd">
+                                    <h4 class="hdg hdg_white hdg_bold">We cut out the unimportant stuff</h4>
+                                </div>
+                                <div class="feature-bd">
+                                    <p>We've learned a lot from working with Fortune 500 leaders, established brands, and start-ups in retail, consumer goods, financial services, hospitality, healthcare and technology.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <div class="jsTab-content" data-jstab-label="Our Team">
                 <div class="section-hd section-hd_about">
                     <h2 class="hdg hdg_section hdg_blue">Meet Straight Line Theory</h2>
@@ -69,73 +136,6 @@
                                 </div>
                                 <div class="feature-hd">
                                     <h4 class="hdg hdg_bold">John Dusek</h4>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="jsTab-content" data-jstab-label="Our Difference">
-                <div class="section-hd section-hd_about">
-                    <h2 class="hdg hdg_section hdg_blue">How We're Different</h2>
-                </div>
-                <div class="section-bd">
-                    <h3 class="isHidden">Our Difference</h3>
-                    <div class="hub">
-                        <div class="hub-panel hub-panel_1of5">
-                            <img src="<?php echo $site_url; ?>assets/images/content/hub1.jpg" alt="" />
-                        </div>
-                        <div class="hub-panel hub-panel_2of5">
-                            <img src="<?php echo $site_url; ?>assets/images/content/hub2.jpg" alt="" />
-                        </div>
-                        <div class="hub-panel hub-panel_3of5">
-                            <img src="<?php echo $site_url; ?>assets/images/content/hub3.jpg" alt="" />
-                        </div>
-                        <div class="hub-panel hub-panel_4of5">
-                            <img src="<?php echo $site_url; ?>assets/images/content/hub4.jpg" alt="" />
-                        </div>
-                        <div class="hub-panel hub-panel_5of5">
-                            <img src="<?php echo $site_url; ?>assets/images/content/hub5.jpg" alt="" />
-                        </div>
-                    </div>
-                    <ul class="blocks blocks_2upThen4up">
-                        <li>
-                            <div class="feature feature_spacedWhenSmall">
-                                <div class="feature-subhd">
-                                    <h4 class="hdg hdg_white hdg_bold">Understand Your Users</h4>
-                                </div>
-                                <div class="feature-bd">
-                                    <p>We started Straight Line Theory in 2002 to focus exclusively on creating great digital experiences that are easy to use. Doing one thing keeps us lean and sharp.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="feature feature_spacedWhenSmall">
-                                <div class="feature-subhd">
-                                    <h4 class="hdg hdg_white hdg_bold">We Understand Business</h4>
-                                </div>
-                                <div class="feature-bd">
-                                    <p>We've learned a lot from working with Fortune 500 leaders, established brands, and start-ups in retail, consumer goods, financial services, hospitality, healthcare and technology.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="feature feature_spacedWhenSmall">
-                                <div class="feature-subhd">
-                                    <h4 class="hdg hdg_white hdg_bold">We're small but get big results</h4>
-                                </div>
-                                <div class="feature-bd">
-                                    <p>Being small means you'll work directly with talented information architects and usability experts who are passionate about what we do and invested in your success.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="feature feature_spacedWhenSmall">
-                                <div class="feature-subhd">
-                                    <h4 class="hdg hdg_white hdg_bold">We cut out the unimportant stuff</h4>
-                                </div>
-                                <div class="feature-bd">
-                                    <p>We've learned a lot from working with Fortune 500 leaders, established brands, and start-ups in retail, consumer goods, financial services, hospitality, healthcare and technology.</p>
                                 </div>
                             </div>
                         </li>
