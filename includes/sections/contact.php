@@ -7,7 +7,10 @@
                         <div class="box box_mute box_basic">
                             <div class="teaser">
                                 <div class="teaser-hd">
-                                    <h2 class="hdg hdg_subSection hdg_bold hdg_lightBlue">Want to know more? Contact Us.</h2>
+                                    <h2 class="hdg hdg_subSection hdg_bold hdg_lightBlue">
+                                        <span class="textlineMobile">Want to know more?</span>
+                                        <span class="textlineMobile">Contact Us.</span>
+                                    </h2>
                                 </div>
                                 <div class="teaser-subHd">
                                     <h3 class="hdg hdg_minorSection hdg_bold hdg_cap"><span class="fn org">Straight Line Theory</span></h3>
