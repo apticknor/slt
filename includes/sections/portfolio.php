@@ -8,19 +8,19 @@
                     <div class="promo-bd">
                         <div class="carousel" id="portfolioCarousel">
                             <ul class="carousel-slides">
-                                <li><img src="assets/images/content/fpo-slide-desktop.png" alt="" /></li>
-                                <li><img src="assets/images/content/fpo-slide-desktop.png" alt="" /></li>
+                                <li><img src="assets/images/content/fpo-slide.png" alt="" /></li>
+                                <li><img src="assets/images/content/fpo-slide.png" alt="" /></li>
                             </ul>
                         </div>
                     </div>
                     <div class="promo-ft">
                         <p>We've helped some of the top brands in the world.</p>
                         <ul class="partners">
-                            <li class="partners-3m"><img src="assets/images/design/logo-3m.jpg" /></li>
-                            <li class="partners-bestbuy"><img src="assets/images/design/logo-bestbuy.jpg" /></li>
-                            <li class="partners-apple"><img src="assets/images/design/logo-apple.jpg" /></li>
-                            <li class="partners-target"><img src="assets/images/design/logo-target.jpg" /></li>
-                            <li class="partners-usbank"><img src="assets/images/design/logo-usbank.jpg" /></li>
+                            <li class="partners-3m"><img src="assets/images/content/logo-3m.jpg" /></li>
+                            <li class="partners-bestbuy"><img src="assets/images/content/logo-bestbuy.jpg" /></li>
+                            <li class="partners-apple"><img src="assets/images/content/logo-apple.jpg" /></li>
+                            <li class="partners-target"><img src="assets/images/content/logo-target.jpg" /></li>
+                            <li class="partners-usbank"><img src="assets/images/content/logo-usbank.jpg" /></li>
                         </ul>
                     </div>
                 </div>
