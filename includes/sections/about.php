@@ -28,10 +28,10 @@
                         <li>
                             <div class="feature feature_spacedWhenSmall">
                                 <div class="feature-subhd">
-                                    <h4 class="hdg hdg_white hdg_bold">Understand Your Users</h4>
+                                    <h4 class="hdg hdg_white hdg_bold">We're specialized</h4>
                                 </div>
                                 <div class="feature-bd">
-                                    <p>We started Straight Line Theory in 2002 to focus exclusively on creating great digital experiences that are easy to use. Doing one thing keeps us lean and sharp.</p>
+                                    <p>We started Straight Line Theory in 2002 to focus exclusively on creating great digital experiences that are easy to use. Doing one thing well keeps us lean and sharp.</p>
                                 </div>
                             </div>
                         </li>
@@ -41,14 +41,14 @@
                                     <h4 class="hdg hdg_white hdg_bold">We Understand Business</h4>
                                 </div>
                                 <div class="feature-bd">
-                                    <p>We've learned a lot from working with Fortune 500 leaders, established brands, and start-ups in retail, consumer goods, financial services, hospitality, healthcare and technology.</p>
+                                    <p>We've learned a lot from working with Fortune 500 leaders, established brands and start-ups in retail, consumer goods, financial services, hospitality, healthcare and technology.</p>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="feature feature_spacedWhenSmall">
                                 <div class="feature-subhd">
-                                    <h4 class="hdg hdg_white hdg_bold">We're small but get big results</h4>
+                                    <h4 class="hdg hdg_white hdg_bold">We're small, but get big results</h4>
                                 </div>
                                 <div class="feature-bd">
                                     <p>Being small means you'll work directly with talented information architects and usability experts who are passionate about what we do and invested in your success.</p>
@@ -61,7 +61,7 @@
                                     <h4 class="hdg hdg_white hdg_bold">We cut out the unimportant stuff</h4>
                                 </div>
                                 <div class="feature-bd">
-                                    <p>We've learned a lot from working with Fortune 500 leaders, established brands, and start-ups in retail, consumer goods, financial services, hospitality, healthcare and technology.</p>
+                                    <p>Our streamlined approach helps you get from idea to reality faster by replacing bloated documentation with focused, usable prototypes that can be tested and improved.</p>
                                 </div>
                             </div>
                         </li>
