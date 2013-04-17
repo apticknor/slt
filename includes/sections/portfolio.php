@@ -16,11 +16,11 @@
                     <div class="promo-ft">
                         <p>We've helped some of the top brands in the world.</p>
                         <ul class="partners">
-                            <li class="partners-3m"><img src="assets/images/content/logo-3m.jpg" /></li>
-                            <li class="partners-bestbuy"><img src="assets/images/content/logo-bestbuy.jpg" /></li>
-                            <li class="partners-apple"><img src="assets/images/content/logo-apple.jpg" /></li>
-                            <li class="partners-target"><img src="assets/images/content/logo-target.jpg" /></li>
-                            <li class="partners-usbank"><img src="assets/images/content/logo-usbank.jpg" /></li>
+                            <li class="partners-3m"><img src="assets/images/content/logo-3m.png" /></li>
+                            <li class="partners-bestbuy"><img src="assets/images/content/logo-bestbuy.png" /></li>
+                            <li class="partners-apple"><img src="assets/images/content/logo-apple.png" /></li>
+                            <li class="partners-target"><img src="assets/images/content/logo-target.png" /></li>
+                            <li class="partners-usbank"><img src="assets/images/content/logo-usbank.png" /></li>
                         </ul>
                     </div>
                 </div>
