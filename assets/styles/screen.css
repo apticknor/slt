@@ -221,6 +221,7 @@ audio {
     height: 33px;
     width: 28px;
     background: transparent url(../images/design/wordmark-icn.png) no-repeat 0 0;
+    text-indent: -9999px;
 }
 
 .wordmark-txt {
@@ -228,6 +229,7 @@ audio {
     height: 33px;
     width: 257px;
     background: transparent url(../images/design/wordmark-txt.png) no-repeat 0 0;
+    text-indent: -9999px;
 }
 
 /* ---------------------------------------------------------------------

@@ -1,6 +1,8 @@
         <div class="globalFooter">
             <div class="globalFooter-bd">
-                <address>Straight Line Theory</address>
+                <address class="wordmark">
+                    <span class="wordmark-txt">Straight Line Theory</span>
+                </address>
             </div>
         </div>
     </body>
