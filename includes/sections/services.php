@@ -4,16 +4,16 @@
                 <h2 class="hdg hdg_section hdg_green">We help companies simplify and improve their websites, applications and mobile experiences.</h2>
             </div>
             <div class="section-bd section-bd_services">
-                <ul class="blocks blocks_3up">
+                <ul class="blocks blocks_3up" data-height-watch-group="servicesBoxes" data-height-watch-disable-width="656">
                     <li>
-                        <div class="box">
+                        <div class="box" data-height-watch-group-member="servicesBoxes">
                             <div class="feature">
                                 <div class="feature-img">
                                     <div class="imgConstraint">
                                         <img src="<?php echo $site_url; ?>assets/images/content/services-users.png" alt="" />
                                     </div>
                                 </div>
-                                <div class="feature-hd">
+                                <div class="feature-hd js-heightWatch-item">
                                     <h3 class="hdg_subSection hdg_green">Understand Your Users.</h3>
                                 </div>
                                 <div class="feature-bd">
@@ -23,7 +23,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="box">
+                        <div class="box" data-height-watch-group-member="servicesBoxes">
                             <div class="feature">
                                 <div class="feature-img">
                                     <div class="imgConstraint">
@@ -40,7 +40,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="box">
+                        <div class="box" data-height-watch-group-member="servicesBoxes">
                             <div class="feature">
                                 <div class="feature-img">
                                     <div class="imgConstraint">

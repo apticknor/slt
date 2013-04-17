@@ -32,6 +32,7 @@ var SLT = SLT || {};
         APP.Tabs.init();
         APP.FixedNavigation.init();
         APP.Carousel.init();
+        APP.HeightWatchers.init();
     });
 
 /* ---------------------------------------------------------------------
@@ -425,5 +426,82 @@ APP.FeatureDetection = {
         APP.Features.isTouch = false;
     }
 };
+
+
+/* ---------------------------------------------------------------------
+HeightWatchers
+Author: Dan Piscitiello
+
+Initializes HeightWatch objects
+------------------------------------------------------------------------ */
+APP.HeightWatchers = {
+    init: function() {
+        var $groups = $('[data-height-watch-group]');
+        $groups.each(function(){
+            new HeightWatcher($(this));
+        });
+    }
+};
+
+/* ---------------------------------------------------------------------
+HeightWatcher Class
+Author: Dan Piscitiello
+
+Monitors DOM elements and makes them equal heights
+------------------------------------------------------------------------ */
+var HeightWatcher = function($group) {
+    this.$group = $group;
+    this.groupName = $group.data('heightWatchGroup');
+    this.$watchedElements = $('[data-height-watch-group-member=' + this.groupName + ']');
+    this.disableBreakpoint = parseInt($group.data('heightWatchDisableWidth'), 10);
+    this.$window = $(window);
+
+    this.bindEvents();
+    this.enableUI();
+    this.setHeights();
+
+    console.dir(this);
+}
+
+HeightWatcher.prototype.bindEvents = function() {
+    this.onResizeEvent = $.proxy(this.handleResize, this);
+}
+
+HeightWatcher.prototype.enableUI = function() {
+    this.$window.on('resize', this.onResizeEvent);
+}
+
+HeightWatcher.prototype.handleResize = function() {
+    this.setHeights();
+}
+
+HeightWatcher.prototype.getTallest = function() {
+    var height = 0;
+    this.removeHeights();
+    this.$watchedElements.each(function(){
+        var tempHeight = $(this).height();
+        height = tempHeight > height ? tempHeight : height;
+    });
+
+    return height;
+}
+
+HeightWatcher.prototype.removeHeights = function() {
+    this.$watchedElements.each(function(){
+        $(this).css('height', 'auto');
+    });
+}
+
+HeightWatcher.prototype.setHeights = function() {
+    if (this.$window.width() < this.disableBreakpoint) {
+        this.removeHeights();
+        return;
+    }
+
+    var height = this.getTallest();
+    this.$watchedElements.each(function(){
+        $(this).height(height);
+    });
+}
 
 }(jQuery, SLT));
