@@ -286,13 +286,11 @@ APP.Carousel = {
         var self = this;
 
         this.$prev.on('click', function(e){
-                console.log('click')
             e.preventDefault();
             self.onPreviousSlide();
         });
 
         this.$next.on('click', function(e){
-                console.log('click')
             e.preventDefault();
             self.onNextSlide();
         });
@@ -397,8 +395,11 @@ Initializes HeightWatch objects
 APP.HeightWatchers = {
     init: function() {
         var $groups = $('[data-height-watch-group]');
-        $groups.each(function(){
-            new HeightWatcher($(this));
+        // must wait for images to load prior to measuring heights
+        $(window).on('load', function() {
+            $groups.each(function(){
+                new HeightWatcher($(this));
+            });
         });
     }
 };
@@ -419,8 +420,6 @@ var HeightWatcher = function($group) {
     this.bindEvents();
     this.enableUI();
     this.setHeights();
-
-    console.dir(this);
 }
 
 HeightWatcher.prototype.bindEvents = function() {
