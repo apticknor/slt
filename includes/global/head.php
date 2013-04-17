@@ -22,7 +22,7 @@
 
         <!-- STYLESHEETS -->
         <link rel="stylesheet" media="screen and (min-width: 1em)" href="<?php echo $site_url; ?>assets/styles/screen.css" />
-        <link rel="stylesheet" media="screen and (min-width: 20em)" href="<?php echo $site_url; ?>assets/styles/screen-sm.css" /> <!-- 320px -->
+        <link rel="stylesheet" media="screen and (min-width: 30em)" href="<?php echo $site_url; ?>assets/styles/screen-sm.css" /> <!-- 320px -->
         <link rel="stylesheet" media="screen and (min-width: 42em)" href="<?php echo $site_url; ?>assets/styles/screen-md.css" /> <!-- 672px -->
         <link rel="stylesheet" media="screen and (min-width: 60em)" href="<?php echo $site_url; ?>assets/styles/screen-lg.css" /> <!-- 960px -->
         <link rel="stylesheet" media="screen and (min-width: 84em)" href="<?php echo $site_url; ?>assets/styles/screen-xl.css" /> <!-- 1344px -->

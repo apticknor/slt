@@ -34,7 +34,7 @@
                                     </div>
                                 </div>
                                 <div class="teaser-ft">
-                                    <h3 class="hdg hdg_subSection hdg_bold hdg_lightGreen"><a href="http://goo.gl/maps/zxYDZ">Get Directions</a></h3>
+                                    <h3 class="hdg hdg_subSection hdg_bold hdg_orange"><a href="http://goo.gl/maps/zxYDZ">Get Directions</a></h3>
                                 </div>
                             </div>
                         </div>

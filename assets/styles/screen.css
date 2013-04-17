@@ -188,9 +188,48 @@ audio {
  Navigation
 ------------------------------------------------------------------------ */
 .nav {
-    position: absolute;
+    position: fixed;
     top: 0;
-    right: 10px;
+    left: 0;
+    width: 100%;
+    background-color: #efefef;
+    background-color: rgba(255,255,255,.7);
+    box-shadow: 0 0 12px rgba(0,0,0,.2);
+}
+
+.nav-inner {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.nav-inner-logo {
+    float: left;
+    margin-left: 10px;
+    margin-top: 4px;
+}
+
+.nav-inner-cta {
+    float: right;
+    margin-right: 10px;
+}
+
+/* ---------------------------------------------------------------------
+ Wordmark
+------------------------------------------------------------------------ */
+.wordmark-icn {
+    display: inline-block;
+    height: 33px;
+    width: 28px;
+    background: transparent url(../images/design/wordmark-icn.png) no-repeat 0 0;
+    text-indent: -9999px;
+}
+
+.wordmark-txt {
+    display: none;
+    height: 33px;
+    width: 257px;
+    background: transparent url(../images/design/wordmark-txt.png) no-repeat 0 0;
+    text-indent: -9999px;
 }
 
 /* ---------------------------------------------------------------------
@@ -348,6 +387,7 @@ audio {
 .hdg_white { color: #ffffff; }
 .hdg_lightGreen { color: #9fc34d; }
 .hdg_lightBlue { color: #80c5c7; }
+.hdg_orange { color: #e9642a; }
 .hdg_bold { font-weight: bold; }
 .hdg_cap { text-transform: uppercase; }
 
@@ -357,10 +397,10 @@ audio {
 .btn {
     display: inline-block;
     padding: 0 44px;
-    height: 38px;
+    height: 42px;
     background: #e9642a;
     color: #ffffff;
-    font: normal 13px/38px "SeravekRegular", Helvetica, Arial, sans-serif;
+    font: normal 13px/42px "SeravekRegular", Helvetica, Arial, sans-serif;
     -webkit-transition: background-color .2s ease-in-out;
     -moz-transition:    background-color .2s ease-in-out;
     -ms-transition:     background-color .2s ease-in-out;
@@ -698,6 +738,16 @@ audio {
 @media only screen and (-webkit-min-device-pixel-ratio:1.5) {
     .logo {
         background: transparent url("../images/design/logo@2x.png") no-repeat 0 0;
+        background-size: 100%;
+    }
+
+    .wordmark-icn {
+        background: transparent url(../images/design/wordmark-icn@2x.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    
+    .wordmark-txt {
+        background: transparent url(../images/design/wordmark-txt@2x.png) no-repeat 0 0;
         background-size: 100%;
     }
 

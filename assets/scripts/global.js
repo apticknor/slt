@@ -30,7 +30,6 @@ var SLT = SLT || {};
         APP.ExternalLinks.init();
         APP.AutoReplace.init();
         APP.Tabs.init();
-        APP.FixedNavigation.init();
         APP.Carousel.init();
         APP.HeightWatchers.init();
     });
@@ -201,45 +200,6 @@ APP.Tabs = {
 
         this.$tabControls.find('li').eq(slideIndex).addClass('isActive');
         this.$tabContent.eq(slideIndex).removeClass('isHidden');
-    }
-};
-
-/* ---------------------------------------------------------------------
-FixedNavigation
-Author: Anthony Ticknor
-
-Figures out whenthe first section of the page has been scrolled past
-and applies fixed positioning to the navigation.
------------------------------------------------------------------------- */
-APP.FixedNavigation = {
-    $nav: undefined,
-    _mastheadHeight: undefined,
-
-    init: function() {
-        var $nav = $('#js-fixedNav');
-        var _mastheadHeight = $('.section_masthead').height();
-
-        if (APP.isMobile === true) {
-            return;
-        }
-
-        this.$nav = $nav;
-        this._mastheadHeight = _mastheadHeight;
-
-        this.bind();
-    },
-
-    bind: function() {
-        var self = this;
-
-        APP.$window.scroll(function() {
-            var offsetTop = $(this).scrollTop();
-            if (offsetTop > self._mastheadHeight) {
-                self.$nav.addClass('nav_isFixed');
-            } else {
-                self.$nav.removeClass('nav_isFixed');
-            }
-        });
     }
 };
 
