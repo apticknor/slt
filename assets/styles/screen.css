@@ -583,13 +583,18 @@ audio {
 ------------------------------------------------------------------------ */
 .paginationDot {
     display: block;
-    width: 8px;
-    height: 8px;
-    background: transparent url(../images/design/pagination-dots.png) no-repeat -12px 0;
+    width: 4px;
+    height: 4px;
+    border: 2px solid #E9642A;
+    background: #ffffff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .paginationDot.isActive {
-    background-position: 0 0;
+    background: #E9642A;
 }
 
 /* ---------------------------------------------------------------------
@@ -736,7 +741,7 @@ audio {
         background: transparent url(../images/design/wordmark-icn@2x.png) no-repeat 0 0;
         background-size: 100%;
     }
-    
+
     .wordmark-txt {
         background: transparent url(../images/design/wordmark-txt@2x.png) no-repeat 0 0;
         background-size: 100%;

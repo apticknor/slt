@@ -121,13 +121,8 @@ body {
  Pagination Dots
 ------------------------------------------------------------------------ */
 .paginationDot {
-    width: 15px;
-    height: 16px;
-    background-position: -71px 0;
-}
-
-.paginationDot.isActive {
-    background-position: -52px 0;
+    width: 8px;
+    height: 8px;
 }
 
 /* ---------------------------------------------------------------------
