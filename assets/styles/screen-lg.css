@@ -137,3 +137,37 @@ body {
 .partners-apple     { width: 73px; }
 .partners-target    { width: 75px; }
 .partners-usbank    { width: 109px; }
+
+/* ---------------------------------------------------------------------
+ Global Footer
+------------------------------------------------------------------------ */
+@media only screen and (min-width: 70em) {
+    .top {
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 999999999;
+        background: rgba(0,0,0,.3);
+    }
+    
+    .top > a {
+        display: block;
+        height: 60px;
+        width: 60px;
+        text-indent: -9999px;
+        position: relative;
+    }
+    
+    .top a:after {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 14px;
+        width: 0px;
+        height: 20px;
+        border-bottom: 16px solid rgba(255,255,255,.8);
+        border-left: 16px solid transparent;
+        border-right: 16px solid transparent;
+    }
+}

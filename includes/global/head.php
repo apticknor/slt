@@ -58,4 +58,4 @@
         <![endif]-->
         <script type="text/javascript" src="<?php echo $site_url; ?>assets/scripts/global.js"></script>
     </head>
-    <body>
+    <body id="page-top">
