@@ -76,7 +76,6 @@
                     <h3 class="isHidden">Our Team</h3>
                     <div class="intro">
                         <p>We're a highly-skilled team of experienced UX professionals. We trill the challenge of turning complex business problems into simple, elegant solutions. We love to sketch, protoype, and explore what's possible. Whether your goal is to bvoost sales or improve customer satisfaction. We can help.</p>
-                        <p><strong class="isBold">Interested in joining our Team?</strong> <a href="mailto:jobs@straightlinetheory.com" class="link-callout">jobs@straightlinetheory.com</a></p>
                     </div>
                     <ul class="blocks blocks_tight blocks_2upThen3up">
                         <li>

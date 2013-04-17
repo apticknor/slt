@@ -686,26 +686,17 @@ audio {
 .navList > li > a {
     display: block;
     padding: 14px 0;
-    background: #ffffff;
+    background-color: #e9642a;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 14px;
-    color: #e9642a;
-    -webkit-transition: background-color .2s ease-in-out;
-    -moz-transition:    background-color .2s ease-in-out;
-    -ms-transition:     background-color .2s ease-in-out;
-    -o-transition:      background-color .2s ease-in-out;
-    transition:         background-color .2s ease-in-out;
-}
-
-.navList > li > a:hover {
-    background-color: #f2f2f2;
+    color: #ffffff;
 }
 
 .navList > li.isActive > a {
-    background-color: #40989b;
-    color: #2b4242;
+    background-color: #ffffff;
+    color: #e9642a;
     cursor: default;
 }
 
