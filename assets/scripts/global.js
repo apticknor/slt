@@ -230,6 +230,7 @@ APP.Carousel = {
     $keySlide: undefined,
     // DOM elements we'll create
     $pagination: undefined,
+    $paginationLinks: undefined,
     $prev: undefined,
     $next: undefined,
     // Other object properties
@@ -271,8 +272,9 @@ APP.Carousel = {
         $pagination.find('.paginationDot').eq(0).addClass('isActive');
 
         this.$pagination = $pagination;
-        this.$prev = $('<span class="carousel-controls-btn carousel-controls-btn_prev">Previous Slide</span>');
-        this.$next = $('<span class="carousel-controls-btn carousel-controls-btn_next">Next Slide</span>');
+        this.$paginationLinks = $pagination.find('.paginationDot');
+        this.$prev = $('<span class="carousel-controls-btn carousel-controls-btn_prev"></span>');
+        this.$next = $('<span class="carousel-controls-btn carousel-controls-btn_next"></span>');
 
         $controls.append(this.$prev);
         $controls.append(this.$next);
@@ -293,6 +295,10 @@ APP.Carousel = {
         this.$next.on('click', function(e){
             e.preventDefault();
             self.onNextSlide();
+        });
+
+        this.$paginationLinks.on('click', function(e){
+            self.gotoSlide($(this).parent().index());
         });
     },
 
