@@ -67,8 +67,8 @@ html {
 
 /* Don't let iOS and WinMobile mobile-optimize text for you */
 html {
-    -webkit-text-size-adjust: none;
-    -ms-text-size-adjust: none;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
 
 
