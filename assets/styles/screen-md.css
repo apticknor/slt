@@ -371,35 +371,68 @@ body {
 /* fine control of map */
 @media only screen and (min-width: 40em) {
     .map {
-        background-position: -384px -60px;
+        background-position: -338px -105px;
     }
 
     .map-pin {
-        left: 96px;
-        top: 172px;
+        left: 136px;
+        top: 137px;
+    }
+}
+
+@media only screen and (min-width: 44em) {
+    .map {
+        background-position: -303px -105px;
+    }
+
+    .map-pin {
+        left: 171px;
+        top: 137px;
+    }
+}
+
+@media only screen and (min-width: 46.5em) {
+    .map {
+        background-position: -268px -105px;
+    }
+
+    .map-pin {
+        left: 206px;
+        top: 137px;
     }
 }
 
 @media only screen and (min-width: 48em) {
     .map {
-        background-position: -340px -60px;
+        background-position: -238px -105px;
     }
 
     .map-pin {
-        left: 140px;
-        top: 172px;
+        left: 236px;
+        top: 137px;
+    }
+}
+
+@media only screen and (min-width: 50em) {
+    .map {
+        background-position: -208px -105px;
+    }
+
+    .map-pin {
+        left: 266px;
+        top: 137px;
     }
 }
 
 @media only screen and (min-width: 52em) {
     .map {
         height: 534px;
-        background-position: -300px -20px;
+        background-position: -244px -40px;
     }
 
     .map-pin {
-        left: 180px;
-        top: 212px;
+        left: 240px;
+        top: 188px;
     }
 
     .map-overlay {
