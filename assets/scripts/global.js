@@ -533,11 +533,7 @@ APP.OnScreenWatcher = {
         var scrollOffset = APP.$window.height() + APP.$window.scrollTop();
         var elOffset     = elPosition.top + $el.height();
 
-        if (scrollOffset > elPosition.top && elOffset > APP.$window.scrollTop()) {
-            return true;
-        }
-
-        return false;
+        return scrollOffset > elPosition.top && elOffset > APP.$window.scrollTop(); // Is $el on screen?
     }
 };
 
