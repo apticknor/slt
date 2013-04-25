@@ -553,7 +553,9 @@ audio {
 
 .teaser-bd {
     margin-bottom: 20px;
-    line-height: 1.4;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 1px;
 }
 
 /* ---------------------------------------------------------------------
