@@ -4,7 +4,7 @@
                 <div class="map">
                     <a href="http://goo.gl/maps/zxYDZ" rel="external" class="map-pin"></a>
                     <div class="map-overlay">
-                        <div class="box box_mute box_basic">
+                        <div class="box box_mute box_basic box_withArrow">
                             <div class="teaser">
                                 <div class="teaser-hd">
                                     <h2 class="hdg hdg_subSection hdg_bold">

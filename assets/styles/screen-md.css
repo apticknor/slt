@@ -116,6 +116,47 @@ body {
     box-shadow:         0 4px 10px #a7a49d;
 }
 
+.box_withArrow {
+    position: relative;
+}
+
+.box_withArrow:before {
+    content: '';
+    position: absolute;
+    top: 52px;
+    left: -20px;
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 10px #a7a49d;
+    -moz-box-shadow:    0 0 10px #a7a49d;
+    -ms-box-shadow:     0 0 10px #a7a49d;
+    -o-box-shadow:      0 0 10px #a7a49d;
+    box-shadow:         0 0 10px #a7a49d;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.box_withArrow:after {
+    content: '';
+    position: absolute;
+    top: 52px;
+    left: -20px;
+    height: 40px;
+    width: 40px;
+    background: #ffffff;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+
 /* ---------------------------------------------------------------------
  Blocks
 ------------------------------------------------------------------------ */
