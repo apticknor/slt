@@ -138,6 +138,30 @@
                                 </div>
                             </div>
                         </li>
+                        <li>
+                            <div class="feature">
+                                <div class="feature-img">
+                                    <img src="<?php echo $site_url; ?>assets/images/content/john-dusek.jpg" alt="John Dusek" />
+                                </div>
+                                <div class="feature-hd">
+                                    <h4 class="hdg hdg_bold">John Dusek</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="mailto:jobs@straightlinetheory.com">
+                                <div class="box box_inset box_dark">
+                                    <div class="feature">
+                                        <div class="feature-subline">
+                                            <h3 class="hdg hdg_major hdg_white hdg_bold">Interested in joining our Team?</h3>
+                                        </div>
+                                        <div class="feature-meta">
+                                            <span class="isBold">jobs@straightlinetheory.com</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>

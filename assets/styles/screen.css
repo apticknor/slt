@@ -380,6 +380,11 @@ audio {
     line-height: 1.2;
 }
 
+.hdg_major {
+    font-size: 30px;
+    line-height: 1.2;
+}
+
 /* hdg mixins */
 .hdg_gray { color: #606158; }
 .hdg_green { color: #315314; }
@@ -420,6 +425,21 @@ audio {
     margin-bottom: 20px;
     background-color: #b0ce6d; /* fallback for non rgba */
     background-color: rgba(255,255,255,.18);
+}
+
+.box_dark {
+    color: #ffffff;
+    background-color: #176164; /* fallback for non rgba */
+    background-color: rgba(23,97,100,.88);
+}
+
+.box_dark a {
+    color: #e9642a;
+}
+
+
+.box_inset {
+    padding: 22px;
 }
 
 .box_basic {
@@ -481,6 +501,15 @@ audio {
 
 .feature-subhd {
     margin-bottom: 12px;
+}
+
+.feature-subline {
+    margin-bottom: 20px;
+}
+
+.feature-meta {
+    color: #e9642a;
+    font-weight: bold;
 }
 
 /* ---------------------------------------------------------------------
@@ -756,9 +785,4 @@ audio {
     .carousel-controls-btn_prev { background-image: url(../images/design/arrow-prev-mobile@2x.png); }
 
     .carousel-controls-btn_next { background-image: url(../images/design/arrow-next-mobile@2x.png); }
-
-    .paginationDot {
-        background-image: url(../images/design/pagination-dots@2x.png);
-        background-size: 86px;
-    }
 }
