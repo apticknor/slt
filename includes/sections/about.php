@@ -139,16 +139,6 @@
                             </div>
                         </li>
                         <li class="js-monitorIsOnScreen hasOpacityChange">
-                            <div class="feature">
-                                <div class="feature-employee" data-height-watch-group-member="teamMembers">
-                                    <img src="<?php echo $site_url; ?>assets/images/content/john-dusek.jpg" alt="John Dusek" />
-                                </div>
-                                <div class="feature-hd">
-                                    <h4 class="hdg hdg_bold">John Dusek</h4>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="js-monitorIsOnScreen hasOpacityChange">
                             <a class="blockAnchor" href="mailto:jobs@straightlinetheory.com">
                                 <div class="box box_plain box_dark" data-height-watch-group-member="teamMembers">
                                     <div class="box box_inset box_transparent">
