@@ -415,6 +415,21 @@ body {
 }
 
 /* ---------------------------------------------------------------------
+ Manage Is-On-Screen Opacity Changes
+------------------------------------------------------------------------ */
+.hasOpacityChange {
+    -webkit-transition: opacity 1.2s ease-in-out;
+    -moz-transition: opacity 1.2s ease-in-out;
+    -o-transition: opacity 1.2s ease-in-out;
+    transition: opacity 1.2s ease-in-out;
+    opacity: 0.2;
+}
+
+.hasOpacityChange.isOnScreen {
+    opacity: 1;
+}
+
+/* ---------------------------------------------------------------------
  Diagonal Stripes
 ------------------------------------------------------------------------ */
 .stripes {

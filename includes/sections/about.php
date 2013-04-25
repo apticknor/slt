@@ -9,19 +9,19 @@
                     <h3 class="isHidden">Our Difference</h3>
                     <div class="hub">
                         <div class="hub-panel hub-panel_1of5">
-                            <img src="<?php echo $site_url; ?>assets/images/content/hub1.jpg" alt="" />
+                            <img class="js-monitorIsOnScreen hasOpacityChange" src="<?php echo $site_url; ?>assets/images/content/hub1.jpg" alt="" />
                         </div>
                         <div class="hub-panel hub-panel_2of5">
-                            <img src="<?php echo $site_url; ?>assets/images/content/hub2.jpg" alt="" />
+                            <img class="js-monitorIsOnScreen hasOpacityChange" src="<?php echo $site_url; ?>assets/images/content/hub2.jpg" alt="" />
                         </div>
                         <div class="hub-panel hub-panel_3of5">
-                            <img src="<?php echo $site_url; ?>assets/images/content/hub3.jpg" alt="" />
+                            <img class="js-monitorIsOnScreen hasOpacityChange" src="<?php echo $site_url; ?>assets/images/content/hub3.jpg" alt="" />
                         </div>
                         <div class="hub-panel hub-panel_4of5">
-                            <img src="<?php echo $site_url; ?>assets/images/content/hub4.jpg" alt="" />
+                            <img class="js-monitorIsOnScreen hasOpacityChange" src="<?php echo $site_url; ?>assets/images/content/hub4.jpg" alt="" />
                         </div>
                         <div class="hub-panel hub-panel_5of5">
-                            <img src="<?php echo $site_url; ?>assets/images/content/hub5.jpg" alt="" />
+                            <img class="js-monitorIsOnScreen hasOpacityChange" src="<?php echo $site_url; ?>assets/images/content/hub5.jpg" alt="" />
                         </div>
                     </div>
                     <ul class="blocks blocks_2upThen4up" data-height-watch-group="differencesHeadlines" data-height-watch-disable-width="656">
@@ -78,7 +78,7 @@
                         <p>We're a highly-skilled team of experienced UX professionals. We trill the challenge of turning complex business problems into simple, elegant solutions. We love to sketch, protoype, and explore what's possible. Whether your goal is to bvoost sales or improve customer satisfaction. We can help.</p>
                     </div>
                     <ul class="blocks blocks_tight blocks_2upThen3up" data-height-watch-group="teamMembers">
-                        <li>
+                        <li class="js-monitorIsOnScreen hasOpacityChange">
                             <div class="feature">
                                 <div class="feature-employee" data-height-watch-group-member="teamMembers">
                                     <img src="<?php echo $site_url; ?>assets/images/content/andrew-benson.jpg" alt="Andrew Benson" />
@@ -88,7 +88,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li class="js-monitorIsOnScreen hasOpacityChange">
                             <div class="feature">
                                 <div class="feature-employee" data-height-watch-group-member="teamMembers">
                                     <img src="<?php echo $site_url; ?>assets/images/content/kristen-skifstad.jpg" alt="Kristen Skifstad" />
@@ -98,7 +98,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li class="js-monitorIsOnScreen hasOpacityChange">
                             <div class="feature">
                                 <div class="feature-employee" data-height-watch-group-member="teamMembers">
                                     <img src="<?php echo $site_url; ?>assets/images/content/jay-mathews.jpg" alt="Jay Mathews" />
@@ -108,7 +108,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li class="js-monitorIsOnScreen hasOpacityChange">
                             <div class="feature">
                                 <div class="feature-employee" data-height-watch-group-member="teamMembers">
                                     <img src="<?php echo $site_url; ?>assets/images/content/laura-horan.jpg" alt="Laura Horan" />
@@ -118,7 +118,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li class="js-monitorIsOnScreen hasOpacityChange">
                             <div class="feature">
                                 <div class="feature-employee" data-height-watch-group-member="teamMembers">
                                     <img src="<?php echo $site_url; ?>assets/images/content/roy-neal.jpg" alt="Roy Neal" />
@@ -128,7 +128,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li class="js-monitorIsOnScreen hasOpacityChange">
                             <div class="feature">
                                 <div class="feature-employee" data-height-watch-group-member="teamMembers">
                                     <img src="<?php echo $site_url; ?>assets/images/content/john-dusek.jpg" alt="John Dusek" />
@@ -138,7 +138,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li class="js-monitorIsOnScreen hasOpacityChange">
                             <div class="feature">
                                 <div class="feature-employee" data-height-watch-group-member="teamMembers">
                                     <img src="<?php echo $site_url; ?>assets/images/content/john-dusek.jpg" alt="John Dusek" />
@@ -148,7 +148,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li class="js-monitorIsOnScreen hasOpacityChange">
                             <a class="blockAnchor" href="mailto:jobs@straightlinetheory.com">
                                 <div class="box box_plain box_dark" data-height-watch-group-member="teamMembers">
                                     <div class="box box_inset box_transparent">

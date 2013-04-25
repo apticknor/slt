@@ -32,6 +32,7 @@ var SLT = SLT || {};
         APP.Tabs.init();
         APP.Carousel.init();
         APP.HeightWatchers.init();
+        APP.OnScreenWatcher.init('isOnScreen', 'js-monitorIsOnScreen');
     });
 
 /* ---------------------------------------------------------------------
@@ -200,6 +201,8 @@ APP.Tabs = {
 
         this.$tabControls.find('li').eq(slideIndex).addClass('isActive');
         this.$tabContent.eq(slideIndex).removeClass('isHidden');
+        APP.$window.trigger('resize');
+        APP.$window.trigger('scroll');
     }
 };
 
@@ -467,6 +470,75 @@ HeightWatcher.prototype.setHeights = function() {
     this.$watchedElements.each(function(){
         $(this).height(height);
     });
+}
+
+
+/* ---------------------------------------------------------------------
+OnScreenWatcher
+Author: Dan Piscitiello
+
+Monitors DOM elements and toggles class when on screen
+------------------------------------------------------------------------ */
+APP.OnScreenWatcher = {
+    ON_SCREEN_ACTIVE_CLASS: '',
+    MONITOR_ME_CLASS: '',
+    $monitorCollection: null,
+
+    init: function(onScreenActiveClass, monitorMeClass) {
+        if (!onScreenActiveClass || !monitorMeClass) {
+            return;
+        }
+
+        this.ON_SCREEN_ACTIVE_CLASS = onScreenActiveClass;
+        this.MONITOR_ME_CLASS = monitorMeClass;
+        this.$monitorCollection = $("." + monitorMeClass);
+
+        if (!this.$monitorCollection.length) {
+            this.$monitorCollection = null;
+            return;
+        }
+
+        this.bind();
+    },
+
+    bind: function() {
+        var self = this;
+
+        APP.$window.on('scroll resize', function(){
+            self.checkElementsOnScreen();
+        });
+    },
+
+    checkElementsOnScreen: function() {
+        var self = this;
+        this.$monitorCollection.each(function(){
+            var $this = $(this);
+            if (self.isOnScreen($this)) {
+                $this.addClass(self.ON_SCREEN_ACTIVE_CLASS);
+            } else {
+                $this.removeClass(self.ON_SCREEN_ACTIVE_CLASS);
+            }
+        });
+    },
+
+    /*
+     * isOnScreen
+     * returns: Boolean
+     *
+     * Whether or not the passed jQuery object is on screen
+     *
+     */
+    isOnScreen: function($el) {
+        var elPosition   = $el.offset();
+        var scrollOffset = APP.$window.height() + APP.$window.scrollTop();
+        var elOffset     = elPosition.top + $el.height();
+
+        if (scrollOffset > elPosition.top && elOffset > APP.$window.scrollTop()) {
+            return true;
+        }
+
+        return false;
+    }
 }
 
 }(jQuery, SLT));

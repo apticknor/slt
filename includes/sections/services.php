@@ -5,8 +5,8 @@
             </div>
             <div class="section-bd section-bd_services" data-height-watch-group="servicesBoxes" data-height-watch-disable-width="656">
                 <ul class="blocks blocks_3up" data-height-watch-group="servicesHeadlines" data-height-watch-disable-width="656">
-                    <li>
-                        <div class="box" data-height-watch-group-member="servicesBoxes">
+                    <li class="js-monitorIsOnScreen hasOpacityChange">
+                        <div class="box js-monitorIsOnScreen" data-height-watch-group-member="servicesBoxes">
                             <div class="feature">
                                 <div class="feature-img">
                                     <div class="imgConstraint">
@@ -22,8 +22,8 @@
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="box" data-height-watch-group-member="servicesBoxes">
+                    <li class="js-monitorIsOnScreen hasOpacityChange">
+                        <div class="box js-monitorIsOnScreen" data-height-watch-group-member="servicesBoxes">
                             <div class="feature">
                                 <div class="feature-img">
                                     <div class="imgConstraint">
@@ -39,7 +39,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="js-monitorIsOnScreen hasOpacityChange">
                         <div class="box" data-height-watch-group-member="servicesBoxes">
                             <div class="feature">
                                 <div class="feature-img">
