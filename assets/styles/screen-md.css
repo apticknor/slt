@@ -57,14 +57,29 @@ body {
     padding: 80px 66px; /* lateral padding should match carousel btn width, plus a bit */
 }
 
+.section_about {
+    position: relative;
+    z-index: 50; /* stack above contact section */
+}
+
 /* contact section */
 .section_contact {
     padding: 0;
+    position: relative;
+    z-index: 40; /* stack below about section */
 }
 
 .section-bd_contact {
-    position: relative;
     max-width: 1364px;
+}
+
+.section-bd_contact.isOnScreen {
+    position: relative;
+}
+
+.globalFooter {
+    position: relative;
+    z-index: 50; /*stack above contact section */
 }
 
 /* ---------------------------------------------------------------------

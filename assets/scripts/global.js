@@ -33,6 +33,7 @@ var SLT = SLT || {};
         APP.Carousel.init();
         APP.HeightWatchers.init();
         APP.OnScreenWatcher.init('isOnScreen', 'js-monitorIsOnScreen');
+        APP.ContactSection.init('.section-bd_contact');
     });
 
 /* ---------------------------------------------------------------------
@@ -472,7 +473,6 @@ HeightWatcher.prototype.setHeights = function() {
     });
 }
 
-
 /* ---------------------------------------------------------------------
 OnScreenWatcher
 Author: Dan Piscitiello
@@ -539,6 +539,52 @@ APP.OnScreenWatcher = {
 
         return false;
     }
-}
+};
+
+/* ---------------------------------------------------------------------
+ContactSection
+Author: Dan Piscitiello
+
+Handles Contact section effects
+------------------------------------------------------------------------ */
+APP.ContactSection = {
+    $el: null,
+
+    init: function(selector) {
+        if (!selector) {
+            return;
+        }
+
+        this.$el = $(selector);
+
+        if (!this.$el.length) {
+            this.$el = null;
+            return;
+        }
+
+        this.bind();
+    },
+
+    bind: function() {
+        var self = this;
+        APP.$window.on('scroll resize', function(){
+            self.positionEl();
+        });
+    },
+
+    positionEl: function() {
+        var elPosition   = this.$el.offset();
+        var elHeight     = this.$el.height();
+        var scrollOffset = APP.$window.height() + APP.$window.scrollTop();
+        var difference = -(elHeight - (scrollOffset - elPosition.top + this.$el.position().top));
+
+        if (difference >= 0 || difference <= -elHeight) {
+            this.$el.css('top', 'auto');
+            return;
+        }
+
+        this.$el.css('top', difference);
+    }
+};
 
 }(jQuery, SLT));

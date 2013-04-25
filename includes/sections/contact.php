@@ -1,6 +1,6 @@
         <!--- SECTION CONTACT -->
         <div class="section section_contact" role="contentinfo" id="page-contact">
-            <div class="section-bd section-bd_contact">
+            <div class="section-bd section-bd_contact js-monitorIsOnScreen">
                 <div class="map">
                     <a href="http://goo.gl/maps/zxYDZ" rel="external" class="map-pin"></a>
                     <div class="map-overlay">
