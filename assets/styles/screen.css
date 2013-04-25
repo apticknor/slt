@@ -385,7 +385,7 @@ audio {
 }
 
 .hdg_major {
-    font-size: 30px;
+    font-size: 13px;
     line-height: 1.2;
 }
 
@@ -527,13 +527,11 @@ audio {
     margin-bottom: 12px;
 }
 
-.feature-subline {
-    margin-bottom: 20px;
-}
-
 .feature-meta {
     color: #e9642a;
     font-weight: bold;
+    margin-top: 20px;
+    display: none;
 }
 
 /* ---------------------------------------------------------------------
