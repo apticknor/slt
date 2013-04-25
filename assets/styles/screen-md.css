@@ -70,11 +70,8 @@ body {
 }
 
 .section-bd_contact {
-    max-width: 1364px;
-}
-
-.section-bd_contact.isOnScreen {
     position: relative;
+    max-width: 1364px;
 }
 
 .globalFooter {
