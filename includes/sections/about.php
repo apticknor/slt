@@ -77,10 +77,10 @@
                     <div class="intro">
                         <p>We're a highly-skilled team of experienced UX professionals. We trill the challenge of turning complex business problems into simple, elegant solutions. We love to sketch, protoype, and explore what's possible. Whether your goal is to bvoost sales or improve customer satisfaction. We can help.</p>
                     </div>
-                    <ul class="blocks blocks_tight blocks_2upThen3up">
+                    <ul class="blocks blocks_tight blocks_2upThen3up" data-height-watch-group="teamMembers">
                         <li>
                             <div class="feature">
-                                <div class="feature-img">
+                                <div class="feature-employee" data-height-watch-group-member="teamMembers">
                                     <img src="<?php echo $site_url; ?>assets/images/content/andrew-benson.jpg" alt="Andrew Benson" />
                                 </div>
                                 <div class="feature-hd">
@@ -90,7 +90,7 @@
                         </li>
                         <li>
                             <div class="feature">
-                                <div class="feature-img">
+                                <div class="feature-employee" data-height-watch-group-member="teamMembers">
                                     <img src="<?php echo $site_url; ?>assets/images/content/kristen-skifstad.jpg" alt="Kristen Skifstad" />
                                 </div>
                                 <div class="feature-hd">
@@ -100,7 +100,7 @@
                         </li>
                         <li>
                             <div class="feature">
-                                <div class="feature-img">
+                                <div class="feature-employee" data-height-watch-group-member="teamMembers">
                                     <img src="<?php echo $site_url; ?>assets/images/content/jay-mathews.jpg" alt="Jay Mathews" />
                                 </div>
                                 <div class="feature-hd">
@@ -110,7 +110,7 @@
                         </li>
                         <li>
                             <div class="feature">
-                                <div class="feature-img">
+                                <div class="feature-employee" data-height-watch-group-member="teamMembers">
                                     <img src="<?php echo $site_url; ?>assets/images/content/laura-horan.jpg" alt="Laura Horan" />
                                 </div>
                                 <div class="feature-hd">
@@ -120,7 +120,7 @@
                         </li>
                         <li>
                             <div class="feature">
-                                <div class="feature-img">
+                                <div class="feature-employee" data-height-watch-group-member="teamMembers">
                                     <img src="<?php echo $site_url; ?>assets/images/content/roy-neal.jpg" alt="Roy Neal" />
                                 </div>
                                 <div class="feature-hd">
@@ -130,7 +130,7 @@
                         </li>
                         <li>
                             <div class="feature">
-                                <div class="feature-img">
+                                <div class="feature-employee" data-height-watch-group-member="teamMembers">
                                     <img src="<?php echo $site_url; ?>assets/images/content/john-dusek.jpg" alt="John Dusek" />
                                 </div>
                                 <div class="feature-hd">
@@ -140,7 +140,7 @@
                         </li>
                         <li>
                             <div class="feature">
-                                <div class="feature-img">
+                                <div class="feature-employee" data-height-watch-group-member="teamMembers">
                                     <img src="<?php echo $site_url; ?>assets/images/content/john-dusek.jpg" alt="John Dusek" />
                                 </div>
                                 <div class="feature-hd">
@@ -149,14 +149,16 @@
                             </div>
                         </li>
                         <li>
-                            <a href="mailto:jobs@straightlinetheory.com">
-                                <div class="box box_inset box_dark">
-                                    <div class="feature">
-                                        <div class="feature-subline">
-                                            <h3 class="hdg hdg_major hdg_white hdg_bold">Interested in joining our Team?</h3>
-                                        </div>
-                                        <div class="feature-meta">
-                                            <span class="isBold">jobs@straightlinetheory.com</span>
+                            <a class="blockAnchor" href="mailto:jobs@straightlinetheory.com">
+                                <div class="box box_plain box_dark" data-height-watch-group-member="teamMembers">
+                                    <div class="box box_inset box_transparent">
+                                        <div class="feature">
+                                            <div class="feature-subline">
+                                                <h3 class="hdg hdg_major hdg_white hdg_bold">Interested in joining our Team?</h3>
+                                            </div>
+                                            <div class="feature-meta">
+                                                <span class="isBold">jobs@straightlinetheory.com</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

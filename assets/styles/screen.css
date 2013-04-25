@@ -173,6 +173,10 @@ audio {
     display: block;
 }
 
+.blockAnchor {
+    display: block;
+}
+
 /* ---------------------------------------------------------------------
  Logo
 ------------------------------------------------------------------------ */
@@ -427,24 +431,33 @@ audio {
     background-color: rgba(255,255,255,.18);
 }
 
-.box_dark {
-    color: #ffffff;
-    background-color: #176164; /* fallback for non rgba */
-    background-color: rgba(23,97,100,.88);
+.box_basic {
+    margin: 0;
+    background-color: transparent;
+}
+
+.box_plain {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.box_transparent {
+    background-color: transparent;
 }
 
 .box_dark a {
     color: #e9642a;
 }
 
+.box_dark {
+    color: #ffffff;
+    background-color: #176164; /* fallback for non rgba */
+    background-color: rgba(23,97,100,.88);
+}
 
 .box_inset {
     padding: 22px;
-}
-
-.box_basic {
-    margin: 0;
-    background-color: transparent;
 }
 
 /* ---------------------------------------------------------------------
@@ -492,6 +505,17 @@ audio {
     text-align: center;
     margin-bottom: 12px;
     margin: 0 auto;
+}
+
+.feature-employee {
+    text-align: center;
+    margin-bottom: 12px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.feature-employee img {
+    display: block;
 }
 
 .feature-hd {
