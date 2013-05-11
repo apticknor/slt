@@ -245,6 +245,8 @@ APP.Carousel = {
     currentSlide: 0,
     numSlides: 0,
 
+    CLICKEVENTTYPE: null,
+
     init: function() {
         var $carousel = $('#portfolioCarousel');
         var $viewport = $carousel.find('.carousel-slides');
@@ -264,6 +266,7 @@ APP.Carousel = {
         this.$keySlide = $keySlide;
 
         this.numSlides = this.$slides.length;
+        this.CLICKEVENTTYPE = APP.isTouch ? 'touchstart' : 'click';
 
         this.createMarkup().bindEvents();
 
@@ -295,17 +298,17 @@ APP.Carousel = {
     bindEvents: function() {
         var self = this;
 
-        this.$prev.on('click', function(e){
+        this.$prev.on(self.CLICKEVENTTYPE, function(e){
             e.preventDefault();
             self.onPreviousSlide();
         });
 
-        this.$next.on('click', function(e){
+        this.$next.on(self.CLICKEVENTTYPE, function(e){
             e.preventDefault();
             self.onNextSlide();
         });
 
-        this.$paginationLinks.on('click', function(e){
+        this.$paginationLinks.on(self.CLICKEVENTTYPE, function(e){
             self.gotoSlide($(this).parent().index());
         });
     },
