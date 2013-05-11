@@ -42,20 +42,5 @@
         <!--[if lt IE 8]>
         <link rel="stylesheet" media="screen" href="<?php echo $site_url; ?>assets/styles/ie-legacy.css" />
         <![endif]-->
-
-        <!-- JQUERY -->
-        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-        <script type="text/javascript" src="<?php echo $site_url; ?>assets/scripts/jquery.easing.js"></script>
-
-        <!-- JAVASCRIPT -->
-        <script type="text/javascript">
-            var legacyIE;
-        </script>
-        <!--[if lt IE 8]>
-        <script type="text/javascript">
-            var legacyIE = true;
-        </script>
-        <![endif]-->
-        <script type="text/javascript" src="<?php echo $site_url; ?>assets/scripts/global.js"></script>
     </head>
     <body id="page-top">
