@@ -34,6 +34,7 @@ var SLT = SLT || {};
         APP.HeightWatchers.init();
         APP.OnScreenWatcher.init('isOnScreen', 'js-monitorIsOnScreen');
         APP.ContactSection.init('.section-bd_contact');
+        APP.Stripes.init();
     });
 
 /* ---------------------------------------------------------------------
@@ -478,6 +479,12 @@ OnScreenWatcher
 Author: Dan Piscitiello
 
 Monitors DOM elements and toggles class when on screen
+
+param: onScreenActiveClass, string
+- CSS class that will be added and removed as items are on and off screen
+
+param: monitorMeClass, string
+- CSS class that this object will search for to monitor
 ------------------------------------------------------------------------ */
 APP.OnScreenWatcher = {
     ON_SCREEN_ACTIVE_CLASS: '',
@@ -580,6 +587,47 @@ APP.ContactSection = {
         }
 
         this.$el.css('top', difference);
+    }
+};
+
+/* ---------------------------------------------------------------------
+Stripes
+Author: Dan Piscitiello
+
+Handles animation of stripes
+------------------------------------------------------------------------ */
+APP.Stripes = {
+    $el: null,
+    oTop: 0,
+    scrollRatio: 2,
+
+    init: function() {
+        this.$el = $(document.getElementById('topLeftStripe'));
+
+        if (!this.$el.length) {
+            this.$el = null;
+            return;
+        }
+
+        this.oTop = parseInt(this.$el.css('top'), 10);
+
+        this.bind();
+    },
+
+    bind: function() {
+        var self = this;
+
+        APP.$window.on('scroll resize', function() {
+            self.handleStripeScroll();
+        });
+    },
+
+    handleStripeScroll: function() {
+        var self = this;
+
+        this.$el.css({
+            top: self.oTop + APP.$window.scrollTop() / self.scrollRatio
+        });
     }
 };
 
