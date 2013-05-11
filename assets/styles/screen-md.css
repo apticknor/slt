@@ -523,6 +523,15 @@ body {
     opacity: 1;
 }
 
+/* Touch devices should not have this effect */
+.touch .hasOpacityChange {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+    opacity: 1;
+}
+
 /* ---------------------------------------------------------------------
  Diagonal Stripes
 ------------------------------------------------------------------------ */

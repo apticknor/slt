@@ -32,9 +32,12 @@ var SLT = SLT || {};
         APP.Tabs.init();
         APP.Carousel.init();
         APP.HeightWatchers.init();
-        APP.OnScreenWatcher.init('isOnScreen', 'js-monitorIsOnScreen');
-        APP.ContactSection.init('.section-bd_contact');
-        APP.Stripes.init();
+
+        if (!APP.Features.isTouch) {
+            APP.OnScreenWatcher.init('isOnScreen', 'js-monitorIsOnScreen');
+            APP.ContactSection.init('.section-bd_contact');
+            APP.Stripes.init();
+        }
     });
 
 /* ---------------------------------------------------------------------
