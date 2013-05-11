@@ -602,6 +602,15 @@ audio {
     transition:         background-color .2s ease-in-out;
 }
 
+.touch .carousel-controls-btn {
+    -webkit-transition: none;
+    -moz-transition:    none;
+    -ms-transition:     none;
+    -o-transition:      none;
+    transition:         none;
+    background-color: rgba(234, 234, 234, 0.68);
+}
+
 .carousel-controls-btn_prev {
     left: 0;
     background: transparent url(../images/design/arrow-prev-mobile.png) no-repeat center center;
