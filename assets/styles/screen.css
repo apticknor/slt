@@ -199,6 +199,11 @@ audio {
     background-color: #efefef;
     background-color: rgba(255,255,255,.7);
     box-shadow: 0 0 12px rgba(0,0,0,.2);
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
 }
 
 .nav-inner {
@@ -553,7 +558,9 @@ audio {
 
 .teaser-bd {
     margin-bottom: 20px;
-    line-height: 1.4;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 1px;
 }
 
 /* ---------------------------------------------------------------------
