@@ -234,8 +234,8 @@ APP.Carousel = {
     // DOM elements that should exist
     $carousel: undefined,
     $viewport: undefined,
+    $slideWrapper: undefined,
     $slides: undefined,
-    $keySlide: undefined,
     // DOM elements we'll create
     $pagination: undefined,
     $paginationLinks: undefined,
@@ -249,24 +249,26 @@ APP.Carousel = {
 
     init: function() {
         var $carousel = $('#portfolioCarousel');
-        var $viewport = $carousel.find('.carousel-slides');
-        var $slides = $viewport.children();
+        var $viewport = $carousel.find('.carousel-viewport');
+        var $slideWrapper = $carousel.find('.carousel-slides');
+        var $slides = $slideWrapper.children();
         var $keySlide = $slides.eq(0);
 
         if (!$carousel.length ||
             !$viewport.length ||
-            !$slides.length ||
-            !$keySlide.length) {
+            !$slideWrapper.length ||
+            !$slides.length) {
             return;
         }
 
         this.$carousel = $carousel;
         this.$viewport = $viewport;
+        this.$slideWrapper = $slideWrapper;
         this.$slides = $slides;
         this.$keySlide = $keySlide;
 
         this.numSlides = this.$slides.length;
-        this.CLICKEVENTTYPE = APP.isTouch ? 'touchstart' : 'click';
+        this.CLICKEVENTTYPE = APP.Features.isTouch ? 'touchstart' : 'click';
 
         this.createMarkup().bindEvents();
 
@@ -328,9 +330,9 @@ APP.Carousel = {
             index = this.numSlides - 1;
         }
 
-        this.$keySlide.stop().animate(
+        this.$slideWrapper.stop().animate(
             {
-                'margin-left': (-(index * 100)) + "%"
+                'left': (-(index * 100)) + "%"
             },
             300,
             'easeOutQuad'

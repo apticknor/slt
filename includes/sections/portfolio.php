@@ -7,10 +7,12 @@
                 <div class="promo">
                     <div class="promo-bd">
                         <div class="carousel" id="portfolioCarousel">
-                            <ul class="carousel-slides">
-                                <li><img src="assets/images/content/fpo-slide.png" alt="" /></li>
-                                <li><img src="assets/images/content/fpo-slide.png" alt="" /></li>
-                            </ul>
+                            <div class="carousel-viewport">
+                                <ul class="carousel-slides">
+                                    <li><img src="assets/images/content/fpo-slide.png" alt="" /></li>
+                                    <li><img src="assets/images/content/fpo-slide.png" alt="" /></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="promo-ft">
