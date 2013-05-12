@@ -330,22 +330,24 @@ body {
 .map-overlay {
     position: absolute;
     top: 50%;
-    right: 60px;
-    margin-top: -114px; /* vertically center on the map */
+    left: 40px;
+    margin-top: -124px; /* vertically center on the map */
     z-index: 999;
 }
 
 /* enclose to mediaquery to identify modern browser */
 @media only screen and (min-width: 1em) {
-    .map-pin {
+    .map-overlay-pin {
         display: block;
         position: absolute;
+        left: -91px;
+        top: 40px;
         width: 61px;
         height: 88px;
         background: transparent url("../images/design/map-pin.png") no-repeat 0 0;
     }
 
-    .map-pin:hover {
+    .map-overlay-pin:hover {
         -webkit-animation: wobble .7s linear 0s infinite normal;
         -moz-animation:    wobble .7s linear 0s infinite normal;
         -ms-animation:     wobble .7s linear 0s infinite normal;
@@ -385,10 +387,10 @@ body {
     .map {
         background-position: -338px -105px;
     }
-
-    .map-pin {
-        left: 136px;
-        top: 137px;
+    
+    .map-overlay {
+        left: 216px;
+        top: 52%;
     }
 }
 
@@ -397,9 +399,9 @@ body {
         background-position: -303px -105px;
     }
 
-    .map-pin {
-        left: 171px;
-        top: 137px;
+    .map-overlay {
+        left: 251px;
+        top: 52%;
     }
 }
 
@@ -408,9 +410,9 @@ body {
         background-position: -268px -105px;
     }
 
-    .map-pin {
-        left: 206px;
-        top: 137px;
+    .map-overlay {
+        left: 286px;
+        top: 52%;
     }
 }
 
@@ -419,9 +421,9 @@ body {
         background-position: -238px -105px;
     }
 
-    .map-pin {
-        left: 236px;
-        top: 137px;
+    .map-overlay {
+        left: 316px;
+        top: 52%;
     }
 }
 
@@ -430,9 +432,9 @@ body {
         background-position: -208px -105px;
     }
 
-    .map-pin {
-        left: 266px;
-        top: 137px;
+    .map-overlay {
+        left: 346px;
+        top: 52%;
     }
 }
 
@@ -442,13 +444,9 @@ body {
         background-position: -244px -40px;
     }
 
-    .map-pin {
-        left: 240px;
-        top: 188px;
-    }
-
     .map-overlay {
-        right: 100px;
+        left: 310px;
+        top: 55%;
     }
 }
 
@@ -458,53 +456,42 @@ body {
         background-position: -280px 0;
     }
 
-    .map-pin {
-        left: 200px;
-        top: 234px;
-    }
-
     .map-overlay {
-        margin-top: -124px; /* vertically center on the map */
+        left: 274px;
+        top: 52%;
     }
 }
 
 @media only screen and (min-width: 69em) {
     .map {
-        height: 634px;
         background-position: -160px 0;
     }
 
-    .map-pin {
-        left: 320px;
-        top: 234px;
-    }
-
     .map-overlay {
-        right: 200px;
+        left: 394px;
+        top: 52%;
     }
 }
 
 @media only screen and (min-width: 74em) {
     .map {
-        height: 634px;
         background-position: -80px 0;
     }
 
-    .map-pin {
-        left: 400px;
-        top: 234px;
+    .map-overlay {
+        left: 474px;
+        top: 52%;
     }
 }
 
 @media only screen and (min-width: 78em) {
     .map {
-        height: 634px;
         background-position: 0 0;
     }
 
-    .map-pin {
-        left: 480px;
-        top: 234px;
+    .map-overlay {
+        left: 554px;
+        top: 52%;
     }
 }
 
