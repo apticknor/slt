@@ -546,3 +546,21 @@ body {
     transform: rotate(-44deg);
     z-index: 26;
 }
+
+/* 
+.stripes2 {
+    content: "";
+    width: 320%;
+    height: 540px;
+    position: absolute;
+    top: 220%;
+    left: -100%;
+    background: rgba(0,0,0,.08);
+    -webkit-transform: rotate(-44deg);
+    -moz-transform: rotate(-44deg);
+    -ms-transform: rotate(-44deg);
+    -o-transform: rotate(-44deg);
+    transform: rotate(-44deg);
+    z-index: 26;
+}
+*/
