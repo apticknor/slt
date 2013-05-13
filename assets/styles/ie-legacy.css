@@ -114,8 +114,18 @@ p, ol, ul {
 /* ---------------------------------------------------------------------
  Section Portfolio
 ------------------------------------------------------------------------ */
-.section_portfolio {
-    
+.section_portfolio .promo-ft {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.partners {
+    overflow: hidden;
+    zoom: 1;
+}
+
+.partners li {
+    float: left;
 }
 
 /* ---------------------------------------------------------------------
@@ -148,6 +158,20 @@ p, ol, ul {
 
 .section_about .blocks_2upThen3up > li .feature {
     text-align: center;
+}
+
+.section_about .blocks_2upThen3up > li a {
+    text-decoration: none;
+}
+
+.section_about .blocks_2upThen3up > li .pod {
+    padding: 20px;
+    color: #ffffff;
+    background: #e9642a;
+}
+
+.section_about .blocks_2upThen3up > li .hdg_team-preamble {
+    display: block;
 }
 
 /* ---------------------------------------------------------------------

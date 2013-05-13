@@ -15,7 +15,7 @@
 
         <!-- JAVASCRIPT -->
         <script type="text/javascript">
-            var legacyIE = false;;
+            var legacyIE = false;
         </script>
         <!--[if lt IE 8]>
         <script type="text/javascript">
