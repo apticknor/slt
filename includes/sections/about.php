@@ -139,18 +139,19 @@
                             </div>
                         </li>
                         <li class="js-monitorIsOnScreen hasOpacityChange">
+                            <div class="feature">
+                                <div class="feature-employee" data-height-watch-group-member="teamMembers">
+                                    <img src="<?php echo $site_url; ?>assets/images/content/heather-lindh.jpg" alt="John Dusek" />
+                                </div>
+                                <div class="feature-hd">
+                                    <h4 class="hdg hdg_bold">Heather Lindh</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="js-monitorIsOnScreen hasOpacityChange">
                             <a class="blockAnchor" href="mailto:jobs@straightlinetheory.com">
                                 <div class="box box_plain box_dark" data-height-watch-group-member="teamMembers">
-                                    <div class="box box_inset box_transparent">
-                                        <div class="feature">
-                                            <div class="feature-subline">
-                                                <h3 class="hdg hdg_major hdg_white hdg_bold">Interested in joining our Team?</h3>
-                                            </div>
-                                            <div class="feature-meta">
-                                                <span class="isBold">jobs@straightlinetheory.com</span>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                             </a>
                         </li>
