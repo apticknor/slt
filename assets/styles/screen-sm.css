@@ -20,3 +20,27 @@ Width: Small Screen & Up
 .hdg_major {
     font-size: 20px;
 }
+
+.hdg_team {
+    font-size: 16px;
+}
+
+.hdg_team-preamble {
+    display: block;
+}
+
+/* ---------------------------------------------------------------------
+ Pod
+------------------------------------------------------------------------ */
+.pod {
+    padding: 16px 20px;
+}
+
+.pod-hd {
+    text-align: left;
+}
+
+.pod-bd-inner {
+    padding: 16px 20px;
+    font-size: 14px;
+}

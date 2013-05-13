@@ -394,6 +394,15 @@ audio {
     line-height: 1.2;
 }
 
+.hdg_team {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.hdg_team-preamble {
+    display: block;
+}
+
 /* hdg mixins */
 .hdg_gray { color: #606158; }
 .hdg_green { color: #315314; }
@@ -461,8 +470,45 @@ audio {
     background-color: rgba(23,97,100,.88);
 }
 
+.box_cta {
+    position: relative;
+    color: #ffffff;
+    background: #e9642a;
+    font-weight: bold;
+}
+
 .box_inset {
     padding: 22px;
+}
+
+/* ---------------------------------------------------------------------
+ Pod
+------------------------------------------------------------------------ */
+.pod {
+    padding: 12px 10px;
+}
+
+.pod-hd {
+    
+}
+
+.pod-bd {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    background-color: #b74000;
+    font-size: 12px;
+    color: #e9642a;
+}
+
+.pod-bd-inner {
+    padding: 4px 10px;
+}
+
+.pod-bd-inner-lg {
+    display: none;
 }
 
 /* ---------------------------------------------------------------------

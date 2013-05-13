@@ -78,12 +78,32 @@ body {
 }
 
 /* ---------------------------------------------------------------------
+ Pod
+------------------------------------------------------------------------ */
+.pod-bd-inner {
+    padding: 20px;
+    font-size: 18px;
+}
+
+.pod-bd-inner-md {
+    display: none;
+}
+
+.pod-bd-inner-lg {
+    display: block;
+}
+
+/* ---------------------------------------------------------------------
  Headings
     - all headings change sizes / hierarchies as mediaqueries apply
 ------------------------------------------------------------------------ */
 .hdg_section { font-size: 34px; }
 .hdg_subSection { font-size: 22px; }
 .hdg_major { font-size: 28px; }
+.hdg_team {
+    font-size: 24px;
+    text-transform: none;
+}
 /* ---------------------------------------------------------------------
  Blocks
 ------------------------------------------------------------------------ */

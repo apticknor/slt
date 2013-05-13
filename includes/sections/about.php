@@ -150,8 +150,20 @@
                         </li>
                         <li class="js-monitorIsOnScreen hasOpacityChange">
                             <a class="blockAnchor" href="mailto:jobs@straightlinetheory.com">
-                                <div class="box box_plain box_dark" data-height-watch-group-member="teamMembers">
-                                    
+                                <div class="box box_plain box_cta" data-height-watch-group-member="teamMembers">
+                                    <div class="pod">
+                                        <div class="pod-hd">
+                                            <h3 class="hdg_team">
+                                                <span class="hdg_team-preamble">Interested in</span>joining our team?
+                                            </h3>
+                                        </div>
+                                        <div class="pod-bd">
+                                            <div class="pod-bd-inner">
+                                                <span class="pod-bd-inner-md">E-mail us</span>
+                                                <span class="pod-bd-inner-lg">jobs@straightlinetheory.com</span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </a>
                         </li>
