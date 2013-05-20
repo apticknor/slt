@@ -11,6 +11,10 @@ Width: Extra Large Screen & Up
  Sections
 ------------------------------------------------------------------------ */
 
+.section_contact {
+    background-color: #eeeae2;
+}
+
 /* fade the edges of the map when it gets gigantic */
 .section-bd_contact:after {
     content: "";
