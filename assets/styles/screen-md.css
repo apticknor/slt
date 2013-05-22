@@ -53,6 +53,10 @@ body {
     padding: 114px 0;
 }
 
+.section-bd_services {
+    padding: 0 10px;
+}
+
 .section_portfolio {
     padding: 80px 66px; /* lateral padding should match carousel btn width, plus a bit */
 }
@@ -60,6 +64,10 @@ body {
 .section_about {
     position: relative;
     z-index: 50; /* stack above contact section */
+}
+
+.section-bd_about {
+    padding: 0 10px;
 }
 
 /* contact section */
@@ -397,7 +405,7 @@ body {
     .map {
         background-position: -338px -105px;
     }
-    
+
     .map-overlay {
         left: 216px;
         top: 52%;
@@ -547,7 +555,7 @@ body {
     z-index: 26;
 }
 
-/* 
+/*
 .stripes2 {
     content: "";
     width: 320%;

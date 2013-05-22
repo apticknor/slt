@@ -5,7 +5,7 @@
                 <div class="section-hd section-hd_about">
                     <h2 class="hdg hdg_section hdg_blue">How We're Different</h2>
                 </div>
-                <div class="section-bd">
+                <div class="section-bd section-bd_about">
                     <h3 class="isHidden">Our Difference</h3>
                     <div class="hub">
                         <div class="hub-panel hub-panel_1of5">
