@@ -144,7 +144,7 @@
                                     <img src="<?php echo $site_url; ?>assets/images/content/heather-lindh.jpg" alt="John Dusek" />
                                 </div>
                                 <div class="feature-hd">
-                                    <h4 class="hdg hdg_bold">Heather Lindh</h4>
+                                    <h4 class="hdg hdg_bold">Heather Lindholm</h4>
                                 </div>
                             </div>
                         </li>
