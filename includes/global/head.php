@@ -18,7 +18,10 @@
 
         <!-- ICONS -->
         <link rel="shortcut icon" type="image/ico" href="<?php echo $site_url; ?>favicon.ico" />
-        <link rel="apple-touch-icon-precomposed" href="<?php echo $site_url; ?>apple-touch-icon.png" />
+        <link rel="apple-touch-icon-precomposed" href="<?php echo $site_url; ?>apple-touch-icon-precomposed.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo $site_url; ?>apple-touch-icon-72x72-precomposed.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo $site_url; ?>apple-touch-icon-114x114-precomposed.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo $site_url; ?>apple-touch-icon-144x144-precomposed.png" />
 
         <!-- STYLESHEETS -->
         <link rel="stylesheet" media="screen and (min-width: 1em)" href="<?php echo $site_url; ?>assets/styles/screen.css" />
