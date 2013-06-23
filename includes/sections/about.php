@@ -38,17 +38,17 @@
                         <li>
                             <div class="feature feature_spacedWhenSmall">
                                 <div class="feature-subhd">
-                                    <h4 class="hdg hdg_white hdg_bold" data-height-watch-group-member="differencesHeadlines">We Understand Business</h4>
+                                    <h4 class="hdg hdg_white hdg_bold" data-height-watch-group-member="differencesHeadlines">We understand business</h4>
                                 </div>
                                 <div class="feature-bd">
-                                    <p>We've learned a lot from working with Fortune 500 leaders, established brands and start-ups in retail, consumer goods, financial services, hospitality, healthcare and technology.</p>
+                                    <p>We've learned from working with Fortune 500 leaders, established brands and start-ups in retail, consumer goods, financial services, healthcare and technology.</p>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="feature feature_spacedWhenSmall">
                                 <div class="feature-subhd">
-                                    <h4 class="hdg hdg_white hdg_bold" data-height-watch-group-member="differencesHeadlines">We're small, but get big results</h4>
+                                    <h4 class="hdg hdg_white hdg_bold" data-height-watch-group-member="differencesHeadlines">Small team, big results</h4>
                                 </div>
                                 <div class="feature-bd">
                                     <p>Being small means you'll work directly with talented information architects and usability experts who are passionate about what we do and invested in your success.</p>
@@ -58,10 +58,10 @@
                         <li>
                             <div class="feature feature_spacedWhenSmall">
                                 <div class="feature-subhd">
-                                    <h4 class="hdg hdg_white hdg_bold" data-height-watch-group-member="differencesHeadlines">We cut out the unimportant stuff</h4>
+                                    <h4 class="hdg hdg_white hdg_bold" data-height-watch-group-member="differencesHeadlines">We cut steps, not corners</h4>
                                 </div>
                                 <div class="feature-bd">
-                                    <p>Our streamlined approach helps you get from idea to reality faster by replacing bloated documentation with focused, usable prototypes that can be tested and improved.</p>
+                                    <p>Our streamlined approach gets you from idea to reality faster. We replace bloated documentation with focused, usable prototypes that can be evaluated and improved.</p>
                                 </div>
                             </div>
                         </li>
