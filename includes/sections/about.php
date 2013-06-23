@@ -75,7 +75,7 @@
                 <div class="section-bd">
                     <h3 class="isHidden">Our Team</h3>
                     <div class="intro">
-                        <p>We're a highly-skilled team of experienced UX professionals. We trill the challenge of turning complex business problems into simple, elegant solutions. We love to sketch, protoype, and explore what's possible. Whether your goal is to bvoost sales or improve customer satisfaction. We can help.</p>
+                        <p>We're a highly-skilled team of experienced UX professionals. We thrill at the challenge of turning complex business problems into simple, elegant solutions. We love to sketch, protoype, and explore what's possible. Whether your goal is to boost sales or improve customer satisfaction, we can help.</p>
                     </div>
                     <ul class="blocks blocks_tight blocks_2upThen3up" data-height-watch-group="teamMembers">
                         <li class="js-monitorIsOnScreen hasOpacityChange">
@@ -159,7 +159,7 @@
                                         </div>
                                         <div class="pod-bd">
                                             <div class="pod-bd-inner">
-                                                <span class="pod-bd-inner-md">E-mail us</span>
+                                                <span class="pod-bd-inner-md">Email us</span>
                                                 <span class="pod-bd-inner-lg">jobs@straightlinetheory.com</span>
                                             </div>
                                         </div>
