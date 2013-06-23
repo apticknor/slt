@@ -10,7 +10,7 @@
                                     <div class="teaser-hd">
                                         <h2 class="hdg hdg_subSection hdg_bold">
                                             <span class="textlineMobile">Want to know more?</span>
-                                            <span class="textlineMobile">Contact Us.</span>
+                                            <span class="textlineMobile">Contact us.</span>
                                         </h2>
                                     </div>
                                     <div class="teaser-subHd">
@@ -19,9 +19,14 @@
                                     <div class="teaser-bd">
                                         <div class="vcard">
                                             <div class="adr">
-                                                <span class="street-address">510 First Avenue North</span>, <span class="extended-address">Suite 408</span><br/>
-                                                <span class="locality">Minneapolis</span>, <span class="region">MN</span> <span class="postal-code">55403</span>
+                                                <a href="http://goo.gl/maps/zxYDZ">
+                                                    <span class="street-address">510 First Avenue North</span>, <span class="extended-address">Suite 408</span><br/>
+                                                    <span class="locality">Minneapolis</span>, <span class="region">MN</span> <span class="postal-code">55403</span>
+                                                </a>
                                                 <br/>
+                                                <br/>
+                                                <span class="hdg_lightGreen">Email</span>
+                                                <a class="email link-highlight" href="mailto:info@straightlinetheory.com">info@straightlinetheory.com</a><br/>
                                                 <span class="tel">
                                                     <span class="type hdg_lightGreen">Phone</span>
                                                     <span class="value">612.455.3388</span>
@@ -31,9 +36,6 @@
                                                     <span class="type hdg_lightGreen">Fax</span>
                                                     <span class="value">612.455.3389</span>
                                                 </span>
-                                                <br/>
-                                                <span class="hdg_lightGreen">Email</span>
-                                                <a class="email link-highlight" href="mailto:info@straightlinetheory.com">info@straightlinetheory.com</a><br/>
                                             </div>
                                         </div>
                                     </div>
