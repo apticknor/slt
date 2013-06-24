@@ -28,11 +28,13 @@ var SLT = SLT || {};
         APP.$document = $(document);
 
         // init all the things
+        APP.HasJS.init();
         APP.ExternalLinks.init();
         APP.AutoReplace.init();
         APP.Tabs.init();
         APP.Carousel.init();
         APP.HeightWatchers.init();
+        APP.FixedNavigation.init();
 
         if (!APP.Features.isTouch) {
             APP.OnScreenWatcher.init('isOnScreen', 'js-monitorIsOnScreen');
@@ -40,6 +42,20 @@ var SLT = SLT || {};
             APP.Stripes.init();
         }
     });
+
+/* ---------------------------------------------------------------------
+HasJS
+Author: Anthony Ticknor
+
+Replaces "no-js" class with "js" on the html element if JavaScript
+is present. This allows you to style both the JavaScript enhanced
+and non JavaScript experiences.
+------------------------------------------------------------------------ */
+APP.HasJS = {
+    init: function() {
+        APP.$html.removeClass('no-js').addClass('js');
+    }
+};
 
 /* ---------------------------------------------------------------------
 ExternalLinks
@@ -685,6 +701,54 @@ APP.ContactSection = {
         this.$el.css('top', difference);
     }
 };
+
+/* ---------------------------------------------------------------------
+FixedNavigation
+Author: Anthony Ticknor
+
+Moved Fixed Navigation (main nav and back to top button) into view
+once you scroll past a certain offset on the page.
+------------------------------------------------------------------------ */
+APP.FixedNavigation = {
+    $top: null,
+    $nav: null,
+    offsetTrigger: null,
+
+    init: function() {
+
+        // stop script for legacy IE
+        if (legacyIE === true) {
+            return;
+        }
+
+        this.$top = $('#js-top');
+        this.$nav = $('#js-nav');
+        this.offsetTrigger = $('.section_masthead').outerHeight();
+
+        if (!this.$top.length || !this.$nav.length || !this.offsetTrigger) {
+            return;
+        }
+
+        this.$top.css('display','block'); // set the element to block when the js is ready
+        this.$nav.css('display','block'); // set the element to block when the js is ready
+
+        this.bind();
+
+    },
+    bind: function() {
+        this.onScrollEvent = $.proxy(this.showNavigation, this);
+        APP.$window.on('scroll', this.onScrollEvent);
+
+    },
+    showNavigation: function() {
+        var scrollOffset = APP.$window.scrollTop();
+        if (scrollOffset > this.offsetTrigger) {
+            APP.$window.off('scroll', this.onScrollEvent);
+            this.$top.addClass('top_isOnScreen');
+            this.$nav.addClass('nav_isOnScreen');
+        }
+    }
+}
 
 /* ---------------------------------------------------------------------
 Stripes

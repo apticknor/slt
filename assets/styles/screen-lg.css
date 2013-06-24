@@ -165,12 +165,21 @@ body {
 ------------------------------------------------------------------------ */
 @media only screen and (min-width: 70em) {
     .top {
-        display: block;
+        display: none;
         position: fixed;
-        bottom: 20px;
+        bottom: -80px;
         right: 20px;
         z-index: 999999999;
         background: rgba(0,0,0,.3);
+        -webkit-transition: bottom .3s ease-in-out;
+        -moz-transition:    bottom .3s ease-in-out;
+        -ms-transition:     bottom .3s ease-in-out;
+        -o-transition:      bottom .3s ease-in-out;
+        transition:         bottom .3s ease-in-out;
+    }
+
+    .top_isOnScreen {
+        bottom: 20px;
     }
 
     .top > a {

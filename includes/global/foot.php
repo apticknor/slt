@@ -4,7 +4,7 @@
                     &copy; Straight Line Theory.
                 </small>
             </div>
-            <div class="top">
+            <div class="top" id="js-top">
                 <a href="#page-top">Back to Top</a>
             </div>
         </div>

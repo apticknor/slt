@@ -192,8 +192,9 @@ audio {
  Navigation
 ------------------------------------------------------------------------ */
 .nav {
+    display: none;
     position: fixed;
-    top: 0;
+    top: -60px;
     left: 0;
     width: 100%;
     background-color: #efefef;
@@ -204,6 +205,15 @@ audio {
     -ms-transform: translate3d(0,0,0);
     -o-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
+    -webkit-transition: top .3s ease-in-out;
+    -moz-transition:    top .3s ease-in-out;
+    -ms-transition:     top .3s ease-in-out;
+    -o-transition:      top .3s ease-in-out;
+    transition:         top .3s ease-in-out;
+}
+
+.nav_isOnScreen {
+    top: 0;
 }
 
 .nav-inner {
