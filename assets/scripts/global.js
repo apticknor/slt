@@ -771,6 +771,7 @@ APP.FixedNavigation = {
         this.$nav.css('display','block'); // set the element to block when the js is ready
 
         this.bind();
+        this.showNavigation();
 
     },
     bind: function() {
