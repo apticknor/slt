@@ -419,7 +419,7 @@ Initializes HeightWatch objects
 ------------------------------------------------------------------------ */
 APP.HeightWatchers = {
     init: function() {
-    
+
         // stop script for legacy IE
         if (legacyIE === true) {
             return;
