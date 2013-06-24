@@ -354,6 +354,18 @@ body {
     z-index: 999;
 }
 
+@media \0screen {
+    /* IE8 hack */
+    .map {
+        height: 634px;
+        background-position: 0 0;
+    }
+    .map-overlay {
+        left: 574px;
+        top: 49%;
+    }
+}
+
 /* enclose to mediaquery to identify modern browser */
 @media only screen and (min-width: 1em) {
     .map-overlay-pin {
