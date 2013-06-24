@@ -1,7 +1,6 @@
         <!--- SECTION MASTHEAD -->
         <div class="stripes2"></div>
         <div class="section section_masthead" role="banner">
-            <div class="stripes" id="topLeftStripe"></div>
             <div class="section-bd section-bd_masthead">
                 <div class="preamble">
                     <div class="preamble-hd">

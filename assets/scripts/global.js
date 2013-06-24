@@ -308,11 +308,13 @@ APP.Carousel = {
 
         this.$prev.on(self.CLICKEVENTTYPE, function(e){
             e.preventDefault();
+            console.dir(e);
             self.onPreviousSlide();
         });
 
         this.$next.on(self.CLICKEVENTTYPE, function(e){
             e.preventDefault();
+            console.dir(e);
             self.onNextSlide();
         });
 
@@ -419,7 +421,7 @@ Initializes HeightWatch objects
 ------------------------------------------------------------------------ */
 APP.HeightWatchers = {
     init: function() {
-    
+
         // stop script for legacy IE
         if (legacyIE === true) {
             return;
@@ -630,7 +632,7 @@ Handles animation of stripes
 APP.Stripes = {
     $el: null,
     oTop: 0,
-    scrollRatio: 2,
+    scrollRatio: 1.8,
 
     init: function() {
         this.$el = $(document.getElementById('topLeftStripe'));
@@ -657,7 +659,7 @@ APP.Stripes = {
         var self = this;
 
         this.$el.css({
-            top: self.oTop + APP.$window.scrollTop() / self.scrollRatio
+            top: self.oTop - APP.$window.scrollTop() / self.scrollRatio
         });
     }
 };
