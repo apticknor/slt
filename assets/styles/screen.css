@@ -132,8 +132,11 @@ textarea {
 /* ---------------------------------------------------------------------
  Base Styles
 ------------------------------------------------------------------------ */
-body {
+html {
     font: normal 16px/1.25 "SeravekLight", Helvetica, Arial, sans-serif;
+}
+
+body {
     color: #3a3a3a;
     background: #ffffff url("../images/design/bg-section-masthead.jpg") no-repeat fixed center top; /* creates "rollover" effect over the top of the first section */
     min-width: 320px;

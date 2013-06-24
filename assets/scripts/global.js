@@ -612,6 +612,7 @@ APP.OnScreenWatcher = {
         }
 
         this.bind();
+        this.checkElementsOnScreen();
     },
 
     bind: function() {
@@ -660,6 +661,8 @@ APP.ContactSection = {
     $el: null,
 
     init: function(selector) {
+        this.minWidth = 672;
+
         if (!selector) {
             return;
         }
@@ -670,35 +673,70 @@ APP.ContactSection = {
         }
 
         this.$el = $(selector);
+        this.$topWatcher = this.$el.parent();
+        this.$heightWatcher = this.$el.children().eq(0);
 
         if (!this.$el.length) {
             this.$el = null;
             return;
         }
 
+        this.targetHeight = 0;
+
         this.bind();
+        this.setMeasurements();
+        this.positionEl();
     },
 
     bind: function() {
         var self = this;
         APP.$window.on('scroll resize', function(){
+            self.setMeasurements();
             self.positionEl();
         });
     },
 
+    setMeasurements: function() {
+        var targetLeft = (APP.$document.width() - this.$el.width()) / 2;
+        this.targetHeight = this.$heightWatcher.height();
+
+        this.$el.css({
+            'left': targetLeft,
+            'height': this.targetHeight
+        });
+
+        this.$topWatcher.css('height', this.targetHeight);
+    },
+
     positionEl: function() {
-        var self = this;
-        var elPosition   = this.$el.offset();
-        var elHeight     = this.$el.height();
-        var scrollOffset = APP.$window.height() + APP.$document.scrollTop();
-        var difference = Math.round(-(elHeight - (scrollOffset - elPosition.top + this.$el.position().top)));
+        var docScroll = APP.$document.scrollTop();
+        var winHeight = APP.$window.height();
+        var topValue = this.$topWatcher.offset().top;
 
-        if (difference >= 0 || difference <= -elHeight) {
-            this.$el.css('top', 'auto');
-            return;
+        var target = topValue - docScroll;
+        var pixelsOnScreen = docScroll + winHeight - topValue;
+        var isOffScreen = docScroll + winHeight < topValue;
+
+        // If I'm smaller than medium breakpoint or I'm not on screen, reset to static positioning
+        if (APP.$window.width() < this.minWidth || isOffScreen) {
+            this.$el.css({
+                'position': 'static'
+            });
+        // or else if my container is not fully on screen
+        } else if (pixelsOnScreen <= this.targetHeight) {
+            this.$el.css({
+                'position': 'fixed',
+                'top': 'auto',
+                'bottom': 0
+            });
+        // otherwise I'm on screen fully
+        } else {
+            this.$el.css({
+                'position': 'fixed',
+                'top': target,
+                'bottom': 'auto'
+            });
         }
-
-        this.$el.css('top', difference);
     }
 };
 
@@ -769,9 +807,10 @@ APP.Stripes = {
             return;
         }
 
-        this.oTop = parseInt(this.$el.css('top'), 10);
+        this.oTop = 0;
 
         this.bind();
+        this.handleStripeScroll();
     },
 
     bind: function() {
