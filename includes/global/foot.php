@@ -1,8 +1,8 @@
         <div class="globalFooter">
             <div class="globalFooter-bd">
-                <address class="wordmark">
-                    <span class="wordmark-txt">Straight Line Theory</span>
-                </address>
+                <small>
+                    &copy; Straight Line Theory.
+                </small>
             </div>
             <div class="top">
                 <a href="#page-top">Back to Top</a>
@@ -15,7 +15,7 @@
 
         <!-- JAVASCRIPT -->
         <script type="text/javascript">
-            var legacyIE = false;;
+            var legacyIE = false;
         </script>
         <!--[if lt IE 8]>
         <script type="text/javascript">

@@ -5,7 +5,7 @@
                 <div class="section-hd section-hd_about">
                     <h2 class="hdg hdg_section hdg_blue">How We're Different</h2>
                 </div>
-                <div class="section-bd">
+                <div class="section-bd section-bd_about">
                     <h3 class="isHidden">Our Difference</h3>
                     <div class="hub">
                         <div class="hub-panel hub-panel_1of5">
@@ -38,17 +38,17 @@
                         <li>
                             <div class="feature feature_spacedWhenSmall">
                                 <div class="feature-subhd">
-                                    <h4 class="hdg hdg_white hdg_bold" data-height-watch-group-member="differencesHeadlines">We Understand Business</h4>
+                                    <h4 class="hdg hdg_white hdg_bold" data-height-watch-group-member="differencesHeadlines">We understand business</h4>
                                 </div>
                                 <div class="feature-bd">
-                                    <p>We've learned a lot from working with Fortune 500 leaders, established brands and start-ups in retail, consumer goods, financial services, hospitality, healthcare and technology.</p>
+                                    <p>We've learned from working with Fortune 500 leaders, established brands and start-ups in retail, consumer goods, financial services, healthcare and technology.</p>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="feature feature_spacedWhenSmall">
                                 <div class="feature-subhd">
-                                    <h4 class="hdg hdg_white hdg_bold" data-height-watch-group-member="differencesHeadlines">We're small, but get big results</h4>
+                                    <h4 class="hdg hdg_white hdg_bold" data-height-watch-group-member="differencesHeadlines">Small team, big results</h4>
                                 </div>
                                 <div class="feature-bd">
                                     <p>Being small means you'll work directly with talented information architects and usability experts who are passionate about what we do and invested in your success.</p>
@@ -58,10 +58,10 @@
                         <li>
                             <div class="feature feature_spacedWhenSmall">
                                 <div class="feature-subhd">
-                                    <h4 class="hdg hdg_white hdg_bold" data-height-watch-group-member="differencesHeadlines">We cut out the unimportant stuff</h4>
+                                    <h4 class="hdg hdg_white hdg_bold" data-height-watch-group-member="differencesHeadlines">We cut steps, not corners</h4>
                                 </div>
                                 <div class="feature-bd">
-                                    <p>Our streamlined approach helps you get from idea to reality faster by replacing bloated documentation with focused, usable prototypes that can be tested and improved.</p>
+                                    <p>Our streamlined approach gets you from idea to reality faster. We replace bloated documentation with focused, usable prototypes that can be evaluated and improved.</p>
                                 </div>
                             </div>
                         </li>
@@ -75,7 +75,7 @@
                 <div class="section-bd">
                     <h3 class="isHidden">Our Team</h3>
                     <div class="intro">
-                        <p>We're a highly-skilled team of experienced UX professionals. We trill the challenge of turning complex business problems into simple, elegant solutions. We love to sketch, protoype, and explore what's possible. Whether your goal is to bvoost sales or improve customer satisfaction. We can help.</p>
+                        <p>We're a highly-skilled team of experienced UX professionals. We thrill at the challenge of turning complex business problems into simple, elegant solutions. We love to sketch, protoype, and explore what's possible. Whether your goal is to boost sales or improve customer satisfaction, we can help.</p>
                     </div>
                     <ul class="blocks blocks_tight blocks_2upThen3up" data-height-watch-group="teamMembers">
                         <li class="js-monitorIsOnScreen hasOpacityChange">
@@ -144,7 +144,7 @@
                                     <img src="<?php echo $site_url; ?>assets/images/content/heather-lindh.jpg" alt="John Dusek" />
                                 </div>
                                 <div class="feature-hd">
-                                    <h4 class="hdg hdg_bold">Heather Lindh</h4>
+                                    <h4 class="hdg hdg_bold">Heather Lindholm</h4>
                                 </div>
                             </div>
                         </li>
@@ -159,7 +159,7 @@
                                         </div>
                                         <div class="pod-bd">
                                             <div class="pod-bd-inner">
-                                                <span class="pod-bd-inner-md">E-mail us</span>
+                                                <span class="pod-bd-inner-md">Email us</span>
                                                 <span class="pod-bd-inner-lg">jobs@straightlinetheory.com</span>
                                             </div>
                                         </div>

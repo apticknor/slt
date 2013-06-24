@@ -255,6 +255,11 @@ APP.Carousel = {
         var $slides = $slideWrapper.children();
         var $keySlide = $slides.eq(0);
 
+        // stop script for legacy IE
+        if (legacyIE === true) {
+            return;
+        }
+
         if (!$carousel.length ||
             !$viewport.length ||
             !$slideWrapper.length ||
@@ -414,6 +419,12 @@ Initializes HeightWatch objects
 ------------------------------------------------------------------------ */
 APP.HeightWatchers = {
     init: function() {
+    
+        // stop script for legacy IE
+        if (legacyIE === true) {
+            return;
+        }
+
         var $groups = $('[data-height-watch-group]');
         // must wait for images to load prior to measuring heights
         $(window).on('load', function() {
@@ -505,6 +516,11 @@ APP.OnScreenWatcher = {
             return;
         }
 
+        // stop script for legacy IE
+        if (legacyIE === true) {
+            return;
+        }
+
         this.ON_SCREEN_ACTIVE_CLASS = onScreenActiveClass;
         this.MONITOR_ME_CLASS = monitorMeClass;
         this.$monitorCollection = $("." + monitorMeClass);
@@ -564,6 +580,11 @@ APP.ContactSection = {
 
     init: function(selector) {
         if (!selector) {
+            return;
+        }
+
+        // stop script for legacy IE
+        if (legacyIE === true) {
             return;
         }
 

@@ -1,4 +1,5 @@
         <!--- SECTION MASTHEAD -->
+        <div class="stripes2"></div>
         <div class="section section_masthead" role="banner">
             <div class="stripes" id="topLeftStripe"></div>
             <div class="section-bd section-bd_masthead">
@@ -13,10 +14,12 @@
                 <div class="nav" role="navigation">
                     <div class="nav-inner">
                         <div class="nav-inner-logo">
-                            <span class="wordmark">
-                                <i class="wordmark-icn"></i>
-                                <span class="wordmark-txt"></span>
-                            </span>
+                            <a href="#page-top">
+                                <span class="wordmark">
+                                    <i class="wordmark-icn"></i>
+                                    <span class="wordmark-txt"></span>
+                                </span>
+                            </a>
                         </div>
                         <div class="nav-inner-cta">
                             <a class="btn" href="#page-contact">Contact Us</a>
