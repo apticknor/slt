@@ -187,13 +187,30 @@ APP.Tabs = {
 
     bind: function() {
         var self = this;
+        var isMoving = false;
 
-        this.$tabControls.on('click', 'a', function(e) {
-            e.preventDefault();
-            var $this = $(this);
-            var newSlideIndex = $this.attr('data-jstab-index');
-            self.showTab(newSlideIndex);
-        });
+        this.$tabControls.on({
+            click: function(e) {
+                e.preventDefault();
+                if (!APP.Features.isTouch) {
+                    var newSlideIndex = $(this).attr('data-jstab-index');
+                    self.showTab(newSlideIndex);
+                }
+            },
+            touchend: function(e) {
+                e.stopImmediatePropagation();
+                e.preventDefault();
+                if (isMoving == false) {
+                    var newSlideIndex = $(this).attr('data-jstab-index');
+                    self.showTab(newSlideIndex);
+                } else {
+                    isMoving = false;
+                }
+            },
+            touchmove: function() {
+                isMoving = true;
+            }
+        }, 'a');
     },
 
     showTab: function(slideIndex) {
@@ -246,8 +263,6 @@ APP.Carousel = {
     currentSlide: 0,
     numSlides: 0,
 
-    CLICKEVENTTYPE: null,
-
     init: function() {
         var $carousel = $('#portfolioCarousel');
         var $viewport = $carousel.find('.carousel-viewport');
@@ -274,7 +289,6 @@ APP.Carousel = {
         this.$keySlide = $keySlide;
 
         this.numSlides = this.$slides.length;
-        this.CLICKEVENTTYPE = APP.Features.isTouch ? 'touchstart' : 'click';
 
         this.createMarkup().bindEvents();
 
@@ -305,22 +319,71 @@ APP.Carousel = {
 
     bindEvents: function() {
         var self = this;
+        var isMoving = false;
 
-        this.$prev.on(self.CLICKEVENTTYPE, function(e){
-            e.preventDefault();
-            console.dir(e);
-            self.onPreviousSlide();
+        this.$prev.on({
+            click: function(e) {
+                e.preventDefault();
+                if (!APP.Features.isTouch) {
+                    self.onPreviousSlide();
+                }
+            },
+            touchend: function(e) {
+                e.stopImmediatePropagation();
+                e.preventDefault();
+                if (isMoving == false) {
+                    self.onPreviousSlide();
+                } else {
+                    isMoving = false;
+                }
+            },
+            touchmove: function() {
+                isMoving = true;
+            }
         });
 
-        this.$next.on(self.CLICKEVENTTYPE, function(e){
-            e.preventDefault();
-            console.dir(e);
-            self.onNextSlide();
+        this.$next.on({
+            click: function(e) {
+                e.preventDefault();
+                if (!APP.Features.isTouch) {
+                    self.onNextSlide();
+                }
+            },
+            touchend: function(e) {
+                e.stopImmediatePropagation();
+                e.preventDefault();
+                if (isMoving == false) {
+                    self.onNextSlide();
+                } else {
+                    isMoving = false;
+                }
+            },
+            touchmove: function() {
+                isMoving = true;
+            }
         });
 
-        this.$paginationLinks.on(self.CLICKEVENTTYPE, function(e){
-            self.gotoSlide($(this).parent().index());
+        this.$paginationLinks.on({
+            click: function(e) {
+                e.preventDefault();
+                if (!APP.Features.isTouch) {
+                    self.gotoSlide($(this).parent().index());
+                }
+            },
+            touchend: function(e) {
+                e.stopImmediatePropagation();
+                e.preventDefault();
+                if (isMoving == false) {
+                    self.gotoSlide($(this).parent().index());
+                } else {
+                    isMoving = false;
+                }
+            },
+            touchmove: function() {
+                isMoving = true;
+            }
         });
+
     },
 
     onNextSlide: function() {
