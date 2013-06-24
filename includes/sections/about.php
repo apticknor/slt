@@ -148,7 +148,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="js-monitorIsOnScreen hasOpacityChange">
+                        <li class="js-monitorIsOnScreen hasOpacityChange legacyIEhide">
                             <a class="blockAnchor" href="mailto:jobs@straightlinetheory.com">
                                 <div class="box box_plain box_cta" data-height-watch-group-member="teamMembers">
                                     <div class="pod">
