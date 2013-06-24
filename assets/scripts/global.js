@@ -709,6 +709,7 @@ APP.Stripes = {
         this.oTop = parseInt(this.$el.css('top'), 10);
 
         this.bind();
+        this.handleStripeScroll();
     },
 
     bind: function() {
