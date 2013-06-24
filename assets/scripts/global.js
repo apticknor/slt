@@ -187,13 +187,30 @@ APP.Tabs = {
 
     bind: function() {
         var self = this;
+        var isMoving = false;
 
-        this.$tabControls.on('click', 'a', function(e) {
-            e.preventDefault();
-            var $this = $(this);
-            var newSlideIndex = $this.attr('data-jstab-index');
-            self.showTab(newSlideIndex);
-        });
+        this.$tabControls.on({
+            click: function(e) {
+                e.preventDefault();
+                if (!APP.Features.isTouch) {
+                    var newSlideIndex = $(this).attr('data-jstab-index');
+                    self.showTab(newSlideIndex);
+                }
+            },
+            touchend: function(e) {
+                e.stopImmediatePropagation();
+                e.preventDefault();
+                if (isMoving == false) {
+                    var newSlideIndex = $(this).attr('data-jstab-index');
+                    self.showTab(newSlideIndex);
+                } else {
+                    isMoving = false;
+                }
+            },
+            touchmove: function() {
+                isMoving = true;
+            }
+        }, 'a');
     },
 
     showTab: function(slideIndex) {
