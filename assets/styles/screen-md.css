@@ -72,6 +72,7 @@ body {
 
 /* contact section */
 .section_contact {
+    overflow: hidden;
     padding: 0;
     position: relative;
     z-index: 40; /* stack below about section */
@@ -79,6 +80,7 @@ body {
 
 .section-bd_contact {
     position: relative;
+    width: 100%;
     max-width: 1364px;
 }
 
