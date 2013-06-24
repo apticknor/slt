@@ -782,8 +782,25 @@ APP.FixedNavigation = {
         var scrollOffset = APP.$window.scrollTop();
         if (scrollOffset > this.offsetTrigger) {
             APP.$window.off('scroll', this.onScrollEvent);
-            this.$top.addClass('top_isOnScreen');
-            this.$nav.addClass('nav_isOnScreen');
+
+            var navHeight = parseInt(this.$nav.css('height'), 10);
+            var navTopPad = parseInt(this.$nav.css('padding-top'), 10);
+
+            this.$nav.animate(
+                {
+                    'top': -(navHeight - navTopPad)
+                },
+                750,
+                'easeOutBack'
+            );
+
+            this.$top.animate(
+                {
+                    'bottom': 20
+                },
+                750,
+                'easeOutBack'
+            );
         }
     }
 }
