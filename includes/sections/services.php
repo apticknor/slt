@@ -17,7 +17,7 @@
                                     <h3 class="hdg_subSection hdg_green" data-height-watch-group-member="servicesHeadlines">Understand Your Users.</h3>
                                 </div>
                                 <div class="feature-bd">
-                                    <p>Do you have a complete picture of the people you want to reach? Through user research and interviews, we help you gain a deeper understanding of your users' behaviors and goals.</p>
+                                    <p>Do you have a complete picture of the people you want to reach? Through user research and interviews, we help you gain a deeper understanding of your users&rsquo; behaviors and goals.</p>
                                 </div>
                             </div>
                         </div>
@@ -34,7 +34,7 @@
                                     <h3 class="hdg_subSection hdg_green" data-height-watch-group-member="servicesHeadlines">Define the Experience.</h3>
                                 </div>
                                 <div class="feature-bd">
-                                    <p>We're experts at creating experiences that get used. We work closely with you to plan, sketch and diagram posssible solutions. Then we create wireframes and prototypes to help you visualize the experience.</p>
+                                    <p>We&rsquo;re experts at creating experiences that get used. We work closely with you to plan, sketch and diagram posssible solutions. Then we create wireframes and prototypes to help you visualize the experience.</p>
                                 </div>
                             </div>
                         </div>
@@ -51,7 +51,7 @@
                                     <h3 class="hdg_subSection hdg_green" data-height-watch-group-member="servicesHeadlines">Test, Evaluate &amp; Improve.</h3>
                                 </div>
                                 <div class="feature-bd">
-                                    <p>We'll test your site or product with real people. Then we'll provide concrete solutions for fixing any problems we uncover. No long-winded reports, just the stuff you need to make it better.</p>
+                                    <p>We&rsquo;ll test your site or product with real people. Then we&rsquo;ll provide concrete solutions for fixing any problems we uncover. No long-winded reports, just the stuff you need to make it better.</p>
                                 </div>
                             </div>
                         </div>

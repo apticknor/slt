@@ -3,7 +3,7 @@
             <div class="jsTab-controls"></div>
             <div class="jsTab-content" data-jstab-label="Our Difference">
                 <div class="section-hd section-hd_about">
-                    <h2 class="hdg hdg_section hdg_blue">How We're Different</h2>
+                    <h2 class="hdg hdg_section hdg_blue">How We&rsquo;re Different</h2>
                 </div>
                 <div class="section-bd section-bd_about">
                     <h3 class="isHidden">Our Difference</h3>
@@ -28,7 +28,7 @@
                         <li>
                             <div class="feature feature_spacedWhenSmall">
                                 <div class="feature-subhd">
-                                    <h4 class="hdg hdg_white hdg_bold" data-height-watch-group-member="differencesHeadlines">We're specialized</h4>
+                                    <h4 class="hdg hdg_white hdg_bold" data-height-watch-group-member="differencesHeadlines">We&rsquo;re specialized</h4>
                                 </div>
                                 <div class="feature-bd">
                                     <p>We started Straight Line Theory in 2002 to focus exclusively on creating great digital experiences that are easy to use. Doing one thing well keeps us lean and sharp.</p>
@@ -41,7 +41,7 @@
                                     <h4 class="hdg hdg_white hdg_bold" data-height-watch-group-member="differencesHeadlines">We understand business</h4>
                                 </div>
                                 <div class="feature-bd">
-                                    <p>We've learned from working with Fortune 500 leaders, established brands and start-ups in retail, consumer goods, financial services, healthcare and technology.</p>
+                                    <p>We&rsquo;ve learned from working with Fortune 500 leaders, established brands and start-ups in retail, consumer goods, financial services, healthcare and technology.</p>
                                 </div>
                             </div>
                         </li>
@@ -51,7 +51,7 @@
                                     <h4 class="hdg hdg_white hdg_bold" data-height-watch-group-member="differencesHeadlines">Small team, big results</h4>
                                 </div>
                                 <div class="feature-bd">
-                                    <p>Being small means you'll work directly with talented information architects and usability experts who are passionate about what we do and invested in your success.</p>
+                                    <p>Being small means you&rsquo;ll work directly with talented information architects and usability experts who are passionate about what we do and invested in your success.</p>
                                 </div>
                             </div>
                         </li>
@@ -75,7 +75,7 @@
                 <div class="section-bd">
                     <h3 class="isHidden">Our Team</h3>
                     <div class="intro">
-                        <p>We're a highly-skilled team of experienced UX professionals. We thrill at the challenge of turning complex business problems into simple, elegant solutions. We love to sketch, protoype, and explore what's possible. Whether your goal is to boost sales or improve customer satisfaction, we can help.</p>
+                        <p>We&rsquo;re a highly-skilled team of experienced UX professionals. We thrill at the challenge of turning complex business problems into simple, elegant solutions. We love to sketch, protoype, and explore what&rsquo;s possible. Whether your goal is to boost sales or improve customer satisfaction, we can help.</p>
                     </div>
                     <ul class="blocks blocks_tight blocks_2upThen3up" data-height-watch-group="teamMembers">
                         <li class="js-monitorIsOnScreen hasOpacityChange">
