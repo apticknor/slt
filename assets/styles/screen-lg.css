@@ -12,11 +12,6 @@ Width: Large Screen & Up
 ------------------------------------------------------------------------ */
 body {
     font: normal 18px/1.26 "SeravekLight", Helvetica, Arial, sans-serif;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 /* ---------------------------------------------------------------------
@@ -177,7 +172,7 @@ body {
         z-index: 999999999;
         background: rgba(0,0,0,.3);
     }
-    
+
     .top > a {
         display: block;
         height: 60px;
@@ -185,7 +180,7 @@ body {
         text-indent: -9999px;
         position: relative;
     }
-    
+
     .top a:after {
         content: '';
         position: absolute;
