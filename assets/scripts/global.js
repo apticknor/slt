@@ -701,17 +701,19 @@ APP.ContactSection = {
         var pixelsOnScreen = docScroll + winHeight - topValue;
         var isOffScreen = docScroll + winHeight < topValue;
 
-        // If I'm smaller than medium breakpoint, reset to static positioning
+        // If I'm smaller than medium breakpoint or I'm not on screen, reset to static positioning
         if (APP.$window.width() < this.minWidth || isOffScreen) {
             this.$el.css({
                 'position': 'static'
             });
+        // or else if my container is not fully on screen
         } else if (pixelsOnScreen <= this.targetHeight) {
             this.$el.css({
                 'position': 'fixed',
                 'top': 'auto',
                 'bottom': 0
             });
+        // otherwise I'm on screen fully
         } else {
             this.$el.css({
                 'position': 'fixed',
@@ -741,7 +743,7 @@ APP.Stripes = {
             return;
         }
 
-        this.oTop = parseInt(this.$el.css('top'), 10);
+        this.oTop = 0;
 
         this.bind();
         this.handleStripeScroll();

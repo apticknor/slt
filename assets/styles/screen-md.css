@@ -557,7 +557,7 @@ body {
 ------------------------------------------------------------------------ */
 .stripeSet {
     position: fixed;
-    top: -100%; /* load off screen so that mid-page refreshes don't flash stripe on screen */
+    top: -500%; /* load off screen so that mid-page refreshes don't flash stripe on screen */
     left: 0;
     width: 75%;
     z-index: 26;
