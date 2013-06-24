@@ -22,9 +22,10 @@ var SLT = SLT || {};
         APP.FeatureDetection.init(); // Creates APP.Features object
 
         // Common jQuery elements
-        APP.$html   = $('html');
-        APP.$body   = $('body');
-        APP.$window = $(window);
+        APP.$html     = $('html');
+        APP.$body     = $('body');
+        APP.$window   = $(window);
+        APP.$document = $(document);
 
         // init all the things
         APP.ExternalLinks.init();
@@ -605,10 +606,11 @@ APP.ContactSection = {
     },
 
     positionEl: function() {
+        var self = this;
         var elPosition   = this.$el.offset();
         var elHeight     = this.$el.height();
-        var scrollOffset = APP.$window.height() + APP.$window.scrollTop();
-        var difference = -(elHeight - (scrollOffset - elPosition.top + this.$el.position().top));
+        var scrollOffset = APP.$window.height() + APP.$document.scrollTop();
+        var difference = Math.round(-(elHeight - (scrollOffset - elPosition.top + this.$el.position().top)));
 
         if (difference >= 0 || difference <= -elHeight) {
             this.$el.css('top', 'auto');
