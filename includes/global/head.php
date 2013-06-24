@@ -38,7 +38,6 @@
         <link rel="stylesheet" media="screen" href="<?php echo $site_url; ?>assets/styles/screen-md.css" />
         <link rel="stylesheet" media="screen" href="<?php echo $site_url; ?>assets/styles/screen-lg.css" />
         <link rel="stylesheet" media="screen" href="<?php echo $site_url; ?>assets/styles/screen-xl.css" />
-        <link rel="stylesheet" media="screen" href="<?php echo $site_url; ?>assets/styles/ie8.css" />
         <![endif]-->
 
         <!-- LEGACY IE SUPPORT -->
