@@ -596,6 +596,7 @@ APP.OnScreenWatcher = {
         }
 
         this.bind();
+        this.checkElementsOnScreen();
     },
 
     bind: function() {
