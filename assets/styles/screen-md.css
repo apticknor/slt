@@ -558,16 +558,16 @@ body {
 .stripeSet {
     position: fixed;
     top: -500%; /* load off screen so that mid-page refreshes don't flash stripe on screen */
-    left: -100%; /* do this to prevent overlaying other interactive elements (see left value of .stripeSet-wrapper) */
+    left: 0;
     width: 75%;
     z-index: 26;
+    pointer-events: none;
 }
 
 .stripeSet-wrapper {
     display: block;
     position: relative;
     top: -300px; /* to prevent top edge of stripe from being visible if "overscrolling" on a mac */
-    left: 133%; /* do this to prevent overlaying other interactive elements (see left value of .stripeSet) */
     height: 0;
     padding-bottom: 100%;
 }
