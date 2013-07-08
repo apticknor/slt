@@ -41,6 +41,14 @@ var SLT = SLT || {};
             APP.ContactSection.init('.section-bd_contact');
             APP.Stripes.init();
         }
+
+        /*
+         * SWIPE EVENT CONFIG
+         */
+        // The percentage of wrapper travelled for swipe event to occur (default is 0.4)
+        jQuery.event.special.swipe.settings.threshold = 0.1;
+        // Sensitivity to swipe events (default is 6)
+        jQuery.event.special.swipe.settings.sensitivity = 8;
     });
 
 /* ---------------------------------------------------------------------
@@ -307,7 +315,6 @@ APP.Carousel = {
         this.numSlides = this.$slides.length;
 
         this.createMarkup().bindEvents();
-
     },
 
     createMarkup: function() {
@@ -325,9 +332,14 @@ APP.Carousel = {
         this.$prev = $('<span class="carousel-controls-btn carousel-controls-btn_prev"></span>');
         this.$next = $('<span class="carousel-controls-btn carousel-controls-btn_next"></span>');
 
-        $controls.append(this.$prev);
-        $controls.append(this.$next);
+        // Only add arrows to non-touch devices
+        if (!APP.Features.isTouch) {
+            $controls.append(this.$prev);
+            $controls.append(this.$next);
+        }
+
         $controls.append($pagination);
+
         this.$carousel.prepend($controls);
 
         return this;
@@ -337,69 +349,46 @@ APP.Carousel = {
         var self = this;
         var isMoving = false;
 
-        this.$prev.on({
-            click: function(e) {
-                e.preventDefault();
-                if (!APP.Features.isTouch) {
+        // Non touch events
+        if (!APP.Features.isTouch) {
+            this.$prev.on({
+                click: function(e) {
+                    e.preventDefault();
                     self.onPreviousSlide();
                 }
-            },
-            touchend: function(e) {
-                e.stopImmediatePropagation();
-                e.preventDefault();
-                if (isMoving == false) {
-                    self.onPreviousSlide();
-                } else {
-                    isMoving = false;
-                }
-            },
-            touchmove: function() {
-                isMoving = true;
-            }
-        });
+            });
 
-        this.$next.on({
-            click: function(e) {
-                e.preventDefault();
-                if (!APP.Features.isTouch) {
+            this.$next.on({
+                click: function(e) {
+                    e.preventDefault();
                     self.onNextSlide();
                 }
-            },
-            touchend: function(e) {
-                e.stopImmediatePropagation();
-                e.preventDefault();
-                if (isMoving == false) {
-                    self.onNextSlide();
-                } else {
-                    isMoving = false;
-                }
-            },
-            touchmove: function() {
-                isMoving = true;
-            }
-        });
+            });
 
-        this.$paginationLinks.on({
-            click: function(e) {
-                e.preventDefault();
-                if (!APP.Features.isTouch) {
+            this.$paginationLinks.on({
+                click: function(e) {
+                    e.preventDefault();
                     self.gotoSlide($(this).parent().index());
                 }
-            },
-            touchend: function(e) {
-                e.stopImmediatePropagation();
-                e.preventDefault();
-                if (isMoving == false) {
-                    self.gotoSlide($(this).parent().index());
-                } else {
-                    isMoving = false;
-                }
-            },
-            touchmove: function() {
-                isMoving = true;
-            }
-        });
+            });
+        }
 
+        // Touch Events
+        if (APP.Features.isTouch) {
+            this.$viewport.on('swipeleft', function(){
+                self.onNextSlide();
+            });
+
+            this.$viewport.on('swiperight', function(){
+                self.onPreviousSlide();
+            });
+
+            this.$viewport.on('movestart', function(e){
+                if ((e.distX > e.distY && e.distX < -e.distY) || (e.distX < e.distY && e.distX > -e.distY)) {
+                    e.preventDefault();
+                }
+            });
+        }
     },
 
     onNextSlide: function() {
@@ -411,10 +400,8 @@ APP.Carousel = {
     },
 
     gotoSlide: function(index) {
-        if (index === this.numSlides) {
-            index = 0;
-        } else if (index < 0) {
-            index = this.numSlides - 1;
+        if (index === this.numSlides || index < 0) {
+            return;
         }
 
         this.$slideWrapper.stop().animate(
