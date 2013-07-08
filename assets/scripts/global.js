@@ -340,6 +340,7 @@ APP.Carousel = {
         if (!APP.Features.isTouch) {
             $controls.append(this.$prev);
             $controls.append(this.$next);
+            this.updateButtons();
         }
 
         $controls.append($pagination);
@@ -418,6 +419,10 @@ APP.Carousel = {
 
         this.currentSlide = index;
         this.updatePagination();
+
+        if (!APP.isTouch) {
+            this.updateButtons();
+        }
     },
 
     updatePagination: function() {
@@ -429,6 +434,11 @@ APP.Carousel = {
             .find('.paginationDot')
                 .eq(this.currentSlide)
                 .addClass('isActive');
+    },
+
+    updateButtons: function() {
+        this.currentSlide === this.numSlides - 1 ? this.$next.hide() : this.$next.show();
+        this.currentSlide === 0 ? this.$prev.hide() : this.$prev.show();
     }
 };
 
