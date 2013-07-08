@@ -12,7 +12,7 @@
                 <div class="nav" id="js-nav" role="navigation">
                     <div class="nav-inner">
                         <div class="nav-inner-logo">
-                            <a href="#page-top">
+                            <a href="#page-top" class="js-scrollTo">
                                 <span class="wordmark">
                                     <i class="wordmark-icn"></i>
                                     <span class="wordmark-txt"></span>
