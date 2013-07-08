@@ -20,7 +20,7 @@
                             </a>
                         </div>
                         <div class="nav-inner-cta">
-                            <a class="btn" href="#page-contact">Contact Us</a>
+                            <a class="btn js-scrollTo" href="#page-contact">Contact Us</a>
                         </div>
                     </div>
                 </div>

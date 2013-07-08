@@ -5,7 +5,7 @@
                 </small>
             </div>
             <div class="top" id="js-top">
-                <a href="#page-top">Back to Top</a>
+                <a href="#page-top" class="js-scrollTo">Back to Top</a>
             </div>
         </div>
 

@@ -36,6 +36,10 @@ var SLT = SLT || {};
         APP.HeightWatchers.init();
         APP.FixedNavigation.init();
 
+        APP.ScrollTo.init({
+            duration: 750
+        });
+
         if (!APP.Features.isTouch) {
             APP.OnScreenWatcher.init('isOnScreen', 'js-monitorIsOnScreen');
             APP.ContactSection.init('.section-bd_contact');
@@ -790,6 +794,53 @@ APP.FixedNavigation = {
                 'easeOutBack'
             );
         }
+    }
+}
+
+/* ---------------------------------------------------------------------
+SctollTo
+Author: Dan Piscitiello
+
+Handles page scrolling
+------------------------------------------------------------------------ */
+APP.ScrollTo = {
+    $triggers: null,
+    $windowGroup: null,
+    duration: 700,
+
+    init: function(options) {
+        this.$triggers = $('.js-scrollTo');
+
+        if (!this.$triggers.length) {
+            this.$triggers = null;
+            return;
+        }
+
+        this.$windowGroup = $('html, body');
+        this.duration = options.duration || this.duration;
+
+        this.bind();
+    },
+
+    bind: function() {
+        var self = this;
+
+        this.$triggers.on('click', function(e){
+            e.preventDefault();
+            self.handleClick($(this));
+        })
+    },
+
+    handleClick: function($trigger) {
+        var target = $($trigger.attr('href')).offset().top;
+
+        this.$windowGroup.animate(
+            {
+                scrollTop: target
+            },
+            this.duration,
+            'easeOutQuad'
+        );
     }
 }
 
