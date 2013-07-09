@@ -195,7 +195,7 @@ audio {
  Navigation
 ------------------------------------------------------------------------ */
 .nav {
-    display: none;
+    display: block;
     position: fixed;
     top: -70px; /* height + padding + shadow */
     left: 0;

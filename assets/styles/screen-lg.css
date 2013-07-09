@@ -165,7 +165,7 @@ body {
 ------------------------------------------------------------------------ */
 @media only screen and (min-width: 70em) {
     .top {
-        display: none;
+        display: block;
         position: fixed;
         bottom: -80px;
         right: 20px;
