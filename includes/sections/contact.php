@@ -25,15 +25,15 @@
                                                 </a>
                                                 <br/>
                                                 <br/>
-                                                <span class="hdg_lightGreen">Email</span>
+                                                <span class="hdg_lightGreen"><i class="icn icn_email">Email</i></span>
                                                 <a class="email link-highlight" href="mailto:info@straightlinetheory.com">info@straightlinetheory.com</a><br/>
                                                 <span class="tel">
-                                                    <span class="type hdg_lightGreen">Phone</span>
+                                                    <span class="type hdg_lightGreen"><i class="icn icn_phone">Phone</i></span>
                                                     <span class="value">612.455.3388</span>
                                                 </span>
                                                 <br/>
                                                 <span class="tel">
-                                                    <span class="type hdg_lightGreen">Fax</span>
+                                                    <span class="type hdg_lightGreen"><i class="icn icn_fax">Fax</i></span>
                                                     <span class="value">612.455.3389</span>
                                                 </span>
                                             </div>

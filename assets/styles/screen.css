@@ -836,6 +836,26 @@ audio {
 }
 
 /* ---------------------------------------------------------------------
+ Icon
+------------------------------------------------------------------------ */
+.icn {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-image: url(../images/design/icons.png);
+    font-size: 0;
+    line-height: 0;
+    margin-top: -1px;
+    padding-right: 2px;
+    text-indent: -9999px;
+    vertical-align: middle;
+}
+
+.icn_email { background-position: 0 0; }
+.icn_fax { background-position: -20px 0; }
+.icn_phone { background-position: -40px 0; }
+
+/* ---------------------------------------------------------------------
  Global Footer
 ------------------------------------------------------------------------ */
 .globalFooter {
@@ -868,6 +888,11 @@ audio {
     .wordmark-txt {
         background: transparent url(../images/design/wordmark-txt@2x.png) no-repeat 0 0;
         background-size: 100%;
+    }
+
+    .icn {
+        background-image: url(../images/design/icons@2x.png);
+        background-size: 60px 16px; /* size of the 1x sprite */
     }
 
     .carousel-controls-btn { background-size: 13px; }
