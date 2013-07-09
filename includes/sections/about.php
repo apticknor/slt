@@ -91,10 +91,10 @@
                         <li class="js-monitorIsOnScreen hasOpacityChange">
                             <div class="feature">
                                 <div class="feature-employee" data-height-watch-group-member="teamMembers">
-                                    <img src="<?php echo $site_url; ?>assets/images/content/kristen-skifstad.jpg" alt="Kristen Skifstad" />
+                                    <img src="<?php echo $site_url; ?>assets/images/content/heather-lindh.jpg" alt="John Dusek" />
                                 </div>
                                 <div class="feature-hd">
-                                    <h4 class="hdg hdg_bold">Kristen Skifstad</h4>
+                                    <h4 class="hdg hdg_bold">Heather Lindholm</h4>
                                 </div>
                             </div>
                         </li>
@@ -138,16 +138,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="js-monitorIsOnScreen hasOpacityChange">
-                            <div class="feature">
-                                <div class="feature-employee" data-height-watch-group-member="teamMembers">
-                                    <img src="<?php echo $site_url; ?>assets/images/content/heather-lindh.jpg" alt="John Dusek" />
-                                </div>
-                                <div class="feature-hd">
-                                    <h4 class="hdg hdg_bold">Heather Lindholm</h4>
-                                </div>
-                            </div>
-                        </li>
+                        <?php if ($show_hiring_box == true) { ?>
                         <li class="js-monitorIsOnScreen hasOpacityChange legacyIEhide">
                             <a class="blockAnchor" href="mailto:jobs@straightlinetheory.com">
                                 <div class="box box_plain box_cta" data-height-watch-group-member="teamMembers">
@@ -167,6 +158,7 @@
                                 </div>
                             </a>
                         </li>
+                        <?php } ?>
                     </ul>
                 </div>
             </div>
