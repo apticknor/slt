@@ -788,6 +788,8 @@ APP.FixedNavigation = {
             var navHeight = parseInt(this.$nav.css('height'), 10);
             var navTopPad = parseInt(this.$nav.css('padding-top'), 10);
 
+            this.$nav.addClass('nav_isOnScreen');
+
             this.$nav.animate(
                 {
                     'top': -(navHeight - navTopPad)

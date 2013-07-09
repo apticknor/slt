@@ -226,6 +226,12 @@ audio {
 .nav-inner-cta {
     float: right;
     margin-right: 10px;
+    position: relative;
+    top: 50px; /* keep the button in view when the nav is hidden */
+}
+
+.nav_isOnScreen .nav-inner-cta {
+    top: 0; /* when the nav is on screen move back into place */
 }
 
 /* ---------------------------------------------------------------------
