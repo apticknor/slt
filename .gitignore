@@ -24,3 +24,4 @@ _psd
 *.psd
 _todo.txt
 _assets
+assets/styles/*.min.css
