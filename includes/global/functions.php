@@ -1,4 +1,6 @@
 <?php
-    // handle any php needs for the site
-    
+
+    // boolen (true / false) to determine if orange box for hiring is visble
+    $show_hiring_box = false;
+
 ?>
