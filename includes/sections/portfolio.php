@@ -9,8 +9,9 @@
                         <div class="carousel" id="portfolioCarousel">
                             <div class="carousel-viewport">
                                 <ul class="carousel-slides">
-                                    <li><img src="assets/images/content/fpo-slide.png" alt="" /></li>
-                                    <li><img src="assets/images/content/fpo-slide.png" alt="" /></li>
+                                    <li><img src="assets/images/content/slide_1.jpg" alt="" /></li>
+                                    <li><img src="assets/images/content/slide_2.jpg" alt="" /></li>
+                                    <li><img src="assets/images/content/slide_3.jpg" alt="" /></li>
                                 </ul>
                             </div>
                         </div>
