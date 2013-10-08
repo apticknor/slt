@@ -34,7 +34,7 @@
                                     <h3 class="hdg_subSection hdg_green" data-height-watch-group-member="servicesHeadlines">Define the Experience.</h3>
                                 </div>
                                 <div class="feature-bd">
-                                    <p>We&rsquo;re experts at creating experiences that get used. We work closely with you to plan, sketch and diagram posssible solutions. Then we create wireframes and prototypes to help you visualize the experience.</p>
+                                    <p>We&rsquo;re experts at creating experiences that get used. We work closely with you to plan, sketch and diagram possible solutions. Then we create wireframes and prototypes to help you visualize the experience.</p>
                                 </div>
                             </div>
                         </div>

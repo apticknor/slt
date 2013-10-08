@@ -75,7 +75,7 @@
                 <div class="section-bd">
                     <h3 class="isHidden">Our Team</h3>
                     <div class="intro">
-                        <p>We&rsquo;re a highly-skilled team of experienced UX professionals. We thrill at the challenge of turning complex business problems into simple, elegant solutions. We love to sketch, protoype, and explore what&rsquo;s possible. Whether your goal is to boost sales or improve customer satisfaction, we can help.</p>
+                        <p>We&rsquo;re a highly-skilled team of experienced UX professionals. We thrill at the challenge of turning complex business problems into simple, elegant solutions. We love to sketch, prototype, and explore what&rsquo;s possible. Whether your goal is to boost sales or improve customer satisfaction, we can help.</p>
                     </div>
                     <ul class="blocks blocks_tight blocks_2upThen3up" data-height-watch-group="teamMembers">
                         <li class="js-monitorIsOnScreen hasOpacityChange">
