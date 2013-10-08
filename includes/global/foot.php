@@ -15,12 +15,6 @@
             </span>
         </span>
 
-        <!-- JQUERY -->
-        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-        <script type="text/javascript" src="<?php echo $site_url; ?>assets/scripts/jquery.easing.js"></script>
-        <script type="text/javascript" src="<?php echo $site_url; ?>assets/scripts/jquery.event.move.js"></script>
-        <script type="text/javascript" src="<?php echo $site_url; ?>assets/scripts/jquery.event.swipe.js"></script>
-
         <!-- JAVASCRIPT -->
         <script type="text/javascript">
             var legacyIE = false;
@@ -30,6 +24,6 @@
             var legacyIE = true;
         </script>
         <![endif]-->
-        <script type="text/javascript" src="<?php echo $site_url; ?>assets/scripts/global.js"></script>
+        <script type="text/javascript" src="<?php echo $site_url; ?>assets/scripts/app.min.js"></script>
     </body>
 </html>
