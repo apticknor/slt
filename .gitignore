@@ -25,3 +25,6 @@ _psd
 _todo.txt
 _assets
 assets/styles/*.min.css
+_archive
+cgi-bin
+stats
